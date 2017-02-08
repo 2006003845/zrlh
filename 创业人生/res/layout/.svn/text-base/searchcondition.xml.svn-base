@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  <Button
+   android:id="@+id/searchcondition_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/searchcondition_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/searchcondition_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="猎头中心"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/searchcondition_button_returnback"
+  	android:layout_toLeftOf="@id/searchcondition_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/searchcondition_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/searchcondition_button_title"
+
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/searchcondition_button_returnback"
+   android:layout_alignRight="@id/searchcondition_button_cancel"
+
+  android:background="@drawable/selectsever_smallback"
+  />
+  <Button
+  android:id="@+id/searchcondition_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/searchcondition_spinner"
+  android:layout_alignTop="@id/searchcondition_scrollviewback"
+  android:layout_alignLeft="@id/searchcondition_scrollviewback"
+   android:layout_alignRight="@id/searchcondition_scrollviewback"
+  android:layout_centerHorizontal="true"
+  android:text="搜索条件"
+  android:textColor="@color/black"
+  android:textSize="27sp"
+  />
+  <Button
+  android:id="@+id/searchcondition_search"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignBottom="@id/searchcondition_scrollviewback"
+  android:layout_alignLeft="@id/searchcondition_scrollviewback"
+  android:background="@drawable/button_seach"
+  />
+	<ScrollView  android:id="@+id/searchcondition_scorll"
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_below="@id/searchcondition_title"
+		android:layout_alignLeft="@id/searchcondition_scrollviewback"
+  		 android:layout_alignRight="@id/searchcondition_scrollviewback"
+		>
+		 <LinearLayout android:id="@+id/linearLayout"  
+       		 android:orientation="vertical" android:layout_width="fill_parent"  
+       		android:layout_height="wrap_content"> 
+       		 
+			<Button android:id="@+id/b_playerName" 
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent" 
+				android:textColor="@color/black"
+  				android:gravity="left|center_vertical"			
+  				android:background="@drawable/searchcondition_spinner"
+				android:text="   玩家姓名" 
+				android:textSize="17sp"/>
+			<Button android:id="@+id/b_staffName" 
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:textColor="@color/black"
+  				android:gravity="left|center_vertical"
+  				android:background="@drawable/searchcondition_spinner"
+				 android:text="   员工姓名" 
+				 android:textSize="17sp"/>
+			<Spinner android:id="@+id/s_departmentPost"
+				android:background="@drawable/searchcondition_spinner"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:layout_gravity="center_vertical|center_horizontal"
+				/>
+			<Spinner android:id="@+id/s_shopType" 
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:background="@drawable/searchcondition_spinner"
+				android:textColor="@color/black"
+  				android:gravity="left|center_vertical" />
+			<Spinner android:id="@+id/s_publicBuilder"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:textColor="@color/black"
+				android:background="@drawable/searchcondition_spinner"
+  				android:gravity="center_horizontal|center_vertical"/>
+  				</LinearLayout>
+	</ScrollView>
+  
+</RelativeLayout>

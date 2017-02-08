@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/game/!svn/ver/35083/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection
+END
+Connection.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/Connection.java
+END
+ProtocolUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/ProtocolUtil.java
+END
+ChunkPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/ChunkPacket.java
+END
+JsonPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/JsonPacket.java
+END
+Protocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/game/!svn/ver/35083/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/Protocol.java
+END
+PairPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/PairPacket.java
+END
+Utility.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/Utility.java
+END
+Community.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/game/!svn/ver/35083/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/Community.java
+END
+IOWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/IOWriter.java
+END
+Packet.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/game/!svn/ver/35067/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/connection/Packet.java
+END

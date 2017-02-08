@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/selectsever_backgroud" />
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/cancel_selector" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/selection"
+        android:text="@string/promoters_id"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/button0"
+        android:layout_toRightOf="@id/button0"
+        android:background="@drawable/selection"
+        android:text="@string/promoters_friend"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/button0"
+        android:layout_toRightOf="@id/button1"
+        android:background="@drawable/selection"
+        android:text="@string/promoters_friend_value"
+        android:textColor="@color/white"
+        android:textSize="18sp" /> -->
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/button0"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/selectsever_smallback" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/back2"
+        android:layout_alignLeft="@id/back2"
+        android:layout_alignRight="@id/back2"
+        android:layout_alignTop="@id/back2"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <RelativeLayout
+            android:id="@+id/lay0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/promoters_myid"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@id/flipper"
+                android:layout_alignRight="@id/flipper"
+                android:layout_below="@id/text0"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line" />
+
+            <Button
+                android:id="@+id/button0_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_frame"
+                android:text="@string/promoters_send"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/button0_1"
+                android:layout_below="@id/text1"
+                android:scrollbars="none" >
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planningdept_strategy"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </ScrollView>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"    
+            >
+            <ListView 
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                ></ListView>
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>

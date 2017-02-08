@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            style="@style/style_toptap_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/group_create" />
+
+        <Button
+            android:id="@+id/group_create_createbtn"
+            style="@style/style_toptap_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/bg_btn_green_selector"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white_30" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/group_create_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    style="@style/text_mid_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|clip_vertical"
+                    android:text="@string/group_form"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/group_create_form_imgv"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gameitem_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_create_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_create_layout1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/group_create_name"
+                    style="@style/text_mid_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/group_name"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/group_create_name_et"
+                    style="@style/text_mid_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/group_create_name" />
+
+                <ImageView
+                    android:id="@+id/group_create_name_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_alignRight="@id/group_create_name_et"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/group_create_name_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/group_create_name_et"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center"
+                    android:text="您的圈子名已有人使用"
+                    android:textColor="@color/red"
+                    android:textSize="10dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_create_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_create_layout2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/group_create_memb"
+                    style="@style/text_mid_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/group_memb"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/group_create_memb_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/group_create_memb"
+                    android:editable="false"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/group_create_addmemb_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/group_create_memb_et"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_add_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_create_layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_create_layout3"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/group_create_intro"
+                    style="@style/text_mid_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/group_intro"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/group_create_intro_et"
+                    style="@style/text_mid_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/group_create_intro"
+                    android:gravity="left" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_create_layout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_create_layout4"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/group_create_notice"
+                    style="@style/text_mid_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/group_notice"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/group_create_notice_et"
+                    style="@style/text_mid_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/group_create_notice"
+                    android:gravity="left"
+                    android:text="@string/notice_text" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/group_create_friends_lv"
+                android:layout_width="100dip"
+                android:layout_height="160dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/group_create_layout3"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/img_frame"
+                android:cacheColorHint="#00000000"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:visibility="gone" >
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

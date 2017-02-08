@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  
+  
+  >
+  
+  <TextView
+  android:id="@+id/employeeinfo_quality_item_name"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="素质"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  
+  />
+  <ImageView
+  android:id="@+id/employeeinfo_quality_item_star1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="20px"
+  android:background="@drawable/star2"
+  />
+   <ImageView
+  android:id="@+id/employeeinfo_quality_item_star2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/star2"
+  />
+   <ImageView
+  android:id="@+id/employeeinfo_quality_item_star3"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/star2"
+  />
+   <ImageView
+  android:id="@+id/employeeinfo_quality_item_star4"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/star2"
+  />
+   <ImageView
+  android:id="@+id/employeeinfo_quality_item_star5"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/star2"
+  />
+  
+  <Button
+  android:id="@+id/employeeinfo_quality_item_up"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="20px"
+  android:background="@drawable/advance"
+  />
+  
+</LinearLayout>

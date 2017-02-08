@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="hello">Hello World, DoctorJumpActivity!</string>
+	<string name="app_name">跳跃达人</string>
+	<string name="aboutus_message">关于我们\n客服电话：010—62259819\n客服邮箱：13810483124@139.com\n
+		联系地址：北京市海淀区西外大街168号腾达大厦701室\n
+		版权所有：兆荣联合（北京）科技发展有限公司\n
+		出品人：张新 刘泽琦\n
+		制作人：丛菲\n
+		策划：××××××××××××\n
+		技术：×××××××××××× \n
+		美术 ：×××××××××××
+	</string>
+	<string name="floor1">下层</string>
+	<string name="floor2">中层</string>
+	<string name="floor3">上层</string>
+	<string name="lasttime">持续时间</string>
+	<string name="maxcomb">最大CAMBO</string>
+	<string name="totalscore">总得分</string>
+	<string name="detail_stu">学业很重要，运动也很重要，同学们，一起参加跳跃达人的挑战赛吧！</string>
+	<string name="detail_white">朝九晚五的生活使白领们缺乏运动，趁着这个机会，一起跳起来吧！</string>
+	<string name="detail_outm">超级明星，不要让他们掉下去哦</string>
+	<string name="detail_andr">来自未来的机器人，最好不要让他们掉入深渊！</string>
+	<string name="detail_ninja">来自某忍者村的实习忍者，跳跃技巧还不是很熟练，掉落深渊会让他们觉得抬不起头来的！</string>
+	<string name="detail_black">一群身份高贵的神秘人，一切资料不详，没准是某组织的精英骨干呢。</string>
+	<string name="detail_lux_doct">高贵的小睿，爱现的小睿，威风凛凛的小睿，一个跟以前不一样的小睿！</string>
+	<string name="detail_school">无尽、限时模式游戏的场景变为学校.</string>
+	<string name="detail_snow">无尽、限时模式游戏的场景变为雪地。</string>
+	<string name="detail_city">无尽、限时模式游戏的场景变为都市。</string>
+	<string name="detail_valley">无尽、限时模式游戏的场景变为深山</string>
+	<string name="detail_fire">触碰后游戏强制结束，购买后出现几率降低5%。</string>
+	<string name="detail_double">双倍跳跃人数，持续10秒，购买后出现几率提高5%。</string>
+	<string name="detail_gold">直接增加金币购买后出现几率提高5%。</string>
+	<string name="detail_life">增加一点生命值（限时模式不可用）购买后出现几率提高5%。</string>
+	<string name="detail_stoptime">游戏时间停止10秒（仅限时模式可用）购买后出现几率提高5%。</string>
+	<string name="detail_slow">降低NPC跑动、跳动速度，持续10秒购买后出现几率提高5%。</string>
+	<string name="detail_extend">增加蹦床长度，持续10秒购买后出现几率提高5%。</string>
+	<string name="detail_shorten">缩短蹦床长度，持续10秒购买后出现几率提高5%。</string>
+	<string name="detail_thumbtack">触碰后附在蹦床上，跳跃者碰到则会高高跃起，继而跳向深处，玩家需要晃动蹦床使其失效，购买后出现几率降低5%。
+	</string>
+	<string name="detail_stone">蹦床变成石板，图钉碰到后自动折断，购买后出现几率提高5%。</string>
+	<string name="detail_board">一个普通的木质板，无其他特殊用途。</string>
+	<string name="detail_ice">关卡结束后结算分数增加5%。</string>
+	<string name="detail_iron">免疫图钉效果。</string>
+	<string name="detail_rope">NPC跳跃高度提高10%。</string>
+	<string name="detail_rairost">无视图钉效果，关卡结束后结算分数增加10%。</string>
+	<string name="detail_skill_life">使用之后生命值回满。</string>
+	<string name="detail_skill_clockstop">：使用之后倒计时停止，持续10秒.</string>
+	<string name="detail_skill_rainrost">使用后蹦床变为彩虹效果覆盖整个底部，NPC跳跃到任意位置都判定为踩到蹦床上，持续时间10秒。
+	</string>
+	<string name="prompt">提示</string>
+	<string name="exit">确认退出？</string>
+	<string name="confirm">确定</string>
+	<string name="cancel">取消</string>
+	<string name="ach_cont1">条件:任意关卡获得3颗星评价\n奖励:无</string>
+	<string name="ach_cont2">条件:获得36颗星\n奖励:开启技能--彩虹桥</string>
+	<string name="ach_cont3">条件:将关卡模式通关\n奖励:+500金币</string>
+	<string name="ach_cont4">条件:金币数量到达1000\n奖励:无</string>
+	<string name="ach_cont5">条件:金币数量到达5000\n奖励:+500金币</string>
+	<string name="ach_cont6">条件:限时模式达到5000分\n奖励:无</string>
+	<string name="ach_cont7">条件:限时模式达到10000分\n奖励:+500金币</string>
+	<string name="ach_cont8">条件:无尽模式坚持5分钟\n奖励:无</string>
+	<string name="ach_cont9">条件:无尽模式坚持15分钟\n奖励:+500金币</string>
+	<string name="ach_cont10">条件:购买全部蹦床\n奖励:新增蹦床类--彩虹床</string>
+	<string name="ach_cont11">条件:购买全部场景\n奖励:新增场景--深山</string>
+	<string name="ach_cont12">条件:购买全部的人物形象\n奖励:新增NPC形象--黑衣人</string>
+	<string name="ach_cont13">条件:购买全部的商城物品\n奖励:所有技能CD减少5秒</string>
+	<string name="ach_cont14">条件:获得以上全部成就\n奖励:道具出现率提高10%</string>
+
+	<string name="ach_name1">这次我完美了</string>
+	<string name="ach_name2">毫无压力</string>
+	<string name="ach_name3">这可难不倒我</string>
+	<string name="ach_name4">小财迷</string>
+	<string name="ach_name5">大富翁</string>
+	<string name="ach_name6">我跳我跳我跳跳跳</string>
+	<string name="ach_name7">蹦啊蹦啊蹦</string>
+	<string name="ach_name8">小铁人</string>
+	<string name="ach_name9">蹦蹦达人</string>
+	<string name="ach_name10">乐蹦乐自由</string>
+	<string name="ach_name11">新鲜感</string>
+	<string name="ach_name12">万人空巷</string>
+	<string name="ach_name13">望门贵族</string>
+	<string name="ach_name14">大满贯</string>
+	
+	<string name="loadin">加载中...</string>
+	<string name="load_finish">加载完成!</string>
+
+</resources>

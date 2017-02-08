@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1" >
+
+    <RelativeLayout
+        android:id="@+id/store_relat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4px"
+        android:layout_marginTop="4px" >
+
+        <ImageView
+            android:id="@+id/store_btn_personsence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/bg_storebtn_person_pressed"
+            android:clickable="true"
+            android:paddingTop="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_person_scene_selector" />
+
+        <ImageView
+            android:id="@+id/store_prop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_toRightOf="@id/store_btn_personsence"
+            android:background="@drawable/bg_storebtn_person_normal"
+            android:clickable="true"
+            android:paddingTop="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_prop_selector" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/store_wealth_bg"
+        android:layout_width="160px"
+        android:layout_height="70px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2px"
+        android:layout_marginTop="3px"
+        android:src="@drawable/bg_gold" />
+
+    <com.zrong.view.NumView
+        android:id="@+id/store_wealthview"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/store_wealth_bg"
+        android:layout_alignLeft="@id/store_wealth_bg"
+        android:layout_alignRight="@id/store_wealth_bg"
+        android:layout_alignTop="@id/store_wealth_bg"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px" />
+
+    <ImageView
+        android:id="@+id/store_btn_backhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3px"
+        android:layout_marginRight="2px"
+        android:background="@drawable/bg_btn_back_selector"
+        android:clickable="true"
+        android:paddingTop="7px"
+        android:scaleType="centerInside"
+        android:src="@drawable/tv_backmenu_selector" />
+
+    <com.zrong.view.MyGallery
+        android:id="@+id/store_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/store_btn_backhome"
+        android:layout_below="@id/store_relat"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:gravity="center_vertical"
+        android:spacing="10px" />
+
+</RelativeLayout>

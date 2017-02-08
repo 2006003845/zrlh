@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/selectsever_backgroud"
+  android:clickable="true"
+  >
+  
+  <Button
+   android:id="@+id/leveupInfo_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/leveupInfo_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/leveupInfo_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text=""
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/leveupInfo_button_returnback"
+  	android:layout_toLeftOf="@id/leveupInfo_button_cancel"
+  />
+  
+  <ImageView
+  android:id="@+id/leveupInfo_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/leveupInfo_button_title"
+  
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+    android:layout_alignLeft="@id/leveupInfo_button_returnback"
+   android:layout_alignRight="@id/leveupInfo_button_cancel"
+  android:background="@drawable/selectsever_smallback"
+  />
+
+ 
+  
+  
+ <ScrollView
+  android:id="@+id/leveupInfo_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:scrollbars="none"
+  android:layout_alignLeft="@id/leveupInfo_scrollviewback"
+  android:layout_alignRight="@id/leveupInfo_scrollviewback"
+  android:layout_alignTop="@id/leveupInfo_scrollviewback"
+  android:layout_alignBottom="@id/leveupInfo_scrollviewback"
+  >
+  	  <LinearLayout
+ 		  android:id="@+id/companyinfo_layout"
+ 		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical" >
+		<TextView 
+			android:id="@+id/tv_levelupConditionTitle"
+  			android:layout_height="wrap_content"
+  			android:layout_width="wrap_content"
+  			android:text="升级条件"
+  			android:textSize="28dp"
+  			android:layout_gravity="center_horizontal"
+  			android:textColor="@color/black"
+		/>
+  		<EditText 
+  			android:id="@+id/et_levelupConditionInfo"
+  			android:layout_height="200sp"
+  			android:layout_width="400sp"
+  			android:layout_gravity="center_horizontal"
+  			android:focusableInTouchMode="true"
+  			android:textSize="25dp"
+  			android:focusable="true"
+  			android:editable="false"
+  			android:background="@drawable/levelup_inf_frame"
+  		/>
+  		
+  		<TextView 
+			android:id="@+id/tv_levelupResultTitle"
+  			android:layout_height="wrap_content"
+  			android:layout_width="wrap_content"
+  			android:text="升级后效果"
+  			android:textSize="28dp"
+  			android:layout_gravity="center_horizontal"
+  			android:textColor="@color/black"
+		/>
+  		<EditText 
+  			android:id="@+id/et_levelupResultInfo"
+  			android:layout_height="150sp"
+  			android:layout_width="400sp"
+  			android:background="@drawable/levelup_inf_frame"
+			 android:layout_gravity="center_horizontal"
+			android:focusableInTouchMode="true"
+  			android:textSize="25dp"
+  			android:focusable="true"
+  			android:keepScreenOn="true"
+  			android:editable="false"
+  		/>
+	  </LinearLayout> 
+  </ScrollView>
+  
+   <Button
+  android:id="@+id/levelup_button_confirm"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignBottom="@id/leveupInfo_scrollviewback"
+  android:layout_alignLeft="@id/leveupInfo_scrollviewback"
+  android:background="@drawable/button_levelup"
+  />
+  
+</RelativeLayout>
+
+

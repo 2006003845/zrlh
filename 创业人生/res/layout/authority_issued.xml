@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  
+   <Button
+   android:id="@+id/authorityissued_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/authorityissued_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/authorityissued_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="权威发布"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/authorityissued_button_returnback"
+  	android:layout_toLeftOf="@id/authorityissued_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/authorityissued_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/authorityissued_button_title"
+   
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/authorityissued_button_returnback"
+   android:layout_alignRight="@id/authorityissued_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />  	
+    <com.zrong.Android.View.SpriteView 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_alignTop="@id/authorityissued_scrollviewback"
+  	android:layout_centerHorizontal="true"
+  	android:id="@+id/authorityissued_img" 
+  	resID="1425"  
+  	 
+  	/>
+  	<Button android:id="@+id/authorityissued_select"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:background="@drawable/authorityissued_select"
+  			android:layout_alignBottom="@id/authorityissued_scrollviewback"
+  			android:layout_alignRight="@id/authorityissued_scrollviewback"
+  		/>
+  	<LinearLayout android:id="@+id/authorittyissued_spinner_linear"
+  		android:orientation="horizontal"
+  		android:layout_centerHorizontal="true"
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:layout_toLeftOf="@id/authorityissued_select" 		
+  		android:layout_alignBottom="@id/authorityissued_scrollviewback"
+  		android:layout_marginBottom="10px">
+  		<Spinner android:id="@+id/authorityissed_area_spinner"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_gravity="center"
+  			android:layout_weight="1.0"
+  			android:layout_marginRight="20px"
+  			android:background="@drawable/authorityissued_spinner_frame"/>
+  		<Spinner android:id="@+id/authorityissed_city_spinner"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_gravity="center"
+  			android:layout_weight="1.0"
+  			android:layout_marginRight="60px"
+  			android:background="@drawable/authorityissued_spinner_frame"/>
+  		</LinearLayout>
+  		
+   
+	
+</RelativeLayout>
+

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GameActivity!</string>
+    <string name="app_name">创业人生</string>
+    <string name="activity_custom_dialog">App/Activity/Custom Dialog</string>
+    <string name="custom_dialog_activity_text">Example of how you can use a
+            custom Theme.Dialog theme to make an activity that looks like a
+            customized dialog, here with an ugly frame.</string>
+            <!-- 3500 当乐
+            	 1500 移动推广
+             -->
+    <string name="channel">3500</string>
+	<string name="version">版本：1.0501</string>
+    
+    <string name="cmcc_exit_message">更多精彩Android(安卓)/OPhone游戏尽在中国移动游戏频道http://game.10086.cn/a</string>
+    <string name="cmcc_exit_url">http://game.10086.cn/a</string>
+    <string name="dangle_exit_message">是否登录当乐专区</string>
+    <string name="dangle_exit_url">http://3g.d.cn/399</string>
+
+    <string name="aboutus_message">关于我们\n客服电话：010—62259819\n客服邮箱：13810483124@139.com\n
+		                                                                                                  联系地址：北京市海淀区西外大街168号腾达大厦701室\n
+		                                                                                                  版权所有：兆荣联合（北京）科技发展有限公司\n
+		                                                                                                  出品人：张新   刘泽琦\n
+		                                                                                                 制作人：丛菲\n
+		                                                                                                 策划：许日   晋江   李昕君\n
+		                                                                                                 客户端技术：杨征    蒋绪金     陈晴    王青松     赵忠祥      李英鹏      张小清     周志龙  </string>
+   <string name="helpsetting_message">建造店铺操作：地图——区域——新手区——选择空地——创建店铺——输入店铺名称——选择店铺规模——选择店铺种类\n
+   								                店铺升级操作：店铺——列表——店铺详细信息界面——升级\n
+   								                员工招聘操作：菜单——员工——招聘\n
+   								                员工升级操作：菜单——员工——列表——选择员工——菜单——查看属性——菜单——培训——进修——确定\n
+   								                员工技能培训操作：菜单——员工——列表——选择员工——菜单——查看属性——菜单——培训——技能培训\n
+   								                员工素质培训操作：菜单——员工——列表——选择员工——菜单——查看属性——菜单——培训——素质培训\n
+   								                聊天操作：打开聊天界面——选择信息输入栏——输入聊天内容——发送\n
+   								                发邮件操作：打开邮件界面——选择写邮件——输入收件人名称——输入邮件标题——输入邮件内容——添加物品附件（可选）\n
+   								                创建商会操作：菜单——商会——商会列表——菜单——创建商会——选择商会图标——输入商会名称</string>
+  <string name="help">游戏帮助</string> 								                
+  <string name="lottery_rules">玩法介绍：\n您需要选择1-16中的一个数字作为您的彩票号码，
+				如果开奖号码和您购买的号码一致即可马上获得16倍大奖！每注1000元，
+				多买多中，实在是发家致富的一个重要手段哦！
+				亲们，还在犹豫什么，快来加入购买彩票的大军吧，千万大奖等着你啊啊啊！</string> 
+<string name="mapmainmenu_menu">地图,部门,店铺,员工,好友,邮件,聊天 ,学堂 ,商城,公司,商会,福利彩站,策划部</string> 
+<string name="routine_menu">雇佣更多的员工为你的公司工作。,花费一定的金钱，增加店铺的士气和知名度。,增加店铺的士气。</string> 
+<string name="routine_menu1">不同的开会方式对员工属性的影响不同。,不同的沟通方式对员工属性的影响不同。,
+    						   从事义务劳动可提升员工的能力和经验，但是会降低其忠诚度。,解雇员工，节约公司成本。解雇员工需要支付员工额外的工资。,
+    						  延长员工的工作期限，让他们安心为公司工作。,花费一定的金钱，提升员工的能力、等级，可以更好的适应更多的工作。,
+    						  花费金钱让员工参加进修，提升员工等级，成功率与员工的经验和能力有关，员工升级后会提升店铺的品质。</string> 
+<string name="school_menu">现实生活中的创业故事、心得。,创业技能测试内容例题。,游戏内最新的运营活动一网打尽！,发布政策信息，以及一些法规的查询。,国家职业技能说明。,收集博士信箱里的一些有价值的问题在这里统一展示。
+                               ,发布一些实时性的就业信息，以及创业事例。,发送邮件给小博士。（邮件系统） </string> 
+<string name="commerce_menu">创建商会,我的商会,商会列表,联合宣传,宣传列表</string> 										                
+<string name="toast_createcommerce">您还没有创建商会或是加入商会</string> 
+<string name="characterinfo_name">姓名： </string>										                
+<string name="characterinfo_sex">性别： </string>										                
+<string name="characterinfo_company">公司： </string>										                
+<string name="characterinfo_level">等级： </string>										                
+<string name="characterinfo_assets">资产： </string>										                
+<string name="characterinfo_strategy">策略</string>										                
+<string name="characterinfo_execution">执行</string>										                
+<string name="characterinfo_leadership">领导</string>										                
+<string name="characterinfo_strength">体力</string>										                
+<string name="chatbox_channel">[世界],[私聊],[商会],[系统]</string>										                
+<string name="chatbox_item">频道发言,发送私聊,加为好友,发送邮件</string>										                
+<string name="chatbox_receiver">您不填写收件人的姓名，信件就不知道会寄到哪儿去了……</string>										                
+<string name="chatbox_title">给您的邮件起一个言简意赅的主题吧。</string>										                
+<string name="chatbox_content">请您尽情挥洒文采，写一封生动的邮件吧~</string>										                
+<string name="checkbuilding_buildingtype">建筑类型:  </string>										                
+<string name="checkbuilding_managername">建筑类型:  </string>										                
+<string name="checkbuilding_manager">项目经理:  </string>										                
+<string name="checkbuilding_flow">增益客流:  </string>										                
+<string name="checkbuilding_range">影响范围:  </string>										                
+<string name="checkbuilding_createcost">创建费用: </string>										                
+<string name="checkbuilding_maintenancecost">维护费用:  </string>										                
+<string name="commerceinfo_changenotice">修改公告</string>										                
+<string name="dialog_ok">确定</string>										                
+<string name="dialog_cancel">取消</string>										                
+<string name="commmercelist_menu">申请加入 </string>										                
+<string name="toast_info">请等待确认...</string>										                
+<string name="sex_men">男</string>										                
+<string name="sex_lady">女</string>										                
+<string name="chairman">  会长</string>										                
+<string name="vice_chairman">副会长</string>										                
+<string name="member">  会员</string>										                
+<string name="commercestaff_menu">发送邮件,发送私聊,加为好友,任命副会长,开除会员</string>										                
+<string name="commercestaff_menu1">发送邮件,发送私聊,加为好友,任命副会长,开除会员,招揽人才,使用策略</string>										                
+<string name="commercestaff_menu2">发送邮件,发送私聊,加为好友,开除会员,招揽人才,使用策略</string>										                
+<string name="commercestaff_menu3">发送邮件,发送私聊,加为好友,招揽人才,使用策略</string>										                
+<string name="appointed">任命</string>										                
+<string name="as_vice_chairman">为副会长</string>										                
+<string name="fire_member">您确定要开除此会员</string>										                
+<string name="commerce_donate">非常理解您向商会捐款的迫切心情，但您也要先输入捐款金额吧</string>										                
+<string name="set_donate_number">必须要输入一个捐款额度，商会不能没有捐款，有木有！！！有木有！！！</string>										                
+<string name="fire_member_self">不是吧，您想开除自已？开什么玩笑……</string>										                
+<string name="commmerceuper_menu">邀请会员,设置捐款额度,商会捐款,退出商会</string>										                
+<string name="commmerceuper_menu1">修改公告,设置捐款额度,商会捐款,商会竞选</string>										                
+<string name="commmerceuper_menu2">修改公告,设置捐款额度,商会捐款,退出商会,商会竞选</string>										                
+<string name="commmerceuper_menu3">商会捐款,退出商会</string>										                
+<string name="commmerceuper_inputname">请输入玩家姓名</string>										                
+<string name="commmerceuper_donate_number">捐款额度设置</string>										                
+<string name="commmerceuper_input_donate_number">请输入捐款金额</string>										                
+<string name="commmerceuper_exit">您确定要退出商会吗!</string>										                
+<string name="dialog_return">返回</string>										                
+<string name="commerceuper_title">商会名称,商会等级,建立时间,商会人数,商会会长,商会排名,管理费,
+				                                                 会费,我的捐款,商会基金,商会资产</string>	
+<string name="Companytab_companyname">公司名称 ：</string>									                
+<string name="Companytab_companylevel">公司等级 ：</string>									                								                
+<string name="Companytab_companywealth">公司现金 ：</string>									                
+<string name="Companytab_companyassets">公司资产 ：</string>									                
+<string name="Companytab_companyawareness">公司知名度 ：</string>									                
+<string name="Companytab_companyprestige">公司荣誉度 ：</string>									                
+<string name="Companytab_shopnumber">店铺数量 ：</string>									                
+<string name="Companytab_staffnumber">员工数量 ：</string>									                
+<string name="Company">公司</string>									                
+<string name="Companylevelinfo_message">您的升级条件不符合，公司无法升级</string>									                
+<string name="createbuilding_toast_choose">你选择了</string>									                
+<string name="createbuilding_toast_fee">需要花费:</string>									                
+<string name="createbuilding_toast_lock">该店铺未解锁，不能创建</string>									                
+<string name="createbuilding_toast_employ">请为您的建筑聘请一位项目经理吧</string>									                
+<string name="createbuilding_toast_message">您已经没有闲置的员工了，请去招聘新员工或者对员工进行内部调动吧！</string>									                
+<string name="department_personnel_dept">人事部</string>									                
+<string name="department_peoplenum">人数：</string>									                
+<string name="department_vacancy">空缺</string>									                
+<string name="department_ceo">首席执行官: </string>									                
+<string name="department_director">总监： </string>									                
+<string name="department_manager">经理： </string>									                
+<string name="department_assistant">助理： </string>									                
+<string name="department_competent">主管： </string>									                
+<string name="department_marcom">公关部： </string>									                
+<string name="department_marcom_ceo">首席公关官 ：</string>									                
+<string name="department_finance_dept">财务部： </string>									                
+<string name="department_concerning">交租 </string>									                
+<string name="department_tax">纳税 </string>									                
+<string name="department_paid">发薪</string>									                
+<string name="department_finance_dept_ceo">首席策划官：</string>									                
+<string name="department_finance_dept_ceo_1">首席财务官：</string>									                
+<string name="departmentlevel_info_toast">您的升级条件不符合，该部门无法升级</string>									                
+<string name="diglist_talentmarket">人才市场</string>									                
+<string name="diglist_huntingcenter">猎头中心</string>									                
+<string name="diglist_menudetail">查看详情</string>									                
+<string name="diglist_menuemployee">聘用</string>									                
+<string name="diglist_menuemployee_dig">挖人</string>									                
+<string name="diglist_menuemployee_dig_cost">挖人花费</string>									                
+<string name="diglist_menuemployee_dig_successrate">成功率:</string>									                
+<string name="diglist_name">姓名:</string>									                
+<string name="diglist_rate">等级:</string>									                
+<string name="diglist_loyalty">忠诚:</string>									                
+<string name="diglist_companyname">公司名:</string>									                
+<string name="diglist_company">公司:</string>									                
+<string name="diglist_position">职位:</string>									                
+<string name="diglist_salary">薪水:</string>									                
+<string name="diglist_saleprice">售价:</string>									                
+<string name="diglist_skill">技能1</string>									                
+<string name="diglist_skill_2">技能2</string>									                
+<string name="diglist_skill_3">技能3</string>									                
+<string name="diglist_blank">(空)</string>									                
+<string name="employeelist_dept">部门：</string>									                
+<string name="employeelist_contract">合同：</string>									                
+<string name="employeelist_day">天</string>									                
+<string name="employeelist_shop">店铺</string>									                
+<string name="employeelist_building">公益建筑</string>									                
+<string name="employeelist_choosestaff">请选择要操作的员工</string>									                
+<string name="employeelist_fasthire">快速招聘</string>									                
+<string name="employeelist_allocatefree">调配空闲</string>
+<string name="employeelist_button_title">员工列表</string>									                
+<string name="employeelist_button_look">查看</string>									                
+<string name="employeelist_button_routine">常务</string>
+<string name="employeelist_button_deploy">调配</string>
+<string name="employeelist_button_employ">招聘</string>
+<string name="employeelist_button_train">培训</string>
+<string name="employeelist_button_recruit">招揽</string>
+
+									                
+<string name="lotterybet_num_hint">请输入1-16中的任意一个数字</string>									                
+<string name="lotterybet_count_hint">请输入购买彩票的数量（上限999注）</string>									                
+<string name="lotterybet_toast1">请输入彩票号码和购买数量!</string>									                
+<string name="lotterybet_toast2">请输入彩票号码!</string>									                
+<string name="lotterybet_toast3">请输入购买数量!</string>									                
+<string name="lotterybet_toast4">请输入规定范围内的彩票号和购买数量!</string>									                
+<string name="lotterystation_state0">未中奖</string>									                
+<string name="lotterystation_state1">未领取</string>									                
+<string name="lotterystation_state2">已领取</string>									                
+<string name="mailbox_check">查看</string>									                
+<string name="mailbox_answer">回复</string>									                
+<string name="mailbox_delete">删除</string>									                
+<string name="mailbox_deleteread">删除已读</string>									                
+<string name="maildetail_sender">发信人：</string>									                
+<string name="maildetail_title">主题：</string>									                
+<string name="maildetail_date">日期：</string>									                
+<string name="maildetail_receivemail">收取邮件</string>									                
+<string name="moregame_dialog1">提示对话框</string>									                
+<string name="moregame_dialog2">带选择的对话框</string>									                
+<string name="moregame_dialog3">带输入的对话框</string>									                
+<string name="promoterstr">推荐您的好友一起来玩创业人生，就可以获得实用道具大礼包（店铺改名卡，店铺拆除卡，员工上限卡） 使用方法：在角色注册时填入您的推荐码</string>									                
+<string name="promoterstr1">后，登陆游戏即可完成操作，领取超级大礼</string>									                
+<string name="promotercontent">我正在玩人社部推荐的 创业实战游戏----“创业人生，
+				    在这里你将化身成为一名运筹帷幄的老板与你的员工一同建设一个商业帝国。 
+				    他推荐你和他一同进行游戏，共享快乐。
+				    详情请点击链接http://g.10086.cn/gamecms/go/pcy=</string>	
+<string name="propagandalist_toast">还没有进行宣传</string>				    								                
+<string name="propagandalist_toast1">是否花费</string>				    								                
+<string name="propagandalist_toast2">钱进行宣传!</string>				    								                
+<string name="recruit_shop">店铺:</string>				    								                
+<string name="recruit_customernumber">客流量:</string>				    								                
+<string name="recruit_company">公司：</string>				    								                
+<string name="recruit_toast">您的还没有店铺，无法进行招揽，请先新建一个店铺并雇用店员。</string>				    								                
+<string name="recruit_toast1">店铺没有员工或已经没有可以用于招揽的店铺了。</string>				    								                
+<string name="regist_account_hint">长度2—12位的的英文字母或数字</string>				    								                
+<string name="regist_password_hint">长度不大于2—12位的的英文字母或数字</string>				    								                
+<string name="regist_pwcheck_hint">请再次输入密码</string>				    								                
+<string name="regist_toast">账号长度不足两位</string>				    								                
+<string name="regist_toast1">密码长度不足两位</string>				    								                
+<string name="regist_toast2">确认密码错误，请重新输入</string>				    								                
+<string name="searchfriend_addfriend">加为好友</string>				    								                
+<string name="searchfriend_checkdocument">查看资料</string>				    								                
+<string name="searchfriend_ji">级</string>				    								                
+<string name="searchfriend_outline">离线</string>				    								                
+<string name="searchfriend_online">在线</string>				    								                
+<string name="searchcondition_departmentPosts">    部门职位,
+			    人事部首席执行官,     人事部总监,     人事部经理,     人事部助理,     人事部主管,
+			    公关部首席执行官,     公关部总监,     公关部经理,     公关部助理,     公关部主管,
+			    财务部首席执行官,     财务部总监,     财务部经理,     财务部助理,     财务部主管,
+			    策划部首席策划官,     策划部总监,     策划部经理,     策划部助理,     策划部主管,</string>				    								                
+<string name="searchcondition_playername">玩家姓名</string>					    								                
+<string name="searchcondition_staffname">员工姓名</string>					    								                
+<string name="searchcondition_null">空</string>					    								                
+<string name="searchcondition_shopstyle">    店铺类型</string>					    								                
+<string name="searchcondition_building">    公益建筑</string>					    								                
+<string name="shopinfo_income"> 店铺收入：未知</string>					    								                
+<string name="shopinfo_income1"> 店铺收入：</string>					    								                
+<string name="shopinfo_incomeadd"> 店铺加成：未知</string>					    								                
+<string name="shopinfo_incomeadd1"> 店铺加成：</string>					    								                
+<string name="shopinfo_customer_flow"> 店铺客流：未知</string>					    								                
+<string name="shopinfo_customer_flow1"> 店铺客流：</string>					    								                
+<string name="shopinfo_store"> 店铺库存：未知</string>					    								                
+<string name="shopinfo_store1"> 店铺库存：</string>					    								                
+<string name="shopinfo_shopleader"> 店长：未知</string>					    								                
+<string name="shopinfo_shopleader1"> 店长：</string>					    								                
+<string name="shopinfo_shopquality"> 店铺品质：未知</string>					    								                
+<string name="shopinfo_shopquality1"> 店铺品质：</string>					    								                
+<string name="shopinfo_shopawareness"> 店铺知名度：未知</string>					    								                
+<string name="shopinfo_shopawareness1"> 店铺知名度：</string>					    								                
+<string name="shopinfo_shopmoral"> 店铺士气：未知</string>					    								                
+<string name="shopinfo_shopmoral1"> 店铺士气：</string>					    								                
+<string name="shopinfo_shopname"> 店铺名称：</string>					    								                
+<string name="shopinfo_shoplocation"> 店铺坐标：</string>					    								                
+<string name="shopinfo_shopstaff"> 店铺员工：</string>					    								                
+<string name="shopinfo_toast"> 您的还没有店铺，或还没有员工无法进行招揽，请先新建一个店铺并雇用店员。</string>					    								                
+<string name="shopinfo_toast1"> 店铺没有员工或已经没有可以用于招揽的店铺了。</string>					    								                
+<string name="shopinfo_toast2"> 您的还没有店铺。</string>					    								                
+<string name="shopinfo_toast3"> 店铺没有员工。</string>					    								                
+<string name="shopinfo_piece"> 件</string>
+<string name="shopinfo_vacancy"> 空缺</string>
+<string name="shoplist_nametag"> 名称：</string>
+<string name="shoplist_leveltag"> 等级：</string>
+<string name="shoplist_typetag"> 类型：</string>
+<string name="shoplist_employeetag"> 员工：</string>
+<string name="shoplist_stocktag"> 库存：</string>
+<string name="shoplist_flowtag"> 客流：</string>
+<string name="shoplist_shopnum"> 店铺数量：</string>
+<string name="shoplist_vacancy"> 空缺</string>
+<string name="shoplist_toast"> 目前没有闲置员工</string>
+<string name="shoplist_toast1"> 请选择一个店铺</string>
+<string name="shoplist_item1"> 快速招聘</string>
+<string name="shoplist_item2"> 人才市场</string>
+<string name="shoplist_item3"> 猎头中心</string>
+<string name="shoplist_title"> 店铺列表</string>
+<string name="shoplist_look"> 查看</string>
+<string name="shoplist_routine"> 常务</string>
+<string name="shoplist_employ"> 调配</string>
+<string name="shoplist_deploy"> 卸任</string>
+<string name="shoplist_buy"> 进货</string>
+<string name="shoplist_recruit"> 招揽</string>
+<string name="shoplist_location"> 位置</string>
+
+<string name="social_item1">   按等级查找    </string>
+<string name="social_item2">   按姓名查找    </string>
+<string name="social_ok"> 确定</string>
+<string name="social_cancel"> 取消</string>
+<string name="social_item3"> 发送消息, 查看资料, 发送邮件, 加入黑名单,
+						删除, 招揽客流,使用策略 </string>
+<string name="social_item4"> 发送消息, 查看资料, 发送邮件, 加入黑名单,加为好友,
+						删除, 招揽客流,使用策略 </string>
+<string name="social_item5">  发送消息, 加为好友, 查看资料, 加入黑名单,使用策略 </string>
+<string name="social_item6">  加为好友, 查看资料, 删除,使用策略 </string>
+<string name="social_toast1">  您不填写收件人的姓名，信件就不知道会寄到哪儿去了…… </string>
+<string name="social_toast2">  给您的邮件起一个言简意赅的主题吧。 </string>
+<string name="social_toast3">  请您尽情挥洒文采，写一封生动的邮件吧~ </string>
+<string name="social_level">  级 </string>
+<string name="social_online">  在线 </string>
+<string name="social_outline"> 离线 </string>
+<string name="social_norecruit">正常</string>
+<string name="social_recruited">被招揽</string>
+<string name="socialdetail_name"> 姓名： </string>
+<string name="socialdetail_level"> 等级： </string>
+<string name="socialdetail_sex"> 性别： </string>
+<string name="socialdetail_man"> 男  </string>
+<string name="socialdetail_woman"> 女 </string>
+<string name="socialdetail_companyname"> 公司名称： </string>
+<string name="socialdetail_shopnum"> 店铺数量： </string>
+<string name="socialdetail_companylevel"> 公司等级： </string>
+<string name="socialdetail_employeenum"> 员工数量： </string>
+<string name="socialdetail_companyasset"> 公司资产： </string>
+<string name="store_title"> 是否购买 </string>
+<string name="store_content"> 是否消耗 </string>
+<string name="store_price"> G购买该商品 </string>
+<string name="store_item1"> 使用道具 </string>
+<string name="store_item2"> 更新道具</string>
+<string name="store_item3"> 删除道具</string>
+<string name="systemsetting_name1"> 游戏音乐</string>
+<string name="systemsetting_name2"> 接受好友邀请</string>
+<string name="systemsetting_name3"> 接受世界聊天频道信息</string>
+<string name="systemsetting_name4"> 接受陌生人的私聊信息</string>
+<string name="systemsetting_open"> 开启</string>
+<string name="systemsetting_close"> 关闭</string>
+<string name="task_items">  可接受, 可领取, 未完成, 不可接受, 可提交, 未完成,
+			                                           回答问题, 领取奖励, 奖励已领取, 任务已关闭</string>
+<string name="task_nametag"> 任务名称： </string>
+<string name="ventureschool_doctor"> 睿博士 </string>
+<string name="writemail_receiver_hint"> 1-12个字符 </string>
+<string name="writemail_title_hint"> 1-20个字符 </string>
+<string name="writemail_content_hint"> 1-200个字符 </string>
+<string name="employee_dutyname"> 职员/店员,主管/店长,助理,经理,总监,首席</string>
+<string name="analysisdata_shop_recruit_list_element1"> 附近好像没有可以招揽的店铺了吧。</string>
+<string name="analysisdata_shop_recruit_list_element2"> 对方好像还没有建立店铺哦，不要那么贪心^o^ ！</string>
+<string name="analysisdata_showerrorinfo_info1"> 没有伪码KEY</string>
+<string name="analysisdata_showerrorinfo_info2"> 用户不存在</string>
+<string name="analysisdata_showerrorinfo_info3"> 用户名已存在</string>
+<string name="analysisdata_showerrorinfo_info4"> 用户名或密码错误</string>
+<string name="analysisdata_showerrorinfo_info5"> 用户已登录</string>
+<string name="analysisdata_showerrorinfo_info6"> 手机号码格式不正确</string>
+<string name="analysisdata_showerrorinfo_info7"> 原手机号码不正确</string>
+<string name="analysisdata_showerrorinfo_info8"> 用户被封</string>
+<string name="analysisdata_showerrorinfo_info9"> 渠道号码不存在</string>
+<string name="analysisdata_showerrorinfo_info10"> 系统处理错误</string>
+<string name="analysisdata_showerrorinfo_info11"> 移动信息不正确</string>
+<string name="analysisdata_user_list_info"> 附近好像没有该玩家！</string>
+<string name="analysisdata_request_info_message">是否同意加入商会？</string>
+<string name="analysisdata_request_info_ok">同意</string>
+<string name="analysisdata_request_info_no">不同意</string>
+<string name="gamedata_lottery_ticket">投注</string>
+<string name="gamedata_lottery_ticket_info">查询</string>
+<string name="gamedata_lottery_ticket_font">规则</string>
+<string name="gamedata_man">男</string>
+<string name="gamedata_woman">女</string>
+<string name="gamedata_lotteryinfo">抽奖反馈</string>
+<string name="gamedata_lotterymanaging">常务奖励</string>
+<string name="gamedata_companyarchsstr">架构</string>
+<string name="gamedata_tabcompanyarchsstr">主架构</string>
+<string name="gamedata_mapnames_1">新手区(A区)</string>
+<string name="gamedata_mapnames_2">创业区(B区)</string>
+<string name="gamedata_mapnames_3">发展区(C区)</string>
+<string name="gamedata_mapnames_4">闹市区(D区)</string>
+<string name="gamedata_mapnames_5">商业区(E区)</string>
+<string name="gamedata_mapnames_6">CBD(F区)</string>
+<string name="gamedata_mapnames_7">商会地块(G区)</string>
+<string name="gamedata_setcity_info">前方修路过不去啦，咱还是回到市区吧。</string>
+<string name="gamedata_canbuild_item1">不同的开会方式对员工属性的影响不同。</string>
+<string name="gamedata_canbuild_item2">不同的沟通方式对员工属性的影响不同</string>
+<string name="gamedata_canbuild_item3">从事义务劳动可提升员工的能力和经验，但是会降低其忠诚度。</string>
+<string name="gamedata_canbuild_item4">免费讲座：花费金钱75000G，士气+30，知名度+30</string>
+<string name="gamedata_canbuild_item5">发表文章：花费金钱175000G，士气+60，知名度+30</string>
+<string name="gamedata_canbuild_item6">新闻发布：花费金钱250000G，士气+60，知名度+60</string>
+<string name="gamedata_canbuild_item7">邀请明星：花费金钱500000G，士气+120，知名度+48</string>
+<string name="gamedata_canbuild_item8">能力培训：花费金钱对员工进行能力培训，增加员工能力和经验。</string>
+<string name="gamedata_canbuild_item9">进修：花费金钱让员工参加进修，提升员工等级，成功率与员工的经验和能力有关，员工升级后会提升店铺的品质。</string>
+<string name="gamedata_canbuild_item10">增加员工的忠诚度和主角的策略，执行。</string>
+<string name="gamedata_canbuild_item11">增加员工的忠诚度和主角的领导力和策略值。</string>
+<string name="gamedata_canbuild_item12">增加店铺的士气</string>
+<string name="gamedata_canbuild_item13">雇佣更多的员工为你的公司工作。 </string>
+<string name="gamedata_canbuild_item14">延长员工的工作期限，让他们安心为公司工作。 </string>
+<string name="gamedata_canbuild_item15">花费一定的金钱，提升员工的能力、等级，可以更好的适应更多的工作。 </string>
+<string name="gamedata_canbuild_item16">增加员工的能力、经验，但降低员工的忠诚。 </string>
+<string name="gamedata_canbuild_item17">花费一定的金钱，增加店铺的士气和知名度。 </string>
+<string name="gamedata_canbuild_item18">人社部政策发布和SIYB培训课程。 </string>
+<string name="gamedata_canbuild_item19">调整员工工资，可以改变员工的忠诚度。 </string>
+<string name="gamedata_canbuild_item20">解雇员工，节约公司成本。解雇员工需要支付员工额外的工资。 </string>
+<string name="gamedata_canbuild_item21">缴纳公司店铺开设地的房租，每周一缴纳。 </string>
+<string name="gamedata_canbuild_item22">缴纳公司的营业税，每周一缴纳  </string>
+<string name="gamedata_canbuild_item23">发放员工工资，每周一发放。 </string>
+<string name="gamedata_getshopscale_small"> 小型店</string>
+<string name="gamedata_getshopscale_medium"> 中型店</string>
+<string name="gamedata_getshopscale_large"> 大型店</string>
+<string name="gamegroupcontrol_setmessage"> 确定退出到主菜单吗？</string>
+<string name="gamegroupcontrol_setmessage_1"> 确定退出吗？</string>
+<string name="gamegroupcontrol_settitle"> 提示</string>
+<string name="gamegroupcontrol_ok"> 确定</string>
+<string name="gamegroupcontrol_cancel"> 取消</string>
+<string name="messagehandler_handle_later"> 稍后处理</string>
+<string name="messagehandler_reconnection"> 重新连接</string>
+<string name="messagehandler_ok"> 确定</string>
+<string name="messagehandler_cancel"> 取消</string>
+<string name="messagehandler_recover"> 恢复</string>
+<string name="messagehandler_message"> /红色杨征阿斯顿减肥啦/绿色adsfsadf</string>
+<string name="script_colortable">黑色,橙色,湖蓝, 白色, 红色, 绿色, 蓝色, 黄色, 世色, 商色, 密色, 系色, 恢复 </string>
+<string name="script_face">  	男羞,	男鄙,	男闭,	男笑,	男得, 	男呆,	男坏,	男讶,	男睡,
+                            	男泣,   男汗,	男亲,	男吐,	男微,	男屈,	男爱,	男奈,	男气,	
+                            	女羞,	女鄙,	女闭,	女笑,	女得,	女呆,	女坏,	女讶,	女睡,
+                        		女泣,	女汗,	女亲,	女吐,	女微,    女屈,  女爱,	女奈,	女气</string>
+<string name="createbuilding_toast">你选择了</string>                       		
+<string name="mainmenu_toast">功能未开放</string>                       		
+<string name="mainmenu_item1">游戏帮助</string>                       		
+<string name="mainmenu_item2">系统设置</string>                       		
+<string name="map_item1">游戏帮助</string>                       		
+<string name="map_item2">系统设置</string>                       		
+<string name="map_ok">确定</string>                       		
+<string name="map_cancel">取消</string>                       		
+<string name="selectsever_setmessage">请选择</string>                       		
+<string name="selectsever_settitle">提示</string>                       		
+<string name="selectsever_login">登陆</string>                       		
+<string name="selectsever_register">注册</string>                       		
+<string name="selectsever_lastlogin">上次登陆：</string>                       		
+<string name="packet_info">数据包长度超过限制，请分包发送</string>                       		
+<string name="tcpconnection_info">构建数据包失败</string>                       		
+<string name="updatasoftwave_settitle_1">更新提示</string>                       		
+<string name="updatasoftwave_settitle_2">下载中</string>                       		
+<string name="updatasoftwave_ok">是</string>                       		
+<string name="updatasoftwave_no">否</string>                       		
+<string name="mapview_item">创建店铺,公益建筑,我的店铺,我的建筑</string>                       		
+<string name="mapview_toast1">没有足够的空地,无法创建公益建筑</string>                       		
+<string name="mapview_toast2">您还没有店铺</string>                       		
+<string name="mapview_toast3">您还没有公共建筑</string>                       		
+<string name="employeeinfo_digcost">挖人花费</string>                       		
+<string name="employeeinfo_successrate">成功率：</string>                       		
+<string name="employeeinfo_name">姓名：</string>                       		
+<string name="employeeinfo_position">职位：</string>                       		
+<string name="employeeinfo_salary">薪水：</string>                       		
+<string name="employeeinfo_skill_1">技能1</string>                       		
+<string name="employeeinfo_skill_2">技能2</string>                       		
+<string name="employeeinfo_skill_3">技能3</string>                       		
+<string name="employeeinfo_vacancy">(空)</string>                       		
+<string name="sharedcircle_text">      \t    游戏分享圈是一个为传统的\n        \t     手机单机游戏提供联网功能\n    \t    分享功能和互动交流的功能\n 
+		性平台!" </string>
+
+<string name="planningdept_strategy">引诱对方员工喝酒，灌醉他们，造成对方体力值降低。/
+															  散布对方公司将对指定店铺进行裁员的流言，造成对方士气低落。/
+															  向媒体曝光不利于对方店铺的消息，使得对方店铺的知名度降低。/
+															  举报一家店铺货物质量问题，使得对方店铺部分货物被有关部门没收。/
+															  制造自己的一名员工和所选的对方员工来个“偶遇”，动摇对方员工对于该公司的忠诚度。（员工忠诚度低30后不可再次通过此策略降低）。/
+															  雇佣美女邀请对方公司董事长一起去健身房锻炼身体，体力消耗迅速，从而无心工作。</string> 
+<string name="planningdept_strategy_gossip">散布对方公司将对指定店铺进行裁员的流言，造成对方士气低落。</string> 		
+<string name="planningdept_strategy_media">向媒体曝光不利于对方店铺的消息，使得对方店铺的知名度降低。</string> 		
+<string name="planningdept_strategy_sniper">举报一家店铺货物质量问题，使得对方店铺部分货物被有关部门没收。</string> 		
+<string name="planningdept_strategy_behind">制造自己的一名员工和所选的对方员工来个“偶遇”，动摇对方员工对于该公司的忠诚度。（员工忠诚度低30后不可再次通过此策略降低）。</string> 		
+<string name="planningdept_strategy_girl">雇佣美女邀请对方公司董事长一起去健身房锻炼身体，体力消耗迅速，从而无心工作。</string> 		
+<string name="staff_list">员工列表</string> 		
+<string name="shop_list_flow">客流</string> 		
+<string name="shop_list_popularity">知名度</string> 		
+<string name="shop_list_goodslevel">货物等级</string> 		
+<string name="doctorlevelup_title">睿博士</string> 		
+<string name="doctor_custody">托管</string> 		
+<string name="doctor_custody_giveup">取消托管</string> 		
+<string name="planningdept_shopnum">（店铺数）</string> 		
+<string name="planningdept_friendnum">（人）</string> 		
+
+<string name="title">提示</string>
+<string name="loadin">加载中...</string>
+<string name="ensure">确定</string>
+<string name="load_failed">加载失败</string>
+<string name="cancel">取消</string>
+<string name="to_buy_props">您没有足够的道具供员工使用，是否到商场购买？</string>
+<string name="confirm_twobutton_et_hint">请输入购买数量</string>
+<string name= "confirm_twobutton_match">您的输入不符合要求，请重新输入</string>
+<string name= "doctorlevel_toast">博士等级不够，赶快加油吧！</string>
+<string name= "ttoast1">您目前还没有员工</string>
+<string name= "department_menu1">人事部</string>
+<string name= "department_menu2">公关部</string>
+<string name= "department_menu3">财务部</string>
+<string name= "department_menu4">策划部</string>
+<string name= "social_menu1">好友</string>
+<string name= "social_menu2">聊天</string>
+<string name= "social_menu3">邮件</string>
+<string name= "social_menu4">商会</string>
+<string name= "social_menu4_2">[商会]</string>
+<string name= "deploy_toast">目前没有可供调配的员工！</string>
+<string name= "employeelist_toast">内容为空</string>
+<string name= "employeelist_toast2">内容</string>
+<string name= "levelup">升级</string>
+<string name= "policy">使用\n策略</string>
+<string name= "chart_all">全部</string>
+<string name= "chart_word">世界</string>
+<string name= "chart_word2">[世界]</string>
+<string name= "chart_pm">私聊</string>
+<string name= "chart_system">系统</string>
+<string name= "chart_peo">发送\n邮件</string>
+<string name= "chart_peo_pm">发起\n私聊</string>
+<string name= "chart_channal">频道\n发言</string>
+<string name= "chart_channal2">频道</string>
+<string name= "chart_friend">添加\n好友</string>
+<string name= "chart_invite">工会\n邀请</string>
+<string name= "chart_send">发送聊天</string>
+<string name= "promoters_id">推广ID</string>
+<string name= "promoters_friend_value">好友值</string>
+<string name= "promoters_friend">推广好友</string>
+<string name= "promoters_myid">我的推广ID:</string>
+<string name= "promoters_send">发送</string>
+<string name= "policy_1">诱导喝酒</string>
+<string name= "policy_2">蜚语之谋</string>
+<string name= "policy_3">非议示众</string>
+<string name= "policy_4">店铺狙击</string>
+<string name= "policy_5">意外背后</string>
+<string name= "policy_6">健身伙伴</string>
+
+<string name="social_tab_freind">好友</string>
+<string name="social_tab_competitor">竞争者</string>
+<string name="social_tab_stranger">陌生人</string>
+<string name="social_tab_blacklist">黑名单</string>
+<string name="social_button_seach">搜索</string>
+<string name="social_button_addfreind">加好友</string>
+<string name="social_button_addblack">加黑</string>
+<string name="social_button_look">查看</string>
+<string name="social_button_delete">删除</string>
+<string name="social_button_interact">交互</string>
+
+<string name="list_item_name_title">名称:</string>
+<string name="list_item_level_title">等级:</string>
+<string name="list_item_online_title">是否在线:</string>
+<string name="list_item_isrecruit_title">招揽状态:</string>
+<string name="social_noselect">请先选择一个操作对象</string>
+<string name="unknow">未知</string>
+<string name="shopsize">小,中,大</string>
+<string name="jiangzuo">金钱25000X公司等级,创业点数1#士气+50</string>
+<string name="wenzhang">金钱25000X公司等级，所需创业点数1#知名度+50</string>
+<string name="xinwen">金钱50000X公司等级，所需创业点数1#士气+50，知名度+50</string>
+<string name="yaoqing">金钱150000X公司等级，所需创业点数1#士气+100，知名度+100</string>
+<string name="Shoplevelinfo_message">您的升级条件不符合，店铺无法升级</string>
+
+</resources>

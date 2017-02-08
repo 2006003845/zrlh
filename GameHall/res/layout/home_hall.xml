@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--
+         <cn.zrong.widget.HallListView
+        android:id="@+id/hall_listv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dip"
+        android:focusable="true" />
+    -->
+
+    <GridView
+        android:id="@+id/hall_gridv"
+        android:layout_width="250dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dip"
+        android:focusable="true"
+        android:gravity="left"
+        android:horizontalSpacing="5px"
+        android:numColumns="2"
+        android:verticalSpacing="15px" />
+
+</RelativeLayout>

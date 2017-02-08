@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/game/!svn/ver/35815/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util
+END
+FileTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/FileTools.java
+END
+Tools.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/game/!svn/ver/35815/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/Tools.java
+END
+FileReaderAndWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/game/!svn/ver/35656/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/FileReaderAndWriter.java
+END
+TextUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/game/!svn/ver/35824/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/TextUtil.java
+END
+ImageUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/game/!svn/ver/35593/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/ImageUtils.java
+END
+MyCountDownTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/game/!svn/ver/35533/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/MyCountDownTimer.java
+END
+TimeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/game/!svn/ver/35656/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/TimeUtil.java
+END
+SIMCardInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/SIMCardInfo.java
+END
+SystemAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/util/SystemAPI.java
+END

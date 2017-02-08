@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  
+   <Button
+   android:id="@+id/company_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/company_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/company_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="公司"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/company_button_returnback"
+  	android:layout_toLeftOf="@id/company_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/company_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/company_button_title"
+   
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/company_button_returnback"
+   android:layout_alignRight="@id/company_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+  
+   
+  
+  
+  
+  
+  <ScrollView
+  android:id="@+id/companyinfo_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:scrollbars="none"
+  android:layout_alignLeft="@id/company_scrollviewback"
+  android:layout_alignRight="@id/company_scrollviewback"
+  android:layout_alignTop="@id/company_scrollviewback"
+  android:layout_alignBottom="@id/company_scrollviewback"
+  >
+  <LinearLayout
+  android:id="@+id/companyinfo_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  >
+   
+   
+  <TextView
+  android:id="@+id/companyinfo_name"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="公司名称:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <ImageView
+  android:id="@+id/companyinfo_parting_line0"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  <RelativeLayout
+  android:id="@+id/companyinfo_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <TextView
+  android:id="@+id/companyinfo_level"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="公司等级:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <Button
+  android:id="@+id/companyinfo_levelup"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/advance"
+  android:layout_alignParentRight="true"
+  />
+  </RelativeLayout>
+  
+  <ImageView
+  android:id="@+id/shopinfo_parting_line1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  
+   <TextView
+  android:id="@+id/companyinfo_cash"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="公司现金:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <ImageView
+  android:id="@+id/shopinfo_parting_line2"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  
+   <TextView
+  android:id="@+id/companyinfo_asset"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="公司资产:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <ImageView
+  android:id="@+id/shopinfo_parting_line3"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  
+  <TextView
+  android:id="@+id/companyinfo_popularity "
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="公司知名度:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <ImageView
+  android:id="@+id/shopinfo_parting_line4"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  
+  <TextView
+  android:id="@+id/companyinfo_morale"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="公司荣誉度:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <ImageView
+  android:id="@+id/shopinfo_parting_line5"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  
+  <TextView
+  android:id="@+id/companyinfo_shop"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="店铺数量:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <ImageView
+  android:id="@+id/shopinfo_parting_line6"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:background="@drawable/parting_line"
+  />
+  
+  <TextView
+  android:id="@+id/companyinfo_employee"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="员工数量:"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  </LinearLayout>
+  </ScrollView>
+   
+  
+  
+</RelativeLayout>

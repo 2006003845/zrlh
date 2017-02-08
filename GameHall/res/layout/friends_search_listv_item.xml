@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/friends_search_listv_item_imgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:id="@+id/friends_search_listv_item_btn_add"
+            style="@style/text_mid_white"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/bg_btn_green_selector"
+            android:text="@string/add_as_friend" />
+
+        <TextView
+            android:id="@+id/friends_search_listv_item_name"
+            style="@style/text_mid_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_toLeftOf="@id/friends_search_listv_item_btn_add"
+            android:layout_toRightOf="@id/friends_search_listv_item_imgv"
+            android:gravity="center_vertical"
+            android:text="name" />
+    </RelativeLayout>
+
+</LinearLayout>

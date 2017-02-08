@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/selectsever_backgroud" />
+
+    <Button
+        android:id="@+id/lottery_station_returnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/returnback_selector"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/chat_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/cancel_selector" />
+
+    <Button
+        android:id="@+id/chat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/chat_button_cancel"
+        android:layout_toRightOf="@id/lottery_station_returnback"
+        android:background="@drawable/selectsever_titleback"
+        android:focusable="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/chart_send"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/lottery_station_smallback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/chat_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/selectsever_smallback"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/chat_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lottery_station_smallback"
+        android:layout_alignRight="@id/lottery_station_smallback"
+        android:layout_marginBottom="20px"
+        android:layout_marginRight="15px"
+        android:background="@drawable/button_frame"
+        android:text="@string/dialog_ok"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <!--
+  <TextView
+  android:id="@+id/chat_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+   android:text="发送聊天"
+    android:textSize="20sp"
+  android:textColor="@color/white"
+  />
+  <Button
+  android:id="@+id/chat_button_ok"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   android:layout_marginLeft="35px"
+   android:layout_alignParentBottom="true"
+   android:layout_marginBottom="40px"
+  android:text="确定"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  
+  />
+  <Button
+  android:id="@+id/chat_button_cancel"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+  android:layout_marginRight="35px"
+  android:layout_alignParentBottom="true"
+  android:layout_marginBottom="40px"
+  android:text="取消"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+ 
+  />
+    -->
+
+    <LinearLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_button_ok"
+        android:layout_alignLeft="@id/lottery_station_smallback"
+        android:layout_alignRight="@id/lottery_station_smallback"
+        android:layout_alignTop="@id/lottery_station_smallback"
+        
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chat_text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employeelist_toast2"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/chat_edit_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+<!-- 
+        <TextView
+            android:id="@+id/chat_text_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chart_channal2"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/chat_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/chat_radiobutton_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/social_menu4_2"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/chat_radiobutton_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chart_word2"
+                android:textColor="@color/black" />
+        </RadioGroup> -->
+    </LinearLayout>
+
+</RelativeLayout>

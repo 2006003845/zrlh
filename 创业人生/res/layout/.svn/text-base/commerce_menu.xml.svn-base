@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    	<Button 
+	     android:id="@+id/commerce_menu1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:textColor="@color/white"
+  		 android:textSize="18sp"
+  		 android:background="@drawable/popmenu_back"
+  		 android:gravity="center"
+	    />
+    	<Button 
+	     android:id="@+id/commerce_menu2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:textColor="@color/white"
+  		 android:textSize="18sp"
+  		 android:background="@drawable/popmenu_back"
+  		 android:gravity="center"
+	    />
+    	<Button 
+	     android:id="@+id/commerce_menu3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:textColor="@color/white"
+  		 android:textSize="18sp"
+  		 android:background="@drawable/popmenu_back"
+  		 android:gravity="center"
+	    />
+    	<Button 
+	     android:id="@+id/commerce_menu4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:textColor="@color/white"
+  		 android:textSize="18sp"
+  		 android:background="@drawable/popmenu_back"
+  		 android:gravity="center"
+	    />
+    	<Button 
+	     android:id="@+id/commerce_menu5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:textColor="@color/white"
+  		 android:textSize="18sp"
+  		 android:background="@drawable/popmenu_back"
+  		 android:gravity="center"
+	    />
+ 
+
+</LinearLayout>

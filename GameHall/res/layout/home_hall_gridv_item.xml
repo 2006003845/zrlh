@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="110dip"
+        android:layout_height="110dip" >
+
+        <ImageView
+            android:id="@+id/hall_gridv_imgv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_piece_selector" />
+
+        <ProgressBar
+            android:id="@+id/hall_gridv_imgv_pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/hall_gridv_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/hall_gridv_imgv"
+            android:layout_alignLeft="@id/hall_gridv_imgv"
+            android:layout_alignRight="@id/hall_gridv_imgv"
+            android:background="@color/black_30"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <ProgressBar
+                android:id="@+id/hall_gridv_pb"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dip"
+                android:layout_toLeftOf="@id/view"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@anim/loading" />
+
+            <TextView
+                android:id="@+id/hall_gridv_progress"
+                style="@style/text_mid_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dip"
+                android:layout_toRightOf="@id/view"
+                android:gravity="right"
+                android:text="0%" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hall_gridv_name"
+        style="@style/text_mid_black"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="15dp" />
+
+</LinearLayout>

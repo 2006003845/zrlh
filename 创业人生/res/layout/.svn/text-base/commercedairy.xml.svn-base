@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:clickable="true"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+   <ImageView 
+   android:id="@+id/imageview"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/selectsever_backgroud" 
+    />
+ <Button
+   android:id="@+id/commercediary_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/commercediary_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/commercediary_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="商会"
+  	android:textColor="@android:color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/commercediary_returnback"
+  	android:layout_toLeftOf="@id/commercediary_cancel"
+  />  
+  <ImageView
+  android:id="@+id/commercediary_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/commercediary_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="50px"
+  android:layout_marginRight="50px"
+  android:layout_marginBottom="20px"
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  />  
+      <LinearLayout
+  android:id="@+id/commercediary_buttonlayout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@+id/commercediary_smallback"
+  android:layout_alignRight="@+id/commercediary_smallback"
+  android:layout_alignBottom="@+id/commercediary_smallback"
+  >
+  
+  <RelativeLayout
+  android:id="@+id/commercediary_button_info_layout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+  <Button
+  android:id="@+id/commercediary_button_info"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_information"
+  />
+  </RelativeLayout>
+  
+  
+   <RelativeLayout
+  android:id="@+id/commercediary_button_uper_layout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+   <Button
+  android:id="@+id/commercediary_button_uper"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_uper"
+  />
+  </RelativeLayout>
+  
+  <RelativeLayout
+  android:id="@+id/commercediary_button_member_layout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+   <Button
+  android:id="@+id/commercediary_button_member"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_staff"
+  />
+  </RelativeLayout>
+  
+  <RelativeLayout
+  android:id="@+id/commercediary_button_diary_layout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+   <Button
+  android:id="@+id/commercediary_button_diary"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_diary_pressed"
+  />
+  </RelativeLayout>
+  
+  
+  </LinearLayout>
+  <TextView 
+  android:id="@+id/commercediarytextview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/commercediary_title"
+  android:layout_above="@+id/commercediary_buttonlayout"
+ 
+  android:layout_alignLeft="@+id/commercediary_smallback"
+  android:layout_alignRight="@+id/commercediary_smallback"
+  android:textColor="@color/black"
+  android:textSize="20dp"
+  android:layout_marginTop="10px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="5px"
+  android:layout_marginBottom="10px"
+  android:scrollbars="none"
+  android:focusable="false"
+  
+   >
+   </TextView>
+ 
+    
+    
+</RelativeLayout>

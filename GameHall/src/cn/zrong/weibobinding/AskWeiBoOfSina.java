@@ -1,0 +1,16 @@
+package cn.zrong.weibobinding;
+
+public class AskWeiBoOfSina {
+	
+	public static String strFormat = "json";
+	
+	public AskWeiBoOfSina(){
+		
+	}
+	
+	public static void initAskSinaWeibo(){
+		
+	}
+	
+	
+}

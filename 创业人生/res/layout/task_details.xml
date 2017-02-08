@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+   <Button
+   android:id="@+id/task_details_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/task_details_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/task_details_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="任务详情"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/task_details_button_returnback"
+  	android:layout_toLeftOf="@id/task_details_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/task_details_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/task_details_button_title"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/task_details_button_returnback"
+   android:layout_alignRight="@id/task_details_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+  <LinearLayout
+  android:id ="@+id/task_details_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/task_details_scrollviewback"
+  android:layout_alignRight="@id/task_details_scrollviewback"
+  android:layout_alignTop="@id/task_details_scrollviewback"
+  android:layout_alignBottom="@id/task_details_scrollviewback"
+  android:orientation="vertical"
+  >
+  <TextView
+  android:id="@+id/task_details_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+ 
+  android:layout_gravity="center_horizontal"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  
+  />
+  
+  <ScrollView
+  android:id="@+id/task_details_scrollview"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <LinearLayout
+  android:id="@+id/task_details_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  >
+  <TextView
+  android:id="@+id/task_details_target"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="目标"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_gravity="center_horizontal"
+  />
+  <TextView
+  android:id="@+id/task_details_target_content"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="20sp"
+   
+  />
+  <TextView
+  android:id="@+id/task_details_guideline"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="指引"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_gravity="center_horizontal"
+  />
+  <TextView
+  android:id="@+id/task_details_guideline_content"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="20sp"
+   
+  />
+  
+  <TextView
+  android:id="@+id/task_details_reward"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="奖励"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_gravity="center_horizontal"
+  />
+  <TextView
+  android:id="@+id/task_details_reward_content"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  
+  />
+  
+  
+  
+  </LinearLayout>
+  
+  </ScrollView>
+  
+  </LinearLayout>
+  <Button
+  android:id="@+id/task_details_button"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignBottom="@id/task_details_scrollviewback"
+  android:layout_alignRight="@id/task_details_scrollviewback"
+  android:background="@drawable/button_accept" 
+  />
+  
+  <com.zrong.Android.View.SpriteView  
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/taskdetial_button_arrows"
+		android:layout_above="@id/task_details_button"
+		android:layout_alignRight="@id/task_details_scrollviewback"
+		android:layout_marginRight="17dip"		
+		resID="1392" 
+		android:visibility="gone"/>
+  
+  
+  
+</RelativeLayout>

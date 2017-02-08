@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/shoplist_selector" 
+  android:descendantFocusability="blocksDescendants"
+  >
+ 
+  
+  <RelativeLayout
+  android:id="@+id/simple_employeelist_item_textlayout1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:layout_alignParentRight="true"
+  >
+  <TextView
+  android:id="@+id/simple_employeelist_item_name"
+  android:layout_width="wrap_content"
+ 
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  />
+  <TextView
+  android:id="@+id/simple_employeelist_item_level"
+ android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  android:layout_centerHorizontal="true"
+  />
+  <TextView
+  android:id="@+id/simple_employeelist_item_contract"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignParentRight="true"
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  />
+  <TextView
+  android:id="@+id/simple_employeelist_item_section"
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below= "@id/simple_employeelist_item_name"
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  />
+  <TextView
+  android:id="@+id/simple_employeelist_item_loyalty"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below= "@id/simple_employeelist_item_name"
+  android:layout_centerHorizontal="true"
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  />
+  
+ 
+  
+  <!-- Button
+  android:id="@+id/employeelist_item_button"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below= "@id/employeelist_item_name"
+  android:layout_alignParentRight="true"
+  android:background="@drawable/button_empty"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:focusable="false"
+  /-->
+  
+ 
+  </RelativeLayout>
+  
+   
+  
+  
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/policyinfolist_frame3"
+  >
+  <TextView android:id="@+id/policyinfo_listview_data_tv"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	 android:textColor="@color/black"
+  	  android:textSize="@dimen/selectsever_selectsever_item_textsize"
+  	  android:layout_marginLeft="10px"
+  	android:layout_alignParentLeft="true"/>
+  <TextView android:id="@+id/policyinfo_listview_name_tv"
+  	android:layout_height="wrap_content"
+  	android:layout_width="wrap_content"
+  	 android:textColor="@color/black"
+  	  android:textSize="@dimen/selectsever_selectsever_item_textsize"
+  	  android:layout_marginRight="10px"
+  	android:layout_alignParentRight="true"/>   
+</RelativeLayout>

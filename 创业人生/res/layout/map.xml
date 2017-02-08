@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.zrong.Android.View.MapView
+        android:id="@+id/map_mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 屏幕上层5个按钮 -->
+
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px" >
+
+        <RelativeLayout
+            android:id="@+id/map_rlayout1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <ImageView
+                android:id="@+id/map_image_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/office_icon_money" />
+
+            <TextView
+                android:id="@+id/map_text_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/map_image_money"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_rlayout2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/map_image_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/office_icon_employnum" />
+
+            <TextView
+                android:id="@+id/map_text_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/map_image_employee"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_rlayout3"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/map_image_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/office_icon_calendar" />
+
+            <TextView
+                android:id="@+id/map_text_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/map_image_calendar"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_rlayout4"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/map_image_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/office_icon_shopnum" />
+
+            <TextView
+                android:id="@+id/map_text_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/map_image_shop"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_rlayout5"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/map_image_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/office_icon_find" />
+
+            <TextView
+                android:id="@+id/map_text_find"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/map_image_find"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 屏幕右下角 -->
+
+    <Button
+        android:id="@+id/map_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/map_menu" />
+
+    <!-- 部门 -->
+
+    <Button
+        android:id="@+id/map_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_menu"
+        android:layout_marginBottom="7px"
+        android:layout_marginLeft="14px"
+        android:background="@drawable/map_department"
+        android:visibility="gone" />
+
+    <!-- 公司 -->
+
+    <Button
+        android:id="@+id/map_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_department"
+        android:layout_marginBottom="7px"
+        android:layout_marginLeft="14px"
+        android:background="@drawable/map_company"
+        android:visibility="gone" />
+
+    <!-- 地图 -->
+
+    <Button
+        android:id="@+id/map_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_company"
+        android:layout_marginBottom="7px"
+        android:layout_marginLeft="14px"
+        android:background="@drawable/map_map"
+        android:visibility="gone" />
+
+    <!-- 店铺 -->
+
+    <Button
+        android:id="@+id/map_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14px"
+        android:layout_toRightOf="@id/map_menu"
+        android:background="@drawable/map_shop"
+        android:visibility="gone" />
+
+    <!-- 员工 -->
+
+    <Button
+        android:id="@+id/map_employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14px"
+        android:layout_toRightOf="@id/map_store"
+        android:background="@drawable/map_staff"
+        android:visibility="gone" />
+
+    <!-- 学堂 -->
+
+    <Button
+        android:id="@+id/map_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14px"
+        android:layout_toRightOf="@id/map_employee"
+        android:background="@drawable/map_school"
+        android:visibility="gone" />
+
+    <!-- 屏幕右下角 -->
+
+    <Button
+        android:id="@+id/map_unfold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7px"
+        android:background="@drawable/office_unfoldtool" />
+
+    <!-- 彩票 -->
+
+    <Button
+        android:id="@+id/map_lottery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_unfold"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="7px"
+        android:layout_marginRight="14px"
+        android:background="@drawable/map_lottery"
+        android:visibility="gone" />
+
+    <!-- 任务 -->
+
+    <Button
+        android:id="@+id/map_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_lottery"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5px"
+        android:layout_marginRight="17px"
+        android:background="@drawable/map_task"
+        android:visibility="gone" />
+
+    <!-- 社交 -->
+
+    <Button
+        android:id="@+id/map_social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_task"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5px"
+        android:layout_marginRight="14px"
+        android:background="@drawable/map_social"
+        android:visibility="gone" />
+
+    <!-- 博士 -->
+
+    <Button
+        android:id="@+id/map_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_social"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5px"
+        android:layout_marginRight="14px"
+        android:background="@drawable/map_doctor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/relative_task_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14px"
+        android:layout_toLeftOf="@id/map_unfold"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.zrong.Android.View.SpriteView
+            android:id="@+id/map_task_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            resID="1392"
+            android:visibility="gone" />
+
+        <!-- 商场 -->
+
+        <Button
+            android:id="@+id/map_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14px"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/map_store"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- 推广 -->
+
+    <Button
+        android:id="@+id/map_promoter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14px"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/relative_task_arrows"
+        android:background="@drawable/map_promoter"
+        android:visibility="invisible" />
+
+    <!-- 系统 -->
+
+    <Button
+        android:id="@+id/map_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14px"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/map_promoter"
+        android:background="@drawable/map_system"
+        android:visibility="invisible" />
+
+    <!-- 分享圈 -->
+
+    <Button
+        android:id="@+id/map_sharedcircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14px"
+        android:layout_marginTop="2px"
+        android:layout_toLeftOf="@id/map_system"
+        android:background="@drawable/sharedcircle"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_promotframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_task"
+        android:layout_below="@id/map_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/promotframe"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/promotFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:text="@string/sharedcircle_text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/close_promotframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="22sp"
+            android:background="@drawable/cancel_selector" />
+    </LinearLayout>
+
+    <!--
+         社交弹出框 
+    	好友
+    	聊天
+    	商会
+    	邮件
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearlayout_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_promoter"
+        android:layout_below="@id/map_layout"
+        android:layout_centerInParent="true"
+        android:background="@drawable/department_frame"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/department_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/cancel_selector" />
+
+        <TextView
+            android:id="@+id/department_lineshort1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/department_lineshort" />
+
+        <Button
+            android:id="@+id/department_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_friend" />
+
+        <TextView
+            android:id="@+id/department_linelong"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_linelong" />
+
+        <Button
+            android:id="@+id/department_relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_chat" />
+
+        <TextView
+            android:id="@+id/department_lineshort3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_lineshort" />
+
+        <Button
+            android:id="@+id/department_finance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_commerce" />
+
+        <TextView
+            android:id="@+id/department_linelong1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_linelong" />
+
+        <Button
+            android:id="@+id/department_strategy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_email" />
+
+        <TextView
+            android:id="@+id/department_lineshort2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/department_lineshort" />
+
+        <Button
+            android:id="@+id/department_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/about_new"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 游戏地图列表 6个分区 -->
+
+    <LinearLayout
+        android:id="@+id/linearlayout_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_promoter"
+        android:layout_below="@id/map_layout"
+        android:layout_centerInParent="true"
+        android:background="@drawable/map_frame"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/map_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/cancel_selector" />
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout1_map1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/map1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/new_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout1_map2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/map2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/venture_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout1_map3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/map3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/develop_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout2_map4"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/map4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/noisy_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2_map5"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/map5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/business_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2_map6"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/map6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/cbd_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.zrong.Android.View.SpriteView
+        android:id="@+id/map_menu_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_menu"
+        android:layout_marginLeft="42px"
+        resID="1392"
+        android:visibility="gone" />
+
+    <com.zrong.Android.View.SpriteView
+        android:id="@+id/map_unfold_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="42dip"
+        android:layout_toLeftOf="@id/map_unfold"
+        resID="1391"
+        android:visibility="gone" />
+
+</RelativeLayout>

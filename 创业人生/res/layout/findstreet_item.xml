@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  >
+  <TextView
+  android:id="@+id/findstreet_item_x"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="街:"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+  <EditText
+  android:id="@+id/findstreet_item_editx"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:inputType="number" 
+  />
+  
+  
+  <TextView
+  android:id="@+id/findstreet_item_y"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="道:"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+   <EditText
+  android:id="@+id/findstreet_item_edity"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:inputType="number" 
+  />
+</LinearLayout>

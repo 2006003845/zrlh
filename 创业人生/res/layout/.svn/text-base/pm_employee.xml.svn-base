@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<Button 
+	     android:id="@+id/pm_employee_button_fastemployee"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:text="快速招聘"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	    />
+	<Button 
+	     android:id="@+id/pm_employee_button_talentmarket"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:text="人才市场"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	    />
+	<Button 
+	     android:id="@+id/pm_employee_button_hunter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:text="猎头中心"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	    />
+    
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/game/!svn/ver/21303/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network
+END
+HttpConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/game/!svn/ver/17677/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/HttpConnection.java
+END
+TcpConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/game/!svn/ver/17839/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/TcpConnection.java
+END
+Packet.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/game/!svn/ver/14753/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/Packet.java
+END
+BaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/game/!svn/ver/10436/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/BaseConnection.java
+END
+GameProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/game/!svn/ver/21303/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/GameProtocol.java
+END
+ConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/game/!svn/ver/11795/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/ConnectionHandler.java
+END
+WMANotify.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/com/zrong/Android/online/network/WMANotify.java
+END

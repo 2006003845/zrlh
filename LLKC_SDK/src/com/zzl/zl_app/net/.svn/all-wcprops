@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net
+END
+Connection.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/Connection.java
+END
+HttpConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/HttpConnection.java
+END
+InputConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/InputConnection.java
+END
+OutputConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/OutputConnection.java
+END
+SocketConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/SocketConnection.java
+END
+Connector.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/Connector.java
+END
+ConnectionNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/ConnectionNotFoundException.java
+END
+StreamConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/game/!svn/ver/35066/schoolAppCode/LLKC/LLKC/src/com/zzl/zl_app/net/StreamConnection.java
+END

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:clickable="true"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+    
+  <ImageView 
+   android:id="@+id/imageview"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/selectsever_backgroud" 
+    />
+  <Button
+  android:id="@+id/createcommerce_return"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+ 
+  android:background="@drawable/returnback_selector"
+  
+  android:layout_marginLeft="5px"
+  android:layout_marginTop="5px"
+  />  
+   <Button
+   android:id="@+id/createcommerce_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button 
+  android:id="@+id/createcommerce_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:text="创建商会"
+	android:textColor="@android:color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@+id/createcommerce_return"
+  	android:layout_toLeftOf="@+id/createcommerce_cancel"
+  /> 
+  
+  <ImageView
+  android:id="@+id/createcommerce_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/createcommerce_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="50px"
+  android:layout_marginRight="50px"
+  android:layout_marginBottom="10px"
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  />
+    <ScrollView 
+  android:id="@+id/createcommerce_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@+id/createcommerce_smallback"
+  android:layout_alignLeft="@+id/createcommerce_smallback"
+  android:layout_alignRight="@+id/createcommerce_smallback"
+  android:layout_alignBottom="@+id/createcommerce_smallback"
+  android:scrollbars="none"
+  
+  >
+  <RelativeLayout 
+  android:id="@+id/createcommerce_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   >
+  <TextView 
+  android:id="@+id/select_logo_text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/createcommerce_title"
+  android:layout_marginTop="10px"
+  android:text="请选择商会图标"
+  android:textColor="@android:color/black"
+  android:textSize="20dp"
+  
+  />
+ 
+  <ImageView 
+  android:id="@+id/logo_frame"
+  android:layout_below="@+id/select_logo_text"
+  android:layout_width="80dp"
+  android:layout_height="80dp"
+  android:layout_marginTop="5px"
+  android:layout_centerHorizontal="true"
+  android:background="@drawable/frame"
+  android:visibility="invisible"
+  />
+ 
+  <Gallery 
+  android:id="@+id/logo_gallery"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/select_logo_text"
+  android:layout_marginTop="5px"
+  
+  />
+ <ImageView 
+     android:id="@+id/image_arrow"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_below="@+id/logo_frame"
+     android:layout_marginTop="10px"
+     android:background="@drawable/selected_arrow"
+     
+     />
+   <TextView 
+  android:id="@+id/input_name_text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/image_arrow"
+  android:layout_marginTop="10px"
+  android:text="请输入商会名称"
+  android:textColor="@android:color/black"
+  android:textSize="20dp"
+  
+  />
+  <EditText 
+  android:id="@+id/commerce_name_edittext"
+  android:layout_width="400px"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/input_name_text"
+  android:layout_centerHorizontal="true"
+  
+  />
+  <TextView 
+  android:id="@+id/create_condition_text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/commerce_name_edittext"
+  android:layout_marginTop="5px"
+  android:text="创建条件"
+  android:textColor="@android:color/black"
+  android:textSize="20dp"
+  
+  
+  />
+  <ImageView 
+  android:id="@+id/condition_imageview"
+  android:layout_width="wrap_content"
+  android:layout_height="180px"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@+id/create_condition_text"
+ 
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="150px"
+  android:layout_marginRight="150px"
+  
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  
+  />
+  <TextView 
+  android:id="@+id/create_condition"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+  android:layout_centerVertical="true"
+  android:layout_below="@+id/create_condition_text"
+  android:layout_marginTop="10px"
+ 
+  android:textSize="19dp"
+  android:textColor="@android:color/black"
+   />
+   
+  </RelativeLayout>
+  </ScrollView>
+   <Button 
+  android:id="@+id/button_confirm"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignRight="@+id/createcommerce_smallback"
+  android:layout_alignBottom="@+id/createcommerce_smallback"
+  android:layout_marginBottom="10px"
+  android:layout_marginRight="10px"
+  android:background="@drawable/confirm_selector"
+  />
+  
+  
+</RelativeLayout>

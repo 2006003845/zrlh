@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这个文件定义了所有的尺寸,初步设想适配通过这个包来实现 -->
+<!-- 变量名称命名规则 view名_控件名_自己的名字，为了避免名字太长自己的名字可以用数字等比较简单的方式命名
+并且没有必要加入pixel等尺寸的类型
+ -->
+<!-- 
+关于尺寸的说明
+px(象素): 屏幕实际的象素，常说的分辨率1024*768pixels，就是横向1024px, 纵向768px，不同设备显示效果相同。
+in(英寸): 屏幕的物理尺寸, 每英寸等于2.54厘米。
+mm(毫米): 屏幕的物理尺寸。
+pt(点)  : 屏幕的物理尺寸。1/72英寸。
+dp/dip  : 与密度无关的象素，一种基于屏幕密度的抽象单位。在每英寸160点的显示器上，1dp = 1px。但dp和px的比例会随着屏幕密度的变化而改变，不同设备有不同的显示效果。
+sp      : 与刻度无关的象素，主要用于字体显示best for textsize，作为和文字相关大小单位。
+
+使用方法
+
+XML: android:textSize="@dimen/some_name"
+Java: float dimen = Resources.getDimen(R.dimen.some_name)
+
+
+ -->
+
+
+<resources>
+<dimen name="one_pixel">1px</dimen> 
+<dimen name="selectsever_selectsever_item_textsize">20sp</dimen>
+</resources>

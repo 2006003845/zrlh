@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            style="@style/text_big_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/change_account" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:background="@color/white_30"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/account"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" >
+
+                <EditText
+                    android:id="@+id/changeaccount_account_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" >
+
+                <EditText
+                    android:id="@+id/changeaccount_psd_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/changeaccount_login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/bg_btn_green_selector"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

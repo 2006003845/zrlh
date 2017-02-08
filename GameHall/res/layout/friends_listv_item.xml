@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/friends_listv_item_imgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_user" />
+
+        <ImageView
+            android:id="@+id/friends_listv_item_btn_sendmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/friends_message" />
+
+        <TextView
+            android:id="@+id/friends_listv_item_name"
+            style="@style/text_mid_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_toLeftOf="@id/friends_listv_item_btn_sendmsg"
+            android:layout_toRightOf="@id/friends_listv_item_imgv"
+            android:gravity="center_vertical"
+            android:text="name" />
+    </RelativeLayout>
+
+</LinearLayout>

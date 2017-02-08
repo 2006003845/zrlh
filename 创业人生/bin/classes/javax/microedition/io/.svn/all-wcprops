@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/12330/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io
+END
+Connection.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/Connection.java
+END
+HttpConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/HttpConnection.java
+END
+InputConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/InputConnection.java
+END
+OutputConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/OutputConnection.java
+END
+SocketConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/SocketConnection.java
+END
+Connector.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/Connector.java
+END
+ConnectionNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/ConnectionNotFoundException.java
+END
+StreamConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/src/javax/microedition/io/StreamConnection.java
+END

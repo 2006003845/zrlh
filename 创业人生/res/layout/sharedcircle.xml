@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  
+   <Button
+   android:id="@+id/sharedcircle_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/sharedcircle_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/sharedcircle_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="分享圈"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/sharedcircle_button_returnback"
+  	android:layout_toLeftOf="@id/sharedcircle_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/sharedcircle_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/sharedcircle_button_title"
+   
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/sharedcircle_button_returnback"
+   android:layout_alignRight="@id/sharedcircle_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+  
+   
+  
+  
+  
+  
+  <ScrollView
+  android:id="@+id/sharedcircle_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:scrollbars="none"
+  android:layout_alignLeft="@id/sharedcircle_scrollviewback"
+  android:layout_alignRight="@id/sharedcircle_scrollviewback"
+  android:layout_alignTop="@id/sharedcircle_scrollviewback"
+  android:layout_alignBottom="@id/sharedcircle_scrollviewback"
+  >
+  <LinearLayout
+  android:id="@+id/sharedcircle_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  >
+   
+   
+  <TextView
+  android:id="@+id/sharedcircle_info"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="分享圈介绍为：比排行、找挑战、交好友，【中国移动手机游戏分享圈】给你想要的精彩游戏生活！"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  <TextView 
+  android:id="@+id/sharedcircle_game_tele"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+    <TextView 
+  android:id="@+id/sharedcircle_game_newest"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+    <TextView 
+  android:id="@+id/sharedcircle_game_hot"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+    <TextView 
+  android:id="@+id/sharedcircle_game_classics"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+    <TextView 
+  android:id="@+id/sharedcircle_game_more"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  />
+  
+  
+  </LinearLayout>
+  </ScrollView> 
+</RelativeLayout>
+

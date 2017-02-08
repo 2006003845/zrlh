@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  <Button
+   android:id="@+id/task_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/task_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/task_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="任务"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/task_button_returnback"
+  	android:layout_toLeftOf="@id/task_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/task_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/task_button_title"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/task_button_returnback"
+   android:layout_alignRight="@id/task_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+  
+  <LinearLayout
+  android:id="@+id/task_buttonlayout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/task_scrollviewback"
+  android:layout_alignRight="@id/task_scrollviewback"
+  android:layout_alignBottom="@id/task_scrollviewback"
+  >
+  
+  <RelativeLayout
+  android:id="@+id/task_button_mainlayout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+  <Button
+  android:id="@+id/task_button_main"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_task_main"
+  />
+  </RelativeLayout>
+  
+  
+   <RelativeLayout
+  android:id="@+id/task_button_extensionslayout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+   <Button
+  android:id="@+id/task_button_extensions"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_task_extension"
+  />
+  </RelativeLayout>
+  
+   
+   <RelativeLayout
+  android:id="@+id/task_button_dailylayout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+   <Button
+  android:id="@+id/task_button_daily"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true"
+  android:background="@drawable/button_task_daily"
+  />
+  </RelativeLayout>
+   
+  </LinearLayout>
+  
+  <ListView
+  android:id="@+id/task_listview_main"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/task_scrollviewback"
+  android:layout_alignRight="@id/task_scrollviewback"
+  android:layout_alignTop="@id/task_scrollviewback"
+  android:layout_above="@id/task_buttonlayout"
+  android:visibility="gone"
+  />
+  
+  <ListView
+  android:id="@+id/task_listview_extension"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/task_scrollviewback"
+  android:layout_alignRight="@id/task_scrollviewback"
+  android:layout_alignTop="@id/task_scrollviewback"
+  android:layout_above="@id/task_buttonlayout"
+  android:visibility="gone"
+  />
+  
+  <ListView
+  android:id="@+id/task_listview_daily"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/task_scrollviewback"
+  android:layout_alignRight="@id/task_scrollviewback"
+  android:layout_alignTop="@id/task_scrollviewback"
+  android:layout_above="@id/task_buttonlayout"
+  android:visibility="gone"
+  />
+  
+  <com.zrong.Android.View.SpriteView  
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/task_list_arrows"
+		android:layout_below="@id/task_button_title"
+		android:layout_alignTop="@id/task_listview_main"	
+		android:layout_alignRight="@id/task_listview_main"
+		android:layout_marginRight="52dip"
+		android:layout_marginBottom="3dip"
+		resID="1391" 
+		android:visibility="gone"/>
+		
+	 <LinearLayout android:id="@+id/linearlayout_promotframe7"
+   		android:layout_below="@id/task_button_title"
+   		android:visibility="gone" 
+   		android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/promotframe"
+		android:layout_centerHorizontal="true"
+		>
+		<TextView android:id="@+id/promotFrame7" 
+			android:layout_width="wrap_content"
+			android:gravity="center" android:textColor="#000000"
+			android:layout_gravity="center" android:textSize="20sp"
+			android:text="@string/sharedcircle_text"
+			android:layout_marginRight="10sp" android:layout_height="wrap_content" />
+		<Button android:id="@+id/close_promotframe7" 
+			android:background="@drawable/cancel_selector"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" 
+			android:layout_marginTop="22sp"
+			android:layout_marginLeft="20sp" />
+	</LinearLayout>	
+</RelativeLayout>

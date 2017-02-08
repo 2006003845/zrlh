@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="#6571bf4a" >
+
+        <TextView
+            android:id="@+id/msglist_item_msgtype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center_vertical|left"
+            android:text="邮件"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/msglist_item_msgremind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/msglist_item_msgtype_tv"
+            android:gravity="center"
+            android:textColor="#ff2c2c2c"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/msglist_item_expand_imgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_add_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

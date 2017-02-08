@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1" >
+
+    <ImageView
+        android:id="@+id/play_result_stage_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20px"
+        android:src="@drawable/bg2" />
+
+    <LinearLayout
+        android:id="@+id/play_result_stage_relat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/play_result_stage_bg2"
+        android:layout_alignLeft="@id/play_result_stage_bg2"
+        android:layout_alignRight="@id/play_result_stage_bg2"
+        android:layout_alignTop="@id/play_result_stage_bg2"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/play_result_stage_linear00"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="5px" >
+
+            <LinearLayout
+                android:id="@+id/play_result_linear01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/play_result_stage_lin01_floor"
+                    android:layout_width="87px"
+                    android:layout_height="67px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tv_floor_down" />
+
+                <RelativeLayout
+                    android:id="@+id/play_result_stage_floor1"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_floor" />
+
+                    <com.zrong.view.NumView
+                        android:id="@+id/play_result_stage_floor1_numview"
+                        android:layout_width="95px"
+                        android:layout_height="35px"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_result_stage_linear02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/play_result_stage_lin02_floor"
+                    android:layout_width="87px"
+                    android:layout_height="67px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tv_floor_mid" />
+
+                <RelativeLayout
+                    android:id="@+id/play_result_stage_floor2"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_floor" />
+
+                    <com.zrong.view.NumView
+                        android:id="@+id/play_result_stage_floor2_numview"
+                        android:layout_width="95px"
+                        android:layout_height="35px"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_result_stage_linear03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/play_result_stage_lin03_floor"
+                    android:layout_width="87px"
+                    android:layout_height="67px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tv_floor_up" />
+
+                <RelativeLayout
+                    android:id="@+id/play_result_stage_floor3"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_floor" />
+
+                    <com.zrong.view.NumView
+                        android:id="@+id/play_result_stage_floor3_numview"
+                        android:layout_width="95px"
+                        android:layout_height="35px"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/view01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="     " />
+
+            <LinearLayout
+                android:id="@+id/play_result_stage_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5px"
+                android:layout_toLeftOf="@id/view01"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/play_result_stage_score_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tv_score2" />
+
+                <com.zrong.view.NumView
+                    android:id="@+id/play_result_stage_score_numview"
+                    android:layout_width="110px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_result_stage_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_toRightOf="@id/view01"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/play_result_stage_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tv_money" />
+
+                <com.zrong.view.NumView
+                    android:id="@+id/play_result_stage_moneyview"
+                    android:layout_width="110px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70px" >
+
+            <com.zrong.view.BloodView
+                android:id="@+id/play_result_stage_starview"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view01"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_result_linea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20px" >
+
+        <ImageView
+            android:id="@+id/play_result_stage_btn_replay"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_small_selector"
+            android:clickable="true"
+            android:padding="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_replay_selector" />
+
+        <ImageView
+            android:id="@+id/play_result_stage_btn_next"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/play_result_stage_btn_replay"
+            android:background="@drawable/bg_small_selector"
+            android:clickable="true"
+            android:padding="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_next_selector" />
+
+        <ImageView
+            android:id="@+id/play_result_stage_btn_back"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/play_result_stage_btn_replay"
+            android:background="@drawable/bg_small_selector"
+            android:clickable="true"
+            android:padding="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_back_selector" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/play_result_stage_wealth_bg"
+        android:layout_width="160px"
+        android:layout_height="70px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2px"
+        android:layout_marginTop="2px"
+        android:src="@drawable/bg_gold" />
+
+    <com.zrong.view.NumView
+        android:id="@+id/play_result_stage_wealthview"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/play_result_stage_wealth_bg"
+        android:layout_alignRight="@id/play_result_stage_wealth_bg"
+        android:layout_alignTop="@id/play_result_stage_wealth_bg"
+        android:layout_marginTop="30px" />
+
+    <ImageView
+        android:id="@+id/play_result_stage_btn_about"
+        android:layout_width="100px"
+        android:layout_height="74px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="3px"
+        android:layout_marginLeft="2px"
+        android:background="@drawable/bg_btn_store_selector"
+        android:clickable="true"
+        android:padding="7px"
+        android:scaleType="centerInside"
+        android:src="@drawable/tv_about_selector" />
+
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,265 @@
+package cn.zrong.weibobinding;
+
+import java.util.Calendar;
+
+import android.app.Service;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.util.Log;
+import android.widget.Toast;
+import cn.zrong.ApplicationData;
+import cn.zrong.activity.R;
+
+public class ShareService extends Service {
+
+	private Handler mHandler;
+	private Context context;
+
+	@Override
+	public IBinder onBind(Intent intent) {
+
+		return null;
+	}
+
+	private ShareReceiver shareReceiver;
+
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		context = this;
+		// 从数据库中读取所有绑定账户
+		// 注册Receiver--可以XML注册，也可以代码注册。代码注册，当程序退出，相关广播也就无效了
+		mHandler = new Handler();
+		shareReceiver = new ShareReceiver();
+		IntentFilter filter = new IntentFilter();
+		filter.addAction(BroadcastSender.LAG_Action_shareWeibo);
+		registerReceiver(shareReceiver, filter);
+	}
+
+	@Override
+	public void onStart(Intent intent, int startId) {
+		super.onStart(intent, startId);
+	}
+
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+
+	}
+
+	public class ShareReceiver extends BroadcastReceiver {
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			Bundle b = intent.getExtras();
+			String shareContent = null;
+			String shareImgUrl = null;
+			if (b != null) {
+				shareContent = b
+						.getString(BroadcastSender.LAG_Content_shareWeibo);
+				shareImgUrl = b
+						.getString(BroadcastSender.LAG_ImagUrl_shareWeibo);
+			}
+			if (shareContent != null) {
+				mHandler.post(new ShareRunnable(shareContent, shareImgUrl));
+			}
+		}
+	}
+
+	class ShareRunnable implements Runnable {
+		private String content;
+		private String imgUrl;
+
+		public ShareRunnable(String content, String imgUrl) {
+			this.content = content;
+			this.imgUrl = imgUrl;
+		}
+
+		@Override
+		public void run() {
+			shareWeibo(content, imgUrl);
+		}
+	};
+
+	private void shareWeibo(String content, String imgUrl) {
+		for (BindingAccount user : ApplicationData.bindingUserList) {
+			if (user.getBindingState() == BindingAccount.STATE_BINDING_ON) {
+				if (user.getAuthoState() == BindingAccount.STATE_AUTHO_EFFECTIVE) {
+					if (user.getType().equals(BindingAccount.TYPE_BINDING_QQ)) {
+						content = dealContent(content);
+						QQResult result = null;
+						Log.i("Loh", user.toString());
+						// 设置oAuth
+						AskWeiBoUtil.createInstance(this)
+								.setOAuth(user.getNewKey(),
+										user.getNewSecret(),
+										user.getConsumerKey(),
+										user.getConsumerSecret(),
+										user.getOauthNonce(),
+										user.getOauthTimestamp(),
+										user.getOauthVerifier(),
+										user.getOauthVersion());
+						AskWeiBoUtil.createInstance(this).getIp();
+						// 发送
+						if (imgUrl == null) {
+							result = AskWeiBoUtil.createInstance(this)
+									.sendQQMessage(content);
+						} else {
+							result = AskWeiBoUtil.createInstance(this)
+									.sendQQMessageAndPic(content, imgUrl);
+						}
+						if (result != null) {
+							if (result.ret == 0) {
+								// 分享成功
+								Log.i("Loh", "分享成功");
+							}
+							// 分享失败
+							else if (result.ret == 3 && result.errorcode == 1) {
+								Log.i("Loh", "分享失败");
+								// token失效
+								user.setAuthoState(BindingAccount.STATE_AUTHO_DISABLED);
+								// TODO 更改数据库内的user资料
+
+								Toast.makeText(
+										context,
+										"您的" + user.getType()
+												+ "账户权限授权已经到期,需要您重新授权",
+										Toast.LENGTH_SHORT).show();
+							}
+						} else {
+							// 分享失败
+							Log.i("Loh", "分享失败2");
+						}
+					} else if (user.getType().equals(
+							BindingAccount.TYPE_BINDING_Sina)) {
+						// TODO
+//						sinaUser = user;
+//						final Weibo weibo = Weibo.getInstance();
+//						content = dealContent(content);
+//						// 设置AccessToken
+//						// weibo.addOauthverifier(user.getOauthVerifier());
+//						weibo.setupConsumerConfig(Constants.CONSUMER_SINA_KEY,
+//								Constants.CONSUMER_SINA_SECRET);
+//						weibo.setRedirectUrl("http://www.sina.com");
+//						AccessToken token = new AccessToken(user.getNewKey(),
+//								user.getNewSecret());
+//						token.setExpiresTime(user.getOauthTimestamp());
+//						token.setVerifier(user.getOauthVerifier());
+//						weibo.setAccessToken(token);
+//						try {
+//							if (!TextUtils.isEmpty((String) (weibo
+//									.getAccessToken().getToken()))) {
+//								if (!TextUtils.isEmpty(imgUrl)) {
+//									upload(weibo, Weibo.getAppKey(), imgUrl,
+//											content, "", "");
+//								} else {
+//									// Just update a text weibo!
+//									String appkey = Weibo.getAppKey();
+//									update(weibo, appkey, content, "", "");
+//								}
+//							} else {
+//							}
+//						} catch (MalformedURLException e) {
+//							e.printStackTrace();
+//						} catch (IOException e) {
+//							e.printStackTrace();
+//						} catch (WeiboException e) {
+//							e.printStackTrace();
+//						}
+					}
+				} else {
+					Toast.makeText(this,
+							"您的" + user.getType() + "账户权限授权已经到期,需要您重新授权",
+							Toast.LENGTH_SHORT).show();
+				}
+			}
+
+		}
+	}
+
+	public BindingAccount sinaUser;
+
+//	private String upload(Weibo weibo, String source, String file,
+//			String status, String lon, String lat) throws WeiboException {
+//		WeiboParameters bundle = new WeiboParameters();
+//		bundle.add("source", source);
+//		bundle.add("pic", file);
+//		bundle.add("status", status);
+//		if (!TextUtils.isEmpty(lon)) {
+//			bundle.add("lon", lon);
+//		}
+//		if (!TextUtils.isEmpty(lat)) {
+//			bundle.add("lat", lat);
+//		}
+//		String rlt = "";
+//		String url = Weibo.SERVER + "statuses/upload.json";
+//		AsyncWeiboRunner weiboRunner = new AsyncWeiboRunner(weibo);
+//		weiboRunner.request(context, url, bundle, Utility.HTTPMETHOD_POST,
+//				requestListener);
+//		return rlt;
+//	}
+
+//	private String update(Weibo weibo, String source, String status,
+//			String lon, String lat) throws MalformedURLException, IOException,
+//			WeiboException {
+//		WeiboParameters bundle = new WeiboParameters();
+//		bundle.add("source", source);
+//		bundle.add("status", status);
+//		if (!TextUtils.isEmpty(lon)) {
+//			bundle.add("lon", lon);
+//		}
+//		if (!TextUtils.isEmpty(lat)) {
+//			bundle.add("lat", lat);
+//		}
+//		String rlt = "";
+//		String url = Weibo.SERVER + "statuses/update.json";
+//		AsyncWeiboRunner weiboRunner = new AsyncWeiboRunner(weibo);
+//		weiboRunner.request(context, url, bundle, Utility.HTTPMETHOD_POST,
+//				requestListener);
+//		return rlt;
+//	}
+
+	private String dealContent(String content) {
+		Calendar calendar = Calendar.getInstance();
+		String hourString = calendar.get(Calendar.HOUR_OF_DAY) + "时";
+		String miniutString = calendar.get(Calendar.MINUTE) + "分";
+		String secStr = calendar.get(Calendar.SECOND) + "秒";
+		content = content + "(" + hourString + miniutString + secStr + ")"
+				+ "《来自" + getResources().getString(R.string.app_name) + "》";
+		return content;
+	}
+
+//	private RequestListener requestListener = new RequestListener() {
+//
+//		@Override
+//		public void onIOException(IOException arg0) {
+//
+//		}
+//
+//		@Override
+//		public void onError(WeiboException arg0) {
+//			Log.i("Loh", "sina_share_failed");
+//		}
+//
+//		@Override
+//		public void onComplete(String arg0) {
+//			Log.i("sinaWeibo", "run_sinaUploadPicResult=" + arg0);
+//			SinaResult rlt = JsonUtils.parseSinaResultJson(arg0);
+//			if (rlt.error_code != null && rlt.error_code.equals("21315")) {
+//				// token失效
+//				sinaUser.setAuthoState(BindingAccount.STATE_AUTHO_DISABLED);
+//				// TODO 更改数据库内的user资料
+//				Toast.makeText(context,
+//						"您的" + sinaUser.getType() + "账户权限授权已经到期,需要您重新授权",
+//						Toast.LENGTH_SHORT).show();
+//			} else if (rlt.request == null && rlt.error_code == null) {
+//				Log.i("Loh", "sina_share_success");
+//			}
+//		}
+//	};
+}

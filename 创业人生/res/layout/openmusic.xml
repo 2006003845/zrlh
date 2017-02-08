@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/black"
+  >
+  <ImageView
+  android:id="@+id/openmusic_gamelogo"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="10dp"
+  android:layout_centerHorizontal="true"
+  android:background="@drawable/logo"
+  />
+  <ImageView
+  android:id="@+id/openmusic_channellogo"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/openmusic_gamelogo"
+   
+  android:layout_centerHorizontal="true"
+  android:background="@drawable/cmcclogo"
+  />
+  
+  <TextView 
+  android:id="@+id/openmusic_text1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  
+  android:layout_below="@id/openmusic_channellogo"
+  android:text="g.10086.cn"
+  android:textSize="20sp"
+  android:textColor="@color/white"
+  android:layout_centerHorizontal="true"
+  
+  />
+  <TextView
+  android:id="@+id/openmusic_text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  
+   android:layout_below="@id/openmusic_text1"
+  android:text="是否开启音乐"
+  android:textSize="20sp"
+  android:textColor="@color/white"
+  android:layout_centerHorizontal="true"
+
+  />
+ 
+  
+   <Button
+  android:id="@+id/openmusic_open"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="是"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_alignParentBottom="true"
+  />
+   <Button
+  android:id="@+id/openmusic_close"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="否"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_alignParentBottom="true"
+  android:layout_alignParentRight="true"
+  />
+  
+</RelativeLayout>

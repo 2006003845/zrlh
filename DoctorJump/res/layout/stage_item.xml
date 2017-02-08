@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.zrong.view.FixedViewFlipper
+        android:id="@+id/ViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- (0) state0 -->
+
+        <RelativeLayout
+            android:id="@+id/stage_item_passed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/stage_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="31px"
+                android:layout_marginLeft="2px"
+                android:layout_marginRight="2px"
+                android:layout_marginTop="7px" />
+
+            <com.zrong.view.BloodView
+                android:id="@+id/stage_item_star"
+                android:layout_width="40px"
+                android:layout_height="15px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0.5px" />
+        </RelativeLayout>
+        <!-- (1) state1 -->
+
+        <RelativeLayout
+            android:id="@+id/stage_item_unpassed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/stage_item_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="15px"
+                android:src="@drawable/img_lock" />
+        </RelativeLayout>
+    </com.zrong.view.FixedViewFlipper>
+
+</RelativeLayout>

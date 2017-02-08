@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:focusable="false" >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_new" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/version"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/startgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/startgame_new" />
+
+        <Button
+            android:id="@+id/fastgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fastgame_new" />
+
+        <Button
+            android:id="@+id/moregame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/moregame_new" />
+
+        <Button
+            android:id="@+id/helpsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/helpsetting_new" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_new" />
+
+        <Button
+            android:id="@+id/exitgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/exitgame_new" />
+    </LinearLayout>
+    <!-- 弹出框 -->
+
+    <RelativeLayout
+        android:id="@+id/middle_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/middle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_0" />
+
+        <ImageButton
+            android:id="@+id/middle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/image_1"
+            android:src="@drawable/image_9" />
+
+        <Button
+            android:id="@+id/middle_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/middle_back"
+            android:layout_alignTop="@id/middle_back"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/exit_0_pressed" />
+
+        <Button
+            android:id="@+id/middle_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/middle_back"
+            android:layout_alignTop="@id/middle_back"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/confirme_0_pressed"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/middle_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/middle_back"
+            android:layout_alignLeft="@id/middle_back"
+            android:layout_alignRight="@id/middle_back"
+            android:layout_below="@id/middle_name"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="65dip"
+            android:layout_marginRight="55dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/image_2" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/middle_pic"
+            android:layout_alignLeft="@id/middle_pic"
+            android:layout_alignRight="@id/middle_pic"
+            android:layout_alignTop="@id/middle_pic"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" >
+
+            <!-- 创建角色 -->
+
+            <RelativeLayout
+                android:id="@+id/lay_createRole"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/role_r"
+                    android:layout_width="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" >
+
+                    <ImageButton
+                        android:id="@+id/role_r_1"
+                        android:layout_width="50dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/image_45"
+                        android:src="@drawable/image_48" />
+
+                    <ImageButton
+                        android:id="@+id/role_r_2"
+                        android:layout_width="50dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:layout_toLeftOf="@id/role_r_1"
+                        android:background="@drawable/image_45"
+                        android:src="@drawable/image_46" />
+
+                    <ImageButton
+                        android:id="@+id/role_r_3"
+                        android:layout_width="30dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/image_50" />
+
+                    <com.zrong.Android.View.SpriteView
+                        android:id="@+id/role_r_4"
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_toLeftOf="@id/role_r_3"
+                        resID="1318" />
+
+                    <ImageButton
+                        android:id="@+id/role_r_5"
+                        android:layout_width="30dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_toLeftOf="@id/role_r_4"
+                        android:background="@drawable/image_52" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" 
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/role_l_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/image_42" />
+
+                        <EditText
+                            android:id="@+id/role_l_1_edit"
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/role_l_1"
+                            android:background="@drawable/image_8"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" />
+                    </RelativeLayout>
+                     <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/role_l_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/image_43" />
+
+                        <EditText
+                            android:id="@+id/role_l_2_edit"
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/role_l_2"
+                            android:background="@drawable/image_8"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" />
+                    </RelativeLayout>
+                     <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/role_l_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/image_44" />
+
+                        <EditText
+                            android:id="@+id/role_l_3_edit"
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/role_l_3"
+                            android:background="@drawable/image_8"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 注册界面 -->
+
+            <LinearLayout
+                android:id="@+id/lay_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/register_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/image_37" />
+
+                    <EditText
+                        android:id="@+id/register_1_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/register_1"
+                        android:layout_toRightOf="@id/register_1"
+                        android:background="@drawable/image_8"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/register_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/image_38" />
+
+                    <EditText
+                        android:id="@+id/register_2_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/register_2"
+                        android:layout_toRightOf="@id/register_2"
+                        android:background="@drawable/image_8"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/register_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/image_39" />
+
+                    <EditText
+                        android:id="@+id/register_3_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/register_3"
+                        android:background="@drawable/image_8"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 登录界面 -->
+
+            <LinearLayout
+                android:id="@+id/lay_login"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/login_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_37" />
+
+                    <EditText
+                        android:id="@+id/login_1_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/login_1"
+                        android:layout_toRightOf="@id/login_1"
+                        android:background="@drawable/image_8"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/login_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_38" />
+
+                    <EditText
+                        android:id="@+id/login_2_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/login_2"
+                        android:layout_toRightOf="@id/login_2"
+                        android:background="@drawable/image_8"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:password="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/login_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/image_31_pressed"
+                        android:src="@drawable/image_33" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 分区分线 -->
+
+            <RelativeLayout
+                android:id="@+id/lay_selectsever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/oldline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/selectsever_selectsever_item_textsize" />
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/oldline" >
+                </ListView>
+            </RelativeLayout>
+
+            <!-- 游戏帮助 -->
+
+            <RelativeLayout
+                android:id="@+id/lay_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <ScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aboutus_message"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </ScrollView>
+            </RelativeLayout>
+
+            <!-- 设置界面 -->
+
+            <LinearLayout
+                android:id="@+id/lay_seting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 音乐 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/seting_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_16_pressed" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/seting_1"
+                        android:layout_alignTop="@id/seting_1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/image_21" />
+
+                    <Button
+                        android:id="@+id/seting_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/seting_1"
+                        android:layout_alignTop="@id/seting_1"
+                        android:layout_marginRight="15dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/image_24" />
+                </RelativeLayout>
+
+                <!-- 好友 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/seting_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/image_16_pressed" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/seting_2"
+                        android:layout_alignTop="@id/seting_2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/image_22" />
+
+                    <Button
+                        android:id="@+id/seting_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/seting_2"
+                        android:layout_alignTop="@id/seting_2"
+                        android:layout_marginRight="15dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/image_24" />
+                </RelativeLayout>
+
+                <!-- 聊天 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/seting_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/image_16_pressed" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/seting_3"
+                        android:layout_alignTop="@id/seting_3"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/image_23" />
+
+                    <Button
+                        android:id="@+id/seting_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/seting_3"
+                        android:layout_alignTop="@id/seting_3"
+                        android:layout_marginRight="15dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/image_24" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 游戏关于 -->
+
+            <LinearLayout
+                android:id="@+id/lay_about"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_16"
+                        android:src="@drawable/image_18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_16"
+                        android:src="@drawable/image_19" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image2"
+                        android:background="@drawable/image_16"
+                        android:src="@drawable/image_20" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--
+   横版界面 布局
+   <Button
+        android:id="@+id/startgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dip"
+        android:background="@drawable/startgame_new" />
+
+    <Button
+        android:id="@+id/fastgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/startgame"
+        android:layout_marginTop="120dip"
+        android:background="@drawable/fastgame_new" />
+
+    <Button
+        android:id="@+id/helpsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startgame"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/fastgame"
+        android:background="@drawable/helpsetting_new" />
+
+    <Button
+        android:id="@+id/exitgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpsetting"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/helpsetting"
+        android:background="@drawable/exitgame_new" />
+
+    <Button
+        android:id="@+id/moregame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startgame"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:layout_toLeftOf="@+id/startgame"
+        android:background="@drawable/moregame_new" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moregame"
+        android:layout_marginTop="20px"
+        android:layout_toLeftOf="@+id/moregame"
+        android:background="@drawable/about_new" />
+    -->
+
+</RelativeLayout>

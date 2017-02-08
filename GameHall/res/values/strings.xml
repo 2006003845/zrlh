@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="userApp">99999</string>
+    <string name="channel">452</string>
+    <string name="platform">3</string>
+    <!--
+    <string name="userUrl">http://game.91juhe.com/PassSystem/UsersJSON.php</string>
+    <string name="weiboUrl">http://game.91juhe.com/PassSystem/WbJSON.php</string>
+    <string name="roleUrl">http://game.91juhe.com/PassSystem/CommunityJSON.php</string>
+    <string name="gameUrl">http://game.91juhe.com/PassSystem/GameJSON.php</string>
+    -->
+
+
+    <!--
+         <string name="userUrl">http://192.168.0.220/PassSystem/UsersJSON.php</string>
+    <string name="weiboUrl">http://192.168.0.220/PassSystem/WbJSON.php</string>
+    <string name="roleUrl">http://192.168.0.220/PassSystem/CommunityJSON.php</string>
+    <string name="gameUrl">http://192.168.0.220/PassSystem/GameJSON.php</string>
+    <string name="imgUrl">http://192.168.0.220/PassSystem/upImg.php</string>
+    -->
+
+    <string name="userUrl">http://218.247.140.193:9995/PassSystem/UsersJSON.php</string>
+    <string name="weiboUrl">http://218.247.140.193:9995/PassSystem/WbJSON.php</string>
+    <string name="roleUrl">http://218.247.140.193:9995/PassSystem/CommunityJSON.php</string>
+    <string name="gameUrl">http://218.247.140.193:9995/PassSystem/GameJSON.php</string>
+    <string name="imgUrl">http://218.247.140.193:9995/PassSystem/upImg.php</string>
+    <string name="gameCenterUrl">http://218.247.140.193:9995/passSystem/newsGame</string>
+    <string name="packageStructure">JSON</string>
+    <string name="hello">Hello World, HomeActivity!</string>
+    <string name="app_name">GameHall</string>
+    <string name="hall">游戏大厅</string>
+    <string name="center">游戏中心</string>
+    <string name="group">游戏圈子</string>
+    <string name="more"> 更多设置</string>
+    <string name="search">搜索</string>
+    <string name="create">创建</string>
+    <string name="message">消息</string>
+    <string name="friends">好友</string>
+    <string name="friends_search">搜索好友</string>
+    <string name="card">名片</string>
+    <string name="hot_recommend">热门推荐</string>
+    <string name="game_ranked">游戏排行</string>
+    <string name="game_class">游戏分类</string>
+    <string name="binding_weibo">绑定微博</string>
+    <string name="binding_weibo2">一键同步各大微博，赢在效率！</string>
+    <string name="opinion_feedback">意见反馈</string>
+    <string name="opinion_feedback2">您的建议是我们服务的标准</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_us2">我们的服务以您的需求为本</string>
+    <string name="account_manage">账号管理</string>
+    <string name="account_manage2">安全管理我们的账户</string>
+    <string name="change_account">账号切换</string>
+    <string name="account">账号</string>
+    <string name="new_account">新账号</string>
+    <string name="password">密码</string>
+    <string name="new_password">新密码</string>
+    <string name="commit">提交</string>
+    <string name="write_your_opinions">留下您的建议或意见</string>
+    <string name="login">登录</string>
+    <string name="synchro">同步</string>
+    <string name="nonsynchronous">非同步</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <!-- group -->
+    <string name="group_create">创建圈子</string>
+    <string name="group_search">搜索圈子</string>
+    <string name="group_info">圈子资料</string>
+    <string name="group_exit">退出圈子</string>
+    <string name="group_msg">圈子信息</string>
+    <string name="group_form">圈子形象</string>
+    <string name="group_name">圈子名称</string>
+    <string name="group_memb">圈子成员</string>
+    <string name="group_intro">圈子简介</string>
+    <string name="change_form">更换形象</string>
+    <string name="group_master">圈主</string>
+    <string name="member">成员</string>
+    <string name="createtime">创建时间</string>
+    <string name="finish">完成</string>
+    <string name="camera">相机拍摄</string>
+    <string name="phoneGallery">手机相册</string>
+    <string name="check_info">查看个人资料</string>
+    <string name="reply_comment">回复评论</string>
+    <string name="join"> 加入</string>
+    <string name="intro">简介</string>
+    <string name="group_notice">圈子公告</string>
+    <string name="notice_text">圈子规定：1、广告、互粉拉黑.  2、灌水、不符合圈子主题删除.  本圈从5月4日开始，清理0发言的童鞋</string>
+    <string name="cancel">取消</string>
+    <string name="clear">清空</string>
+    <string name="ok">确定</string>
+    <string name="twice_sure">您确认退出该群?</string>
+    <!-- msg -->
+    <string name="msg_check">消息查看</string>
+    <string name="message_item_ninyou">您有</string>
+    <string name="message_item_emailNum">封私信!</string>
+    <string name="message_item_requestNum">个请求!</string>
+    <string name="agree">同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="msg_send">消息发送</string>
+    <string name="send">发送</string>
+    <string name="reply">回复</string>
+
+    <!-- friends -->
+    <string name="my_friends">我的好友</string>
+    <string name="search_sb">搜索玩家</string>
+    <string name="remove_friend">解除好友</string>
+    <!-- card -->
+    <string name="personal_card">个人名片</string>
+    <string name="add_as_friend">加为好友</string>
+    <string name="location">所在地</string>
+    <string name="personal_intro">个人介绍</string>
+    <string name="edit">编辑</string>
+    <string name="requesting">请求中...</string>
+    <string name="save">保存</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="nan">男</string>
+    <string name="nv">女</string>
+
+    <!-- game -->
+    <string name="game_classify">游戏分类</string>
+    <string name="game_rank">游戏排行</string>
+    <string name="game_search">游戏搜索</string>
+    <string name="game_hot_recommend">热门推荐</string>
+    <string name="game_detail">游戏详情</string>
+    <string name="click_to_banding">点击绑定...</string>
+    <string name="cancel_banding">取消绑定...</string>
+    <string name="hot_rank">热门排行</string>
+    <string name="download_num">下载量</string>
+    <string name="new_publish">最新发布</string>
+    <string name="week_rank">周排行</string>
+
+</resources>

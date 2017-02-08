@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  >
+  <com.zrong.Android.View.SpriteView
+  android:id="@+id/grid_item_sprite"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="3"
+  resID="1391" 
+  android:layout_gravity="center_horizontal"
+  />
+  <ImageView
+  android:id="@+id/grid_item_imageview"
+  android:layout_width="fill_parent"
+  android:layout_height="15sp"
+  android:layout_alignRight="@id/grid_item_sprite"
+  android:layout_alignBottom="@id/grid_item_sprite"
+  android:layout_weight="1"
+  android:layout_gravity="center_horizontal"
+  android:gravity="center_horizontal"
+  android:src="@drawable/lock"
+  />
+  
+</RelativeLayout>
+

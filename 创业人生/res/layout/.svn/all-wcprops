@@ -1,0 +1,977 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout
+END
+department_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/20769/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/department_item.xml
+END
+dialog_dp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialog_dp.xml
+END
+about_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/11362/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/about_item.xml
+END
+doctorshop_grid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/16756/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctorshop_grid.xml
+END
+invite_player_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/invite_player_dialog.xml
+END
+employee_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employee_info.xml
+END
+dialogtemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/12711/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialogtemplate.xml
+END
+mailbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mailbox.xml
+END
+office.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/office.xml
+END
+store.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/store.xml
+END
+moregame.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/10457/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/moregame.xml
+END
+createshop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/18693/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/createshop.xml
+END
+tasklist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/tasklist.xml
+END
+commerceuper_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commerceuper_item.xml
+END
+infolist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/16659/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/infolist_item.xml
+END
+mailbox_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/11357/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mailbox_item.xml
+END
+diglist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/14753/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/diglist_item.xml
+END
+employeelist_routine.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employeelist_routine.xml
+END
+task_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/11357/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/task_item.xml
+END
+mapmenu3_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/18716/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mapmenu3_list.xml
+END
+slot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/game/!svn/ver/11746/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/slot.xml
+END
+simple_employeelist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/simple_employeelist.xml
+END
+propagandalist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/propagandalist_item.xml
+END
+commerceuper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commerceuper.xml
+END
+othershopinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/othershopinfo.xml
+END
+lottery_bet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19569/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/lottery_bet.xml
+END
+map_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/18968/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/map_menu.xml
+END
+selectsever_selectitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/game/!svn/ver/11287/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/selectsever_selectitem.xml
+END
+selectsever_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/game/!svn/ver/10700/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/selectsever_item.xml
+END
+lottery_station.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/lottery_station.xml
+END
+commerceinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19569/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commerceinfo.xml
+END
+shoplistshow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/21805/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shoplistshow.xml
+END
+doctorinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctorinfo.xml
+END
+searchcondition_player_dailog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/game/!svn/ver/12024/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/searchcondition_player_dailog.xml
+END
+promoter_detail_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/game/!svn/ver/12028/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/promoter_detail_item.xml
+END
+social.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/game/!svn/ver/20480/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/social.xml
+END
+pm_employee.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/18694/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/pm_employee.xml
+END
+employeelist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employeelist.xml
+END
+chat.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/game/!svn/ver/20769/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/chat.xml
+END
+myshopandbuilding.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/21304/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/myshopandbuilding.xml
+END
+lottery_station_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/game/!svn/ver/19039/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/lottery_station_item.xml
+END
+createbuilding.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/createbuilding.xml
+END
+shoplist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19161/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shoplist_item.xml
+END
+policyinfolist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/game/!svn/ver/16659/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/policyinfolist_item.xml
+END
+levelup_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/levelup_info.xml
+END
+planningdept_grid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/16756/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/planningdept_grid.xml
+END
+custom_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/12712/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/custom_dialog.xml
+END
+employeelist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/18663/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employeelist_item.xml
+END
+diaopei_emp_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/diaopei_emp_item.xml
+END
+propaganda_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/propaganda_item.xml
+END
+commercestaff_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercestaff_item.xml
+END
+systemsetting_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/12450/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/systemsetting_item.xml
+END
+authority_issued.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/authority_issued.xml
+END
+mail_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mail_detail.xml
+END
+tipbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/tipbox.xml
+END
+shopinfo2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shopinfo2.xml
+END
+recruitshop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/recruitshop.xml
+END
+mainmenu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/21805/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mainmenu.xml
+END
+dialog_gg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialog_gg.xml
+END
+simple_shoplist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/simple_shoplist.xml
+END
+createcommerce.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/createcommerce.xml
+END
+commercestaff.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19080/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercestaff.xml
+END
+characterdetail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/characterdetail.xml
+END
+confirm_twobutton.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/confirm_twobutton.xml
+END
+doctor_shop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctor_shop.xml
+END
+recruit_shop_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/21933/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/recruit_shop_item.xml
+END
+shopinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shopinfo.xml
+END
+answerquestion.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/answerquestion.xml
+END
+policy_dep.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/20769/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/policy_dep.xml
+END
+chatbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/chatbox.xml
+END
+searchcondition_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/game/!svn/ver/12024/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/searchcondition_item.xml
+END
+promoters.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/20769/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/promoters.xml
+END
+dialog_sj.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/22117/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialog_sj.xml
+END
+openmusic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/17733/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/openmusic.xml
+END
+pm_listview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/18694/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/pm_listview.xml
+END
+mapmenu3_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/20395/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mapmenu3_item.xml
+END
+custom_dialog_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/game/!svn/ver/10421/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/custom_dialog_activity.xml
+END
+cardlist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/cardlist.xml
+END
+pm_emoloyeelist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/18912/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/pm_emoloyeelist.xml
+END
+login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/game/!svn/ver/19569/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/login.xml
+END
+planningdept_shoplist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/planningdept_shoplist.xml
+END
+cardlist_grid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/17097/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/cardlist_grid.xml
+END
+shopandbuilding.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/21805/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shopandbuilding.xml
+END
+grid_item_icon_text.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/game/!svn/ver/13992/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/grid_item_icon_text.xml
+END
+venture_evaluation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/venture_evaluation.xml
+END
+planningdept.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/planningdept.xml
+END
+selectsever.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19058/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/selectsever.xml
+END
+mapmainmenu_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/game/!svn/ver/10519/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mapmainmenu_item.xml
+END
+doctor_levelup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctor_levelup.xml
+END
+createcharactor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19058/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/createcharactor.xml
+END
+doctortask_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/16756/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctortask_item.xml
+END
+vocationskill_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/vocationskill_info.xml
+END
+grid_icon.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/17097/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/grid_icon.xml
+END
+diglist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/diglist.xml
+END
+doctor_custody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctor_custody.xml
+END
+characterinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/characterinfo.xml
+END
+about.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/game/!svn/ver/19167/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/about.xml
+END
+commercelist_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/18716/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercelist_menu.xml
+END
+propaganda.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/propaganda.xml
+END
+checkbuilding1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/checkbuilding1.xml
+END
+loading.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/loading.xml
+END
+pm_shoplist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/game/!svn/ver/18920/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/pm_shoplist_item.xml
+END
+findstreet_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/11702/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/findstreet_item.xml
+END
+pm_employeelist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/game/!svn/ver/18753/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/pm_employeelist_item.xml
+END
+planningdept_shoplist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/game/!svn/ver/16756/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/planningdept_shoplist_item.xml
+END
+simple_spinner_item_customer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/game/!svn/ver/18912/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/simple_spinner_item_customer.xml
+END
+social_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/20480/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/social_item.xml
+END
+doctor_shopinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19039/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctor_shopinfo.xml
+END
+task.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/task.xml
+END
+commercelist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercelist_item.xml
+END
+policyinfolist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/policyinfolist.xml
+END
+employeeinfo_skill_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/game/!svn/ver/10920/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employeeinfo_skill_item.xml
+END
+infolist2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/infolist2.xml
+END
+pm_simplelistview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/18694/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/pm_simplelistview.xml
+END
+searchcondition.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/searchcondition.xml
+END
+commerce_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/18968/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commerce_menu.xml
+END
+shoproutine.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shoproutine.xml
+END
+commercedairy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercedairy.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/main.xml
+END
+infocontent.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/infocontent.xml
+END
+commercelist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19569/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercelist.xml
+END
+characterinfo_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/10924/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/characterinfo_item.xml
+END
+sharedcircle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/sharedcircle.xml
+END
+social_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/20395/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/social_detail.xml
+END
+chat_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/20769/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/chat_item.xml
+END
+answerresult.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/answerresult.xml
+END
+modify_shop_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/12255/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/modify_shop_dialog.xml
+END
+invite_player_dlg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/game/!svn/ver/19690/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/invite_player_dlg.xml
+END
+commercediary_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/game/!svn/ver/13271/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/commercediary_item.xml
+END
+simple_employeelist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/game/!svn/ver/18920/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/simple_employeelist_item.xml
+END
+employee_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/18763/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employee_menu.xml
+END
+dialog_zl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/21933/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialog_zl.xml
+END
+task_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/task_details.xml
+END
+seachfriendlist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/seachfriendlist.xml
+END
+chatwindow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/20769/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/chatwindow.xml
+END
+invite_commerce.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/19690/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/invite_commerce.xml
+END
+dialog_cg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/22117/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialog_cg.xml
+END
+system_dlg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/18968/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/system_dlg.xml
+END
+policyinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/policyinfo.xml
+END
+videoplayerview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/game/!svn/ver/10207/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/videoplayerview.xml
+END
+employeeinfo_quality_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/game/!svn/ver/10920/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/employeeinfo_quality_item.xml
+END
+systemsetting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19167/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/systemsetting.xml
+END
+recruitshop_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/game/!svn/ver/11357/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/recruitshop_item.xml
+END
+cardinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/19039/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/cardinfo.xml
+END
+popmenu_goodsnumber.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/game/!svn/ver/18968/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/popmenu_goodsnumber.xml
+END
+gameback.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/gameback.xml
+END
+writemail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/game/!svn/ver/19569/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/writemail.xml
+END
+regist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/game/!svn/ver/21805/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/regist.xml
+END
+middle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/game/!svn/ver/22324/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/middle.xml
+END
+mycommerce.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/19690/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mycommerce.xml
+END
+department.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/21304/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/department.xml
+END
+shoplist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/21805/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/shoplist.xml
+END
+company.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/company.xml
+END
+mapmainmenu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/mapmainmenu.xml
+END
+propagandalist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/propagandalist.xml
+END
+popumenu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/game/!svn/ver/18693/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/popumenu.xml
+END
+custody_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/game/!svn/ver/16756/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/custody_item.xml
+END
+dialog_new.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/game/!svn/ver/19039/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/dialog_new.xml
+END
+lottery_rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/lottery_rules.xml
+END
+doctor_task.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/game/!svn/ver/19072/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/doctor_task.xml
+END
+tasklist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/game/!svn/ver/16756/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/tasklist_item.xml
+END
+map.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/game/!svn/ver/21304/kJAVA/%E5%88%9B%E4%B8%9A%E4%BA%BA%E7%94%9F/lifeVenture_androidVersion/res/layout/map.xml
+END

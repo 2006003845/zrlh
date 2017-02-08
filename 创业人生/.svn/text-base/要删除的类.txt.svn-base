@@ -1,0 +1,8 @@
+店铺详情
+ShopInfoActivity====shopinfo
+店铺列表
+ShopListActivity====shoplist
+招揽界面
+RecruitActivity=====recruitshop
+招揽item
+RecruitShopItemAdapter

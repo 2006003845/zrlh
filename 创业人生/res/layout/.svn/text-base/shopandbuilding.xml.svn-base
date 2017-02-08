@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_three" />
+
+    <Button
+        android:id="@+id/create_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="15px"
+        android:background="@drawable/shop" />
+
+    <Button
+        android:id="@+id/create_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/create_shop"
+        android:layout_toRightOf="@id/create_shop"
+        android:background="@drawable/building" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/backGround"
+        android:layout_alignLeft="@id/backGround"
+        android:layout_alignRight="@id/backGround"
+        android:layout_alignTop="@id/backGround"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Gallery
+                android:id="@+id/gallery1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:spacing="20dip" />
+
+            <Button
+                android:id="@+id/info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/shop_name"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/exit_ui_press" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Gallery
+                android:id="@+id/gallery2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:spacing="20dip" />
+
+            <Button
+                android:id="@+id/info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/shop_name"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/exit_ui_press" />
+        </RelativeLayout>
+    </ViewFlipper>
+<!-- 弹出菜单 -->
+    <RelativeLayout
+        android:id="@+id/middle_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/middle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_0" />
+
+       <ImageButton
+            android:id="@+id/middle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/image_1"
+            android:src="@drawable/image_9" />
+
+
+        <Button
+            android:id="@+id/middle_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/middle_back"
+            android:layout_alignTop="@id/middle_back"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/exit_0_pressed" />
+
+        <Button
+            android:id="@+id/middle_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/middle_back"
+            android:layout_alignTop="@id/middle_back"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/confirme_0_pressed" />
+
+        <ImageView
+            android:id="@+id/middle_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/middle_back"
+            android:layout_alignLeft="@id/middle_back"
+            android:layout_alignRight="@id/middle_back"
+            android:layout_below="@id/middle_name"
+              android:layout_marginBottom="20dip"
+            android:layout_marginLeft="65dip"
+            android:layout_marginRight="55dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/image_2" />
+
+          <Button 
+            android:id="@+id/middle_shop_chose_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/middle_pic" 
+            android:layout_alignBottom="@id/middle_pic"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/image_11_1"
+              />
+          <TextView 
+            android:id="@+id/middle_shop_chose_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/middle_shop_chose_1"
+            android:layout_alignBottom="@id/middle_shop_chose_1" 
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/image_10"
+              />
+          <Button 
+            android:id="@+id/middle_shop_chose_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/middle_shop_chose_2"
+            android:layout_alignBottom="@id/middle_shop_chose_2" 
+            android:layout_marginLeft="5dip" 
+            android:background="@drawable/image_12_1"
+              />
+          
+          <ImageView
+            android:id="@+id/middle_shop_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/middle_pic"
+            android:layout_alignRight="@id/middle_pic" 
+            android:layout_above="@id/middle_shop_chose_2"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="5dip" />
+        
+          <com.zrong.Android.View.SpriteView
+            android:id="@+id/middle_building_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/middle_pic" 
+            android:layout_marginRight="15dip"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            resID="1318" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/middle_pic"
+            android:layout_alignLeft="@id/middle_pic"
+            android:layout_alignRight="@id/middle_pic"
+            android:layout_alignTop="@id/middle_pic"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="20dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/middle_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_5" />
+
+                <EditText
+                    android:id="@+id/middle_shop_name_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_name"
+                    android:background="@drawable/image_8"
+                    android:layout_marginRight="120dip"
+                    android:maxWidth="60dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:textSize="15sp" />
+                
+                <TextView
+                    android:id="@+id/middle_building_name_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_name"
+                    android:background="@drawable/image_8"
+                    android:maxWidth="60dip"
+                    android:layout_marginRight="120dip"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"  >
+
+                <ImageView
+                    android:id="@+id/middle_shop_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_6"
+                     android:layout_marginTop="3dip"  />
+
+                <TextView
+                    android:id="@+id/middle_shop_num_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_num"
+                    android:text="asdf"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/middle_shop_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_price"
+                    android:background="@drawable/image_7" 
+                    android:layout_marginTop="3dip" />
+
+                <TextView
+                    android:id="@+id/middle_shop_price_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_price"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+             <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/middle_shop_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_price"
+                    android:background="@drawable/image_7" 
+                    android:layout_marginTop="3dip" />
+
+                <TextView
+                    android:id="@+id/middle_shop_rent_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/middle_shop_rent"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

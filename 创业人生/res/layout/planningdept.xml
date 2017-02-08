@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+   <Button 
+ android:id="@+id/planningdept_button_returnback"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginLeft="5px"
+ android:layout_marginTop="5px"
+ android:background="@drawable/returnback_selector"
+  />   
+ <Button 
+ android:id="@+id/planningdept_button_cancel"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_alignParentRight="true"
+ android:layout_marginRight="5px"
+ android:layout_marginTop="5px"
+ android:background="@drawable/cancel_selector"
+  />   
+ <Button 
+ android:id="@+id/planningdept_button_title"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_centerHorizontal="true"
+ android:gravity="center_vertical|center_horizontal"
+ android:layout_toLeftOf="@+id/planningdept_button_cancel"
+ android:layout_toRightOf="@+id/planningdept_button_returnback"
+ android:background="@drawable/selectsever_titleback"
+ android:text="策划部"
+ android:textSize="30dp"
+ android:textColor="@color/black"
+ android:focusable="false"
+  /> 
+    <ImageView
+  android:id="@+id/planningdept_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/planningdept_button_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="20px"
+  android:layout_marginRight="20px"
+  android:layout_marginBottom="10px"
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  />
+  <!-- 
+   <Button
+   android:id="@+id/planningdept_confirm"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignRight="@+id/planningdept_smallback"
+   android:layout_alignBottom="@+id/planningdept_smallback"
+   android:background="@drawable/planningdept_confirm"
+    />
+    <TextView 
+    android:id="@+id/planningdept_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/planningdept_smallback"
+    android:layout_alignRight="@+id/planningdept_smallback"
+    android:layout_above="@+id/planningdept_confirm"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    />
+    -->
+   <GridView
+  android:id="@+id/planningdept_gridview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@+id/planningdept_smallback"
+  android:layout_alignLeft="@+id/planningdept_smallback"
+  android:layout_alignRight="@+id/planningdept_smallback"
+  android:layout_alignBottom="@+id/planningdept_smallback"
+  
+  android:numColumns="auto_fit"
+  android:verticalSpacing="10px"
+  android:horizontalSpacing="10px"
+  android:gravity="center"
+  android:columnWidth="200px"
+  android:stretchMode="columnWidth"
+
+  
+  
+  />
+  
+</RelativeLayout>
+

@@ -1,0 +1,87 @@
+package cn.zrong.weibobinding;
+
+import java.util.List;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+import cn.zrong.activity.R;
+import cn.zrong.widget.SwitchButton;
+
+public class AccountListAdapter extends BaseAdapter {
+
+	private List<AccountItem> accountList;
+	private int layoutResID;
+	private LayoutInflater inflater;
+	private Context context;
+
+	public AccountListAdapter(Context context, List<AccountItem> accountList,
+			int layoutResID) {
+		this.context = context;
+		this.accountList = accountList;
+		this.layoutResID = layoutResID;
+		inflater = (LayoutInflater) context
+				.getSystemService(android.content.Context.LAYOUT_INFLATER_SERVICE);
+	}
+
+	@Override
+	public int getCount() {
+		return accountList.size();
+	}
+
+	@Override
+	public Object getItem(int position) {
+		return accountList.get(position);
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		View view = convertView;
+		if (view == null) {
+			view = inflater.inflate(layoutResID, null);
+		}
+		AccountItem account = accountList.get(position);
+		ImageView imgV = (ImageView) view
+				.findViewById(R.id.weibobinding_list_account_logo_imgv);
+		imgV.setImageResource(account.account_imgId);
+		TextView nameTV = (TextView) view
+				.findViewById(R.id.weibobinding_list_account_name_tv);
+		nameTV.setText(account.account_name);
+		final TextView statTV = (TextView) view
+				.findViewById(R.id.weibobinding_list_account_state_tv);
+		final SwitchButton slipBtn = (SwitchButton) view
+				.findViewById(R.id.weibobinding_list_item_slipbtn);
+		if (account.state == AccountItem.STATE_ON) {
+			slipBtn.setSwitchState(true);
+			statTV.setText("绑定");
+		} else {
+			slipBtn.setSwitchState(false);
+			statTV.setText("未绑定");
+		}
+		slipBtn.setClickable(false);
+		slipBtn.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+
+			}
+		});
+		return view;
+	}
+
+	public void setSwitchState(int state, int position) {
+		AccountItem account = accountList.get(position);
+		account.state = state;
+	}
+
+}

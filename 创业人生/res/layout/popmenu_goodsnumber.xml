@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<Button 
+	     android:id="@+id/popmenu_goodsnumber_button_100"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:text="100件"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	/>
+	<Button 
+	     android:id="@+id/popmenu_goodsnumber_button_500"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		 android:text="500件"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	/>
+	<Button 
+	     android:id="@+id/popmenu_goodsnumber_button_3000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		  android:text="3000件"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	/>
+	<Button 
+	     android:id="@+id/popmenu_goodsnumber_button_10000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+  		 android:layout_centerInParent="true"
+  		  android:text="10000件"
+  		 android:textSize="18sp"
+  		 android:textColor="@color/white"
+  		 android:background="@drawable/popmenu_back"
+	/>
+    
+
+</LinearLayout>

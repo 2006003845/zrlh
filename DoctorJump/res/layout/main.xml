@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.zrong.engine.GameView
+        android:id="@+id/gameview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        useFilter="true" />
+
+    <com.zrong.view.FixedViewFlipper
+        android:id="@+id/ViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="165px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1px" >
+
+        <!-- (0) stage -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.zrong.view.BloodView
+                android:id="@+id/main_top_stage_bloodview"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="5px" />
+
+            <ImageView
+                android:id="@+id/main_top_stage_pausebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5px"
+                android:background="@drawable/bg_btn_other_selector"
+                android:clickable="true"
+                android:paddingTop="7px"
+                android:scaleType="centerInside"
+                android:src="@drawable/tv_pause_selector" />
+
+            <com.zrong.view.TimeView
+                android:id="@+id/main_top_stage_timeview"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="7px"
+                android:layout_toLeftOf="@id/main_top_stage_pausebtn" />
+
+            <com.zrong.view.SkillButtonView
+                android:id="@+id/btn_stage_skill"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_below="@id/main_top_stage_pausebtn"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <com.zrong.view.NumView
+                android:id="@+id/main_top_stage_scoreview"
+                android:layout_width="110px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px" />
+
+            <ImageView
+                android:id="@+id/main_top_stage_score_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3px"
+                android:layout_marginTop="5px"
+                android:layout_toLeftOf="@id/main_top_stage_scoreview"
+                android:src="@drawable/tv_score" />
+        </RelativeLayout>
+
+        <!-- (1) limit -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.zrong.view.TimeView
+                android:id="@+id/main_top_limit_timeview"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="2px" />
+
+            <ImageView
+                android:id="@+id/main_top_limit_pausebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5px"
+                android:background="@drawable/bg_btn_other_selector"
+                android:clickable="true"
+                android:paddingTop="7px"
+                android:scaleType="centerInside"
+                android:src="@drawable/tv_pause_selector" />
+
+            <com.zrong.view.SkillButtonView
+                android:id="@+id/btn_limit_skill"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_below="@id/main_top_limit_pausebtn"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <com.zrong.view.NumView
+                android:id="@+id/main_top_limit_scoreview"
+                android:layout_width="110px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px" />
+
+            <ImageView
+                android:id="@+id/main_top_limit_score_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3px"
+                android:layout_marginTop="5px"
+                android:layout_toLeftOf="@id/main_top_limit_scoreview"
+                android:src="@drawable/tv_score" />
+        </RelativeLayout>
+
+        <!-- (2) endless -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.zrong.view.BloodView
+                android:id="@+id/main_top_endless_bloodview"
+                android:layout_width="wrap_content"
+                android:layout_height="70px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="2px"
+                android:layout_marginTop="2px" />
+
+            <ImageView
+                android:id="@+id/main_top_endless_pausebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5px"
+                android:background="@drawable/bg_btn_other_selector"
+                android:clickable="true"
+                android:padding="7px"
+                android:scaleType="centerInside"
+                android:src="@drawable/tv_pause_selector" />
+
+            <com.zrong.view.SkillButtonView
+                android:id="@+id/btn_endless_skill"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_below="@id/main_top_endless_pausebtn"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <com.zrong.view.TimeView
+                android:id="@+id/main_top_endless_timeview"
+                android:layout_width="130px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="5px" />
+        </RelativeLayout>
+    </com.zrong.view.FixedViewFlipper>
+
+    <ImageView
+        android:id="@+id/mian_teach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_teach"
+        android:visibility="visible" />
+
+</RelativeLayout>

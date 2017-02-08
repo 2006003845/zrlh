@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:background="#ffecf6e3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/group_headview_tap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip" >
+
+            <ImageView
+                android:id="@+id/group_imgv"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/gameitem_default" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/group_imgv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/group_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/member"
+                        android:textColor="#2f3a49"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#2f3a49"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/group_membernum_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text=""
+                        android:textColor="#2f3a49"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/group_master"
+                        android:textColor="#2f3a49"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#2f3a49"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/group_master_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text=""
+                        android:textColor="#2f3a49"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="26dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/group_exit_btn"
+                    style="@style/text_mid_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/group_exit" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/bg_frame"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/group_notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="@string/group_notice"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/group_notice_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:maxLines="10"
+                android:text="@string/notice_text"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/group_talk_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="2dip"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="left|center_vertical"
+            android:hint="和圈子的朋友说点什么(140)"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/group_talk_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/group_talk_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input_frame" >
+
+                <EditText
+                    android:id="@+id/group_talk_content_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="和圈子的朋友说点什么(140)"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/group_talk_content_imgv"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/group_talk_content_et"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/default_user"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_talk_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_talk_layout"
+                android:layout_marginTop="2dip" >
+
+                <Button
+                    android:id="@+id/group_talk_cancel"
+                    android:layout_width="45dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_green_selector"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/group_talk_clear"
+                    android:layout_width="45dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dip"
+                    android:layout_toRightOf="@id/group_talk_cancel"
+                    android:background="@drawable/bg_btn_green_selector"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/group_talk_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/group_talk_clear"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_photo_selector" />
+
+                <ImageView
+                    android:id="@+id/group_talk_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/group_talk_photo"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_face_selector" />
+
+                <LinearLayout
+                    android:id="@+id/group_talk_send"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/bg_btn_green_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/group_talk_send_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center"
+                        android:text="发布"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center"
+                        android:text="("
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/group_talk_send_left_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="140"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=")"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/group_talk_express_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:layout_below="@id/group_talk_layout2"
+                android:layout_weight="1"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10.0px"
+                android:visibility="gone" >
+            </GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

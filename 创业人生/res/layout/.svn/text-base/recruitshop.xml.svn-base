@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  <Button
+   android:id="@+id/recruitshop_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/recruitshop_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/recruitshop_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="招揽"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/recruitshop_button_returnback"
+  	android:layout_toLeftOf="@id/recruitshop_button_cancel"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/recruitshop_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/recruitshop_button_title"
+   
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+  android:layout_alignLeft="@id/recruitshop_button_returnback"
+   android:layout_alignRight="@id/recruitshop_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+  
+   <ListView
+  android:id="@+id/recruitshop_listview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/recruitshop_scrollviewback"
+  android:layout_alignRight="@id/recruitshop_scrollviewback"
+  android:layout_alignTop="@id/recruitshop_scrollviewback"
+  android:layout_alignBottom="@id/recruitshop_scrollviewback"
+  android:cacheColorHint="#00000000"
+  />
+</RelativeLayout>

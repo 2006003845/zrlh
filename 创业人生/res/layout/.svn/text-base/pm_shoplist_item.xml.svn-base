@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/shoplist_selector" 
+  android:descendantFocusability="blocksDescendants"
+  >
+  <!--  
+  <CheckBox
+  android:id="@+id/shoplist_item_checkbox"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerVertical="true"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:button="@drawable/checkbox_selector"
+  android:focusable="false"
+  android:visibility="gone"
+  />
+  -->
+  <LinearLayout
+  android:id="@+id/shoplist_item_textlayout1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  
+  android:layout_alignParentRight="true"
+  >
+  <TextView
+  android:id="@+id/shoplist_item_name"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+   android:textSize="15sp"
+  />
+  <TextView
+  android:id="@+id/shoplist_item_level"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  />
+  <TextView
+  android:id="@+id/shoplist_item_type"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+   android:textSize="15sp"
+  />
+ 
+  </LinearLayout>
+  
+  <LinearLayout
+  android:id="@+id/shoplist_item_textlayout2"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_alignParentRight="true"
+  android:layout_below="@id/shoplist_item_textlayout1"
+  >
+  
+  <TextView
+  android:id="@+id/shoplist_item_stock"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+   android:textSize="15sp"
+  />
+  <TextView
+  android:id="@+id/shoplist_item_flow"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="15sp"
+  />
+   <TextView
+  android:id="@+id/shoplist_item_employee"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+   android:textSize="15sp"
+  />
+  <!--  RelativeLayout
+  android:id="@+id/shoplist_item_buttonlayout"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  >
+  <Button
+  android:id="@+id/shoplist_item_button"
+  android:layout_width="wrap_content"
+   
+  android:layout_height="wrap_content"
+  android:layout_alignParentRight="true"
+  android:focusable="false"
+  /> 
+  </RelativeLayout-->
+  
+  
+  
+  </LinearLayout>
+  
+  
+</RelativeLayout>

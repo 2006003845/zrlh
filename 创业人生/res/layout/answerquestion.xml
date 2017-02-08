@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selectsever_backgroud"
+    android:clickable="true" >
+
+    <Button
+        android:id="@+id/answerquestion_button_returnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/returnback_selector" />
+
+    <Button
+        android:id="@+id/answerquestion_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/cancel_selector" />
+
+    <Button
+        android:id="@+id/answerquestion_button_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/answerquestion_button_cancel"
+        android:layout_toRightOf="@id/answerquestion_button_returnback"
+        android:background="@drawable/selectsever_titleback"
+        android:focusable="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/answerquestion_scrollviewback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@id/answerquestion_button_returnback"
+        android:layout_alignRight="@id/answerquestion_button_cancel"
+        android:layout_below="@id/answerquestion_button_title"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/selectsever_smallback" />
+
+    <Button
+        android:id="@+id/answerquestion_confirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/answerquestion_scrollviewback"
+        android:layout_alignRight="@id/answerquestion_scrollviewback"
+        android:background="@drawable/button_confirm" />
+
+    <RadioGroup
+        android:id="@+id/answerques_radiogp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answerquestion_confirmed"
+        android:layout_alignLeft="@id/answerquestion_scrollviewback"
+        android:layout_alignRight="@id/answerquestion_scrollviewback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15px"
+        android:contentDescription="答案"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/answerquestion_scroll_checkitem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectsever_selectsever_item_textsize" />
+
+        <RadioButton
+            android:id="@+id/answerquestion_scroll_rbt1"
+            style="@style/ZR_RadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_weight="1.0"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/answerquestion_scroll_checkitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectsever_selectsever_item_textsize" />
+
+        <RadioButton
+            android:id="@+id/answerquestion_scroll_rbt2"
+            style="@style/ZR_RadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/answerquestion_scroll_checkitem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectsever_selectsever_item_textsize" />
+
+        <RadioButton
+            android:id="@+id/answerquestion_scroll_rbt3"
+            style="@style/ZR_RadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_weight="1.0" 
+           
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/answerquestion_scroll_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answerques_radiogp"
+        android:layout_alignLeft="@id/answerquestion_scrollviewback"
+        android:layout_alignRight="@id/answerquestion_scrollviewback"
+        android:layout_alignTop="@id/answerquestion_scrollviewback"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/answerquestion_total_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="回答第一题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectsever_selectsever_item_textsize" />
+
+        <TextView
+            android:id="@+id/answerquestion_question_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerquestion_total_tv"
+            android:layout_marginTop="33px"
+            android:gravity="center"
+            android:text="1+1=？"
+            android:textColor="@color/black"
+            android:textSize="@dimen/selectsever_selectsever_item_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

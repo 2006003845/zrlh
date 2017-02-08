@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            style="@style/text_big_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/account_manage" />
+
+        <Button
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/bg_btn_green_selector"
+            android:text="@string/change_account"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/white_50" >
+
+            <ImageView
+                android:id="@+id/account_manage_imgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/default_user" />
+
+            <TextView
+                android:id="@+id/account_manage_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="nickname"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/account_manage_setting_btn"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_setting_selector" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="3dip"
+            android:background="@color/white_50"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/account_manage_account"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/account"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip" >
+
+                    <EditText
+                        android:id="@+id/account_manage_account_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_manage_newaccount_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/account_manage_account2"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/new_account"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip" >
+
+                    <EditText
+                        android:id="@+id/account_manage_account_et2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/account_manage_psd"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip" >
+
+                    <EditText
+                        android:id="@+id/account_manage_psd_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:editable="false"
+                        android:text="********"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_manage_psd_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        android:id="@+id/account_manage_psd1"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/new_password"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:typeface="sans" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dip" >
+
+                        <EditText
+                            android:id="@+id/account_manage_psd1_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:typeface="sans" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        android:id="@+id/account_manage_psd2"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/new_password"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:typeface="sans" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dip" >
+
+                        <EditText
+                            android:id="@+id/account_manage_psd2_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:typeface="sans" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/account_manage_commit"
+                android:layout_width="150dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/bg_btn_green_selector"
+                android:gravity="center"
+                android:text="确认修改"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_manage_changeaccount"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="#71bf4a" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/change_account"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

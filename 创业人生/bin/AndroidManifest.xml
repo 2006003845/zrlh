@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.zrong.Android.activity" android:versionCode="10501"
+	android:versionName="1.05.01">
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+	<application android:icon="@drawable/icon1" android:label="@string/app_name"
+	    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+		android:debuggable="true"
+		>
+		<activity android:name=".MainActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+				<category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+			</intent-filter>
+
+		</activity>
+
+		
+
+
+		<activity android:name=".MoreGame" 
+		android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+ 
+        
+ 
+         <activity android:name=".Department_personalActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Department_relationActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Department_financeActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Department_strategyActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".CreateCommerceActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+ 
+         <activity android:name=".CommerceListActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".PropagandaActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".CommerceStaffActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".CommerceUperActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".CommerceDiaryActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+ 
+        
+         <activity android:name=".CommerceInfoActivity"              
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:windowSoftInputMode="stateVisible|adjustResize"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+ 
+         <activity android:name=".PropagandaListActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Lottery_Station_Activity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Lottery_Bet_Activity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Lottery_RulesActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".TaskListActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".TaskAnswerResultActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".DoctorInfoActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".DoctorCustodyActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".DoctorTaskActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".DoctorShopActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".DoctorShopinfoActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".DoctorLevelUpActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".PlanningDeptActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".PlanningDeptShoplistActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".CardListActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".CardinfoActivity"
+                android:label="@string/app_name"
+                android:screenOrientation = "landscape"
+                android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+ 
+        
+ 		 <service android:name=".MusicService">
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.SAMPLE_CODE" />
+          </intent-filter>
+        </service>
+	    
+ 
+
+		
+
+		 
+
+		<activity android:name=".RegistActivity" 
+		    android:label="@string/app_name"
+		     android:windowSoftInputMode="stateVisible|adjustResize"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="landscape" 
+			android:configChanges="keyboardHidden|orientation">
+ 
+
+		</activity>
+		<activity android:name=".CharacterInfoActivity"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+
+
+
+		<activity android:name=".CustomDialogActivity" android:label="@string/app_name"
+			android:theme="@style/Theme.CustomDialog">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ShopInfoActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MapmainMenuActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+
+		<activity android:name=".CompanyTabActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".StoreActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ComfirmActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".EmployeeInfoActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".DepartmentActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ShopListActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".EmployeeListActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+
+
+		<activity android:name=".HelpSettingActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity android:name=".AboutUSActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+
+		<activity android:name=".PromoterActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".PomoterFriendActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+
+		<activity android:name=".SystemSettingActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+
+
+
+
+		<activity android:name=".RecruitActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TaskActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TaskDetailActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".SocialActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".SocialDetailActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MailboxActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".WriteMailActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MailDetailActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ChatBoxActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ChatActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".CreateShopActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".CheckBuildingActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".CreateBuildingActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".SeacherFriendActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".DiglistActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".SearchconditionActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".VentureSchoolMain"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".CompanyLevelInfoActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="DepartmentLevelInfoActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="ShareCircleActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VentureEvalutionActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".AnswersQuesActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".AuthorityIssuedActivity"
+			android:label="@string/app_name" android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+			
+		<activity android:name=".VocationSkillActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VocationSkillInforActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VentureActionActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VentureActionContentActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".ExpertAnswersActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".ExpertAnswersContentActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VentureStoryActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VentureStoryContentActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".PolicyInfoListActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".PolicyInfoList2Activity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".PolicyInfoContentActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".AuthorityIssuedInfoActivtiy" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".AuthorityIssuedInfoContentActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name="SimpleShopListActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name="SimpleEmployeelistActivity" android:label="@string/app_name"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.SAMPLE_CODE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ChatWindowActivity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		
+		<activity android:name=".PromotersActivity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		
+		<activity android:name=".PolicyActivity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		
+		<activity android:name=".CreateShopAndBuildActivity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		
+		<activity android:name=".MyShopAndBuildingActivity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		
+		<activity android:name=".ShopList2Activity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".shopInfo2Activity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".OtherShopInfoActivity" android:label="@string/app_name"
+		    android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+		</activity>
+
+	</application>
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+	<uses-sdk android:minSdkVersion="7" />
+
+</manifest> 

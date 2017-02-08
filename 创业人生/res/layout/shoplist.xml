@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selectsever_backgroud" >
+
+    <Button
+        android:id="@+id/shoplist_button_returnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/returnback_selector"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/shoplist_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/cancel_selector" />
+
+    <Button
+        android:id="@+id/shoplist_button_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectsever_titleback"
+        android:focusable="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/shoplist_title"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/shoplist_scrollviewback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/shoplist_button_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/selectsever_smallback" />
+
+    <Button
+        android:id="@+id/shoplist_layout_allselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/shoplist_scrollviewback"
+        android:layout_alignTop="@id/shoplist_scrollviewback"
+        android:background="@drawable/button_allselect"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/shoplist_buttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/shoplist_scrollviewback"
+        android:layout_alignLeft="@id/shoplist_scrollviewback"
+        android:layout_alignRight="@id/shoplist_scrollviewback" >
+
+        <RelativeLayout
+            android:id="@+id/em_button_look_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/em_button_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_back"
+                android:text="@string/shoplist_look"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/em_button_routine_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/em_button_routine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_back"
+                android:text="@string/shoplist_routine"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/em_button_employ_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/em_button_employ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_back"
+                android:text="@string/shoplist_employ"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/em_button_buy_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/em_button_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_back"
+                android:text="@string/shoplist_buy"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/em_button_recruit_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/em_button_recruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_back"
+                android:text="@string/shoplist_recruit"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/em_button_location_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/em_button_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_back"
+                android:text="@string/shoplist_location"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shoplist_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shoplist_buttonlayout"
+        android:layout_alignLeft="@id/shoplist_scrollviewback"
+        android:layout_alignRight="@id/shoplist_scrollviewback"
+        android:layout_alignTop="@id/shoplist_scrollviewback"
+        android:layout_below="@id/shoplist_button_title"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:listSelector="@drawable/shoplist_selector" />
+    <!--
+  <LinearLayout
+  android:id="@+id/shoplist_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/shoplist_scrollviewback"
+  android:layout_alignRight="@id/shoplist_scrollviewback"
+  android:layout_alignTop="@id/shoplist_scrollviewback"
+  android:layout_alignBottom="@id/shoplist_scrollviewback"
+  >
+  <RelativeLayout
+  android:id="@+id/shoplist_layout_title"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <Button
+  android:id="@+id/shoplist_layout_allselect"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/button_allselect"
+  />
+  
+  <TextView
+  android:id="@+id/shoplist_shopnum"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="店铺数量"
+  android:textSize="25sp"
+  android:textColor="@color/black"
+  android:layout_centerHorizontal="true"
+  />
+  
+  <Button
+  android:id="@+id/shoplist_layout_standing"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/button_standing"
+  android:layout_alignParentRight="true"
+  />
+  <ListView
+  android:id="@+id/shoplist_listview"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/shoplist_layout_allselect"
+  android:cacheColorHint="#00000000"
+  />
+  </RelativeLayout>
+  
+  </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearlayout_promotframe6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoplist_button_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/promotframe"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/promotFrame6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:text="@string/sharedcircle_text"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/close_promotframe6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="22sp"
+            android:background="@drawable/cancel_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

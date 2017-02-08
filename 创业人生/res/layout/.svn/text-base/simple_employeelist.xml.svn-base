@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  <Button
+    android:id="@+id/simple_employeelist_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="@string/employeelist_button_title"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  /> 
+  
+  
+   <ImageView
+  android:id="@+id/simple_employeelist_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/simple_employeelist_button_title"
+   android:layout_centerHorizontal="true"
+  
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  android:background="@drawable/selectsever_smallback"
+  />
+    <Button
+   android:id="@+id/simple_employeelist_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+   android:visibility="invisible"
+  />
+  <Button
+   android:id="@+id/simple_employeelist_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+    
+     
+   <ListView
+  android:id="@+id/simple_employeelist_listview"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/simple_employeelist_scrollviewback"
+  android:layout_alignRight="@id/simple_employeelist_scrollviewback"
+  android:layout_alignTop="@id/simple_employeelist_scrollviewback"
+  android:layout_alignBottom="@id/simple_employeelist_scrollviewback"
+  android:cacheColorHint="#00000000"
+  android:scrollbars="none"
+  />
+  <!--  
+  <LinearLayout
+  android:id="@+id/employeelist_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/employeelist_scrollviewback"
+  android:layout_alignRight="@id/employeelist_scrollviewback"
+  android:layout_alignTop="@id/employeelist_scrollviewback"
+  android:layout_alignBottom="@id/employeelist_scrollviewback"
+  >
+  <RelativeLayout
+  android:id="@+id/employeelist_layout_title"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <Button
+  android:id="@+id/employeelist_layout_allselect"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/button_allselect"
+  />
+   <Button
+  android:id="@+id/employeelist_layout_recruitment"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/button_recruitment"
+  android:layout_toRightOf="@id/employeelist_layout_allselect"
+  />
+  
+  <TextView
+  android:id="@+id/employeelist_num"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="员工数量"
+  android:textSize="25sp"
+  android:textColor="@color/black"
+  android:layout_centerHorizontal="true"
+  />
+  
+  <Button
+  android:id="@+id/employeelist_layout_standing"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/button_standing"
+  android:layout_alignParentRight="true"
+  />
+  
+  <ListView
+  android:id="@+id/employeelist_listview"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/employeelist_layout_allselect"
+  android:cacheColorHint="#00000000"
+  android:scrollbars="none"
+  />
+  </RelativeLayout>
+  </LinearLayout>
+  -->
+   
+		
+</RelativeLayout>

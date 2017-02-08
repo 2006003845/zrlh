@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_store_item" >
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="10px"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/gallery_item_goods_img"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px" />
+
+    <com.zrong.view.FixedViewFlipper
+        android:id="@+id/ViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2px"
+        android:orientation="vertical" >
+
+        <!-- (0) goods -->
+
+        <RelativeLayout
+            android:id="@+id/gallery_item_goods_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/gallery_item_btn_operate"
+                android:layout_width="103px"
+                android:layout_height="64px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_btn_other2_selector"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="7px"
+                android:paddingTop="10px"
+                android:scaleType="centerInside" />
+
+            <com.zrong.view.NumView
+                android:id="@+id/gallery_item_goods_priceview"
+                android:layout_width="110px"
+                android:layout_height="35px"
+                android:layout_above="@id/gallery_item_btn_operate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15px"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <!-- (1) achievements -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/gallery_item_goods_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3px"
+                android:layout_marginRight="3px" />
+        </RelativeLayout>
+    </com.zrong.view.FixedViewFlipper>
+
+</RelativeLayout>

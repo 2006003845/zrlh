@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:clickable="true"
+     android:background="@drawable/selectsever_backgroud"
+    >
+
+
+ 
+   <Button
+   android:id="@+id/characterinfo_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="20px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/characterinfo_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="20px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/characterinfo_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="人物信息"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/characterinfo_button_returnback"
+  	android:layout_toLeftOf="@id/characterinfo_button_cancel"
+  /> 
+  <ImageView
+  android:id="@+id/characterinfo_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/characterinfo_button_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="1px"
+  android:layout_marginLeft="50px"
+  android:layout_marginRight="50px"
+  android:layout_marginBottom="10px"
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+ 
+  />
+  <ScrollView 
+  android:id="@+id/characterinfo_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@id/characterinfo_smallback"
+  android:layout_alignLeft="@id/characterinfo_smallback"
+  android:layout_alignRight="@id/characterinfo_smallback"
+  android:layout_alignBottom="@id/characterinfo_smallback"
+  
+  >
+  <RelativeLayout 
+  android:id="@+id/characterinfo_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   >
+  
+  <com.zrong.Android.View.SpriteView 
+  android:id="@+id/characterinfo_smallback_1"
+  
+  
+  android:layout_width="150px"
+  android:layout_height="150px"
+   
+  android:layout_marginTop="1px"
+  android:layout_marginLeft="10px"
+  
+  
+  android:focusable="false"
+  resID="1318"
+  
+  />
+
+  <TextView
+    android:id="@+id/characterinfo_name"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@id/characterinfo_smallback_1"
+   
+    android:layout_marginTop="20px"
+    android:layout_marginLeft="40px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+ 
+ />  
+    
+  
+    
+
+  
+ <TextView
+    android:id="@+id/characterinfo_sex"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@+id/characterinfo_name"
+  
+  
+  android:layout_marginTop="20px"
+  android:layout_marginLeft="100px"
+ 
+   android:textSize="20dp"
+   android:textColor="@color/black"
+ />
+ 
+  <TextView
+    android:id="@+id/characterinfo_companyName"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+ android:layout_toRightOf="@+id/characterinfo_smallback_1"
+ android:layout_below="@+id/characterinfo_name"
+  
+   android:layout_marginTop="30px"
+    android:layout_marginLeft="40px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+ />  
+ 
+  <TextView
+    android:id="@+id/characterinfo_level"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_sex"
+  android:layout_toRightOf="@+id/characterinfo_companyName"
+  
+    android:layout_marginTop="30px"
+    android:layout_marginLeft="100px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+ />  
+ <TextView
+   
+    android:id="@+id/characterinfo_line"
+    android:layout_width="fill_parent"
+    android:layout_height="2px"
+    android:layout_below="@+id/characterinfo_companyName"
+    android:layout_alignLeft="@id/characterinfo_smallback"
+    android:layout_alignRight="@id/characterinfo_smallback"
+    android:layout_marginTop="18px"
+    android:background="@drawable/line"
+  /> 
+  <TextView
+    android:id="@+id/characterinfo_assets"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_line"
+   
+  android:layout_marginTop="10px"
+  android:layout_marginLeft="60px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+ />
+ <TextView
+    android:id="@+id/characterinfo_strategy"
+    
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@+id/characterinfo_assets"
+    
+   android:layout_marginTop="15px"
+  android:layout_marginLeft="60px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+ />
+ <Button
+    android:id="@+id/characterinfo_strategy_1"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_assets"
+  android:layout_toRightOf="@+id/characterinfo_strategy"
+  android:layout_marginTop="15px"
+  android:layout_marginLeft="5px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  android:background="@drawable/colorbar_white"
+  android:focusable="false"
+ />
+  <TextView
+    android:id="@+id/characterinfo_execution"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_line"
+  android:layout_toRightOf="@+id/characterinfo_strategy_1"
+  android:layout_marginTop="70px"
+  android:layout_marginLeft="100px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  
+ />
+ <Button
+    android:id="@+id/characterinfo_execution_1"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_line"
+  android:layout_toRightOf="@+id/characterinfo_execution"
+  android:layout_marginTop="70px"
+  android:layout_marginLeft="5px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  android:background="@drawable/colorbar_white"
+  android:focusable="false"
+  
+ />
+ <TextView
+    android:id="@+id/characterinfo_leadership"
+    
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@+id/characterinfo_strategy"
+   
+   android:layout_marginTop="15px"
+  android:layout_marginLeft="60px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+ />
+  <Button
+    android:id="@+id/characterinfo_leadership_1"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_strategy_1"
+  android:layout_toRightOf="@+id/characterinfo_leadership"
+  android:layout_marginTop="15px"
+  android:layout_marginLeft="5px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  android:background="@drawable/colorbar_white"
+  android:focusable="false"
+ />
+  <TextView
+    android:id="@+id/characterinfo_strength"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_execution"
+  android:layout_toRightOf="@+id/characterinfo_leadership_1"
+  android:layout_marginTop="15px"
+  android:layout_marginLeft="100px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  
+ />
+  <Button
+    android:id="@+id/characterinfo_strength_1"
+    
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/characterinfo_execution_1"
+  android:layout_toRightOf="@+id/characterinfo_execution"
+  android:layout_marginTop="15px"
+  android:layout_marginLeft="5px"
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  android:background="@drawable/colorbar_red"
+  android:focusable="false"
+ />
+ 
+  
+  
+  
+  
+ </RelativeLayout>
+  
+  
+  </ScrollView>
+  
+  
+  
+   
+  
+   
+</RelativeLayout>
+ 

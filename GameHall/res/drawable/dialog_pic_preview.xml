@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e3a48" >
+
+    <com.zrong.widget.ImageZoomView
+        android:id="@+id/pic_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/dialog_pic_prev_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="7dip"
+        android:src="@drawable/btn_back_selector" />
+
+    <ImageView
+        android:id="@+id/dialog_pic_prev_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="7dip"
+        android:src="@drawable/btn_delete_selector" />
+
+</RelativeLayout>

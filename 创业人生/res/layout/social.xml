@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+   <Button
+   android:id="@+id/social_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+   />
+  
+  <LinearLayout 
+  android:id="@+id/social_tab_linearlayout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignBottom="@id/social_button_cancel"
+  android:orientation="horizontal"
+  >
+  <Button
+  android:id="@+id/social_tab_friend"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center_vertical"
+  android:text="@string/social_tab_freind"
+  android:background="@drawable/selection"
+  />
+  
+  <Button
+  android:id="@+id/social_tab_competitor"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center_vertical"
+  android:text="@string/social_tab_competitor"
+  android:background="@drawable/selection"
+  />
+   
+  <Button
+  android:id="@+id/social_tab_stranger"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center_vertical"
+  android:text="@string/social_tab_stranger"
+  android:background="@drawable/selection"
+  />
+  <Button
+  android:id="@+id/social_tab_blacklist"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center_vertical"
+  android:text="@string/social_tab_blacklist"
+  android:background="@drawable/selection"
+  />    
+  </LinearLayout>
+ 
+  
+  
+  <ImageView
+  android:id="@+id/social_scrollviewback"
+  android:layout_below="@id/social_button_cancel"
+  style="@style/fill_parent_model2"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+           
+  
+  <!--用来实现部分切换  -->
+  <ViewFlipper android:id="@+id/social_flipper"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:persistentDrawingCache="animation"
+  android:flipInterval="1000"   
+  android:inAnimation="@anim/push_left_in"   
+  android:outAnimation="@anim/push_left_out"  
+  android:layout_alignLeft="@id/social_scrollviewback"
+  android:layout_alignRight="@id/social_scrollviewback"
+  android:layout_alignTop="@id/social_scrollviewback"
+  android:layout_alignBottom="@id/social_scrollviewback"
+  >
+  <!--第一部分 好友列表  -->
+
+  			<RelativeLayout
+  			    android:id="@+id/social_ralative_friend"
+  			    android:layout_width="fill_parent"
+  			    android:layout_height="fill_parent" >
+				<!--功能按钮布局  -->
+  			    <LinearLayout
+  			        android:id="@+id/socail_button_linearlayout_friend"
+  			        android:layout_width="wrap_content"
+  			        android:layout_height="wrap_content"
+  			        android:layout_alignParentBottom="true" >
+					<!--查找好友  -->
+  			        <Button
+  			            android:id="@+id/socail_friend_button_seach"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_seach" />
+					<!--添加黑名单  -->
+  			        <Button
+  			            android:id="@+id/socail_friend_button_addblack"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_addblack" />
+					<!--查看好友详情  -->
+  			        <Button
+  			            android:id="@+id/socail_friend_button_look"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_look" />
+					<!-- 删除好友 -->
+  			        <Button
+  			            android:id="@+id/socail_friend_button_delete"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_delete" />
+					<!-- 好友交互 -->
+  			        <Button
+  			            android:id="@+id/socail_friend_button_interact"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_interact" />
+  			    </LinearLayout>
+  			    <!-- 好友列表 -->
+  			    <ListView
+  			        android:id="@+id/social_listview_friend"
+  			        android:layout_width="fill_parent"
+  			        android:layout_height="fill_parent"
+  			        android:layout_alignParentTop="true"
+  			        android:layout_above="@id/socail_button_linearlayout_friend"
+  			        android:cacheColorHint="#00000000"
+  			        android:scrollbars="none" />
+				
+  			</RelativeLayout>
+
+			<!--第二部分 竞争者列表  -->
+
+  			<RelativeLayout
+  			    android:id="@+id/social_ralative_competitor"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignBottom="@id/social_scrollviewback"
+  			    android:layout_alignLeft="@id/social_scrollviewback"
+  			    android:layout_alignRight="@id/social_scrollviewback"
+  			    android:layout_alignTop="@id/social_scrollviewback" >
+
+				 <LinearLayout
+				     android:id="@+id/socail_competitor_button_linearlayout"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignParentBottom="true" >
+					
+					<!-- 竞争者添加黑名单 -->
+				     <Button
+				         android:id="@+id/socail_competitor_button_addblack"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_gravity="center_vertical"
+				         android:background="@drawable/new_button_selector"
+				         android:text="@string/social_button_addblack" />
+					<!-- 竞争者查看 -->
+				     <Button
+				         android:id="@+id/socail_competitor_button_look"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_gravity="center_vertical"
+				         android:background="@drawable/new_button_selector"
+				         android:text="@string/social_button_look" />
+					<!-- 竞争者删除 -->
+				     <Button
+				         android:id="@+id/socail_competitor_button_delete"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_gravity="center_vertical"
+				         android:background="@drawable/new_button_selector"
+				         android:text="@string/social_button_delete" />
+					<!-- 竞争者交互 -->
+				     <Button
+				         android:id="@+id/socail_competitor_button_interact"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_gravity="center_vertical"
+				         android:background="@drawable/new_button_selector"
+				         android:text="@string/social_button_interact" />
+				 </LinearLayout>
+				<!--竞争者列表  -->
+  			    <ListView
+  			        android:id="@+id/social_listview_competitor"
+  			        android:layout_width="fill_parent"
+  			        android:layout_height="fill_parent"
+  			        android:layout_alignParentTop="true"
+  			        android:layout_above="@id/socail_competitor_button_linearlayout"
+  			        android:cacheColorHint="#00000000"
+  			        android:scrollbars="none" />
+  			</RelativeLayout>
+			<!--第三部分 陌生人列表  -->
+
+  			<RelativeLayout
+  			    android:id="@+id/social_ralative_stranger"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignBottom="@id/social_scrollviewback"
+  			    android:layout_alignLeft="@id/social_scrollviewback"
+  			    android:layout_alignRight="@id/social_scrollviewback"
+  			    android:layout_alignTop="@id/social_scrollviewback" >
+  			    <LinearLayout
+                android:id="@+id/socail_stranger_button_linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+              
+             
+
+                <Button
+                    android:id="@+id/socail_stranger_button_addblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/new_button_selector"
+                    android:text="@string/social_button_addblack" />
+
+                <Button
+                    android:id="@+id/socail_stranger_button_look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/new_button_selector"
+                    android:text="@string/social_button_look" />
+
+                <Button
+                    android:id="@+id/socail_stranger_button_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/new_button_selector"
+                    android:text="@string/social_button_delete" />
+
+                <Button
+                    android:id="@+id/socail_stranger_button_interact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/new_button_selector"
+                    android:text="@string/social_button_interact" />
+               
+            </LinearLayout>
+			<ListView
+  			        android:id="@+id/social_listview_stranger"
+  			        android:layout_width="fill_parent"
+  			        android:layout_height="fill_parent"
+  			        android:layout_alignParentTop="true"
+  			        android:layout_above="@id/socail_stranger_button_linearlayout"
+  			        android:cacheColorHint="#00000000"
+  			        android:scrollbars="none" />
+  			</RelativeLayout>
+			<!--第四部分 黑名单列表  -->
+
+  			<RelativeLayout
+  			    android:id="@+id/social_ralative_blacklist"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignBottom="@id/social_scrollviewback"
+  			    android:layout_alignLeft="@id/social_scrollviewback"
+  			    android:layout_alignRight="@id/social_scrollviewback"
+  			    android:layout_alignTop="@id/social_scrollviewback" >
+
+  			    <LinearLayout
+  			        android:id="@+id/socail_blacklist_button_linearlayout"
+  			        android:layout_width="wrap_content"
+  			        android:layout_height="wrap_content"
+  			        android:layout_alignParentBottom="true" >
+
+  			       
+
+  			        
+
+  			       
+
+  			        <Button
+  			            android:id="@+id/socail_blacklist_button_look"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_look" />
+
+  			        <Button
+  			            android:id="@+id/socail_blacklist_button_delete"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_delete" />
+
+  			        <Button
+  			            android:id="@+id/socail_blacklist_button_interact"
+  			            android:layout_width="wrap_content"
+  			            android:layout_height="wrap_content"
+  			            android:layout_gravity="center_vertical"
+  			            android:background="@drawable/new_button_selector"
+  			            android:text="@string/social_button_interact" />
+  			    </LinearLayout>
+
+  			    <ListView
+  			        android:id="@+id/social_listview_blacklist"
+  			        android:layout_width="fill_parent"
+  			        android:layout_height="wrap_content"
+  			        android:layout_alignParentTop="true"
+  			        android:layout_above="@id/socail_blacklist_button_linearlayout"
+  			        android:cacheColorHint="#00000000"
+  			        android:scrollbars="none" />
+  			</RelativeLayout>
+
+</ViewFlipper>
+  
+  
+</RelativeLayout>

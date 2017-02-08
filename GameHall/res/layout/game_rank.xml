@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            style="@style/style_toptap_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/game_rank" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/gray" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/game_rank_btn_hot"
+                style="@style/text_small_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_btn_gray_selector"
+                android:text="@string/hot_rank" />
+
+            <Button
+                android:id="@+id/game_rank_btn_downloadnum"
+                style="@style/text_small_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_btn_gray_selector"
+                android:text="@string/download_num" />
+
+            <Button
+                android:id="@+id/game_rank_btn_publish_new"
+                style="@style/text_small_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_btn_gray_selector"
+                android:text="@string/new_publish" />
+
+            <Button
+                android:id="@+id/game_rank_btn_week"
+                style="@style/text_small_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_btn_gray_selector"
+                android:text="@string/week_rank" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/game_rank_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/game_rank_listv_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/gray"
+                android:dividerHeight="1px" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/game_rank_listv_downloadnum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/gray"
+                android:dividerHeight="4px" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/game_rank_listv_publishnew"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/gray"
+                android:dividerHeight="4px" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/game_rank_listv_week"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/gray"
+                android:dividerHeight="4px" >
+            </ListView>
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

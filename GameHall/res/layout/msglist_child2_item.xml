@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#14000000" >
+
+        <ImageView
+            android:id="@+id/msglist_child_item_imgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:padding="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_user" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/msglist_child_item_msg_who"
+                style="@style/text_mid_black"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical|left"
+                android:text="世界末日" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/msglist_child_item_btn_agree"
+                style="@style/text_mid_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn_green_selector"
+                android:gravity="center"
+                android:text="@string/agree" />
+
+            <Button
+                android:id="@+id/msglist_child_item_btn_refuse"
+                style="@style/text_mid_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/bg_btn_orange_selector"
+                android:gravity="center"
+                android:text="@string/refuse"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/msglist_child_item_msg_what"
+        style="@style/text_mid_black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_gravity="left|center_vertical"
+        android:background="#14000000"
+        android:gravity="left"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="content"
+        android:textSize="15dp" />
+
+</RelativeLayout>

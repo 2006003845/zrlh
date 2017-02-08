@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  
+  >
+  <ImageView
+  android:id="@+id/confirm_twobutton_back"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="100px"
+  android:layout_marginRight="100px"
+  android:layout_marginTop="60px"
+  android:layout_marginBottom="60px"
+  android:background="@drawable/selectsever_backgroud"
+  android:layout_centerInParent="true"
+  />
+  <LinearLayout
+  android:id="@+id/confirm_twobutton_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_alignLeft="@id/confirm_twobutton_back"
+  android:layout_alignRight="@id/confirm_twobutton_back"
+  android:layout_alignTop="@id/confirm_twobutton_back"
+  android:layout_alignBottom="@id/confirm_twobutton_back"
+  android:layout_marginLeft="50px"
+  android:layout_marginRight="50px"
+  android:layout_marginTop="50px"
+  android:layout_marginBottom="50px"
+  android:background="@drawable/selectsever_smallback"
+  android:orientation="vertical"
+  >
+   <TextView
+  android:id="@+id/confirm_twobutton_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_gravity="center_horizontal"
+  />
+   <EditText android:id="@+id/confirm_twobutton_et"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:singleLine="true"
+  	   android:digits="0123456789"
+  	   android:maxLength="2"
+       android:hint="@string/confirm_twobutton_et_hint"
+       android:layout_gravity="center_horizontal"/>
+   	
+  <com.zrong.Android.View.TipBoxView
+  android:id="@+id/confirm_twobutton_content"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center_horizontal"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  />
+  </LinearLayout>
+  
+  
+ <Button
+ android:id="@+id/confirm_twobutton_cancel"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_alignLeft="@id/confirm_twobutton_back"
+ android:layout_alignBottom="@id/confirm_twobutton_back"
+ android:background="@drawable/returns_selector"
+ />
+ 
+ <Button
+ android:id="@+id/confirm_twobutton_confirm"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_alignRight="@id/confirm_twobutton_back"
+ android:layout_alignBottom="@id/confirm_twobutton_back"
+ android:background="@drawable/confirm_selector"
+ />
+ 
+  
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ImageView 
+        android:id="@+id/image_back"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:background="@drawable/commerce_dlg_frame"
+        />
+
+	<TextView 
+	    android:id="@+id/notice_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/image_back"
+	    android:layout_alignRight="@id/image_back"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+		android:layout_marginTop="20dp"
+	    android:text="是否退出？"
+	    android:gravity="center"
+	    android:textColor="@color/black"
+	    android:textColorHighlight="@color/black"
+	    android:textStyle="bold"
+	    android:textSize="18sp"
+	    
+	    />
+	<EditText 
+	    android:id="@+id/notice_message_input"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/image_back"
+	    android:layout_alignRight="@id/image_back"
+	    android:layout_centerInParent="true"
+	    
+	    />
+	<LinearLayout 
+	   android:id="@+id/button_layout"	    
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/image_back"
+       android:layout_alignRight="@+id/image_back"
+       android:layout_alignBottom="@+id/image_back"
+	    
+	    >
+	      <RelativeLayout
+  android:id="@+id/button_layout1"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+	    
+	 	<Button 
+	    android:id="@+id/button_confirm"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+ 		android:text="确认"
+ 		android:gravity="center"
+ 		android:textColor="@color/white"
+ 		android:textSize="18sp"
+	    android:background="@drawable/selection"
+	    />   
+	   </RelativeLayout> 
+	      <RelativeLayout
+  android:id="@+id/button_layout2"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+	    
+	 	<Button 
+	    android:id="@+id/button_cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="取消"
+	    android:gravity="center"
+ 		android:textColor="@color/white"
+ 		android:textSize="18sp"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/selection"
+	    />   
+	   </RelativeLayout> 
+	</LinearLayout>
+
+	
+</RelativeLayout>

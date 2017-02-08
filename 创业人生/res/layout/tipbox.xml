@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:focusable="true"
+  android:background="@color/white_50"
+  android:clickable="true"
+  >
+  <com.zrong.Android.View.TipBoxView android:id="@+id/tv" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:scrollbars="none"
+		android:singleLine="false" android:maxLines="5"
+		android:layout_marginLeft="50px"
+		android:layout_marginRight="50px"
+		android:layout_marginTop="100px"
+		android:text="阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送阿娇的顺口溜费劲啊了多少将发送"
+		android:textColor="#FF0000"
+		android:background="@color/white_50"
+		/>
+		 
+</RelativeLayout>

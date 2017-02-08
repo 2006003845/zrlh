@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/ceshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/office_icon_shopnum"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/middle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ceshi"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/middle_1_1"
+            android:src="@drawable/middle_1_0" />
+        <ImageView 
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ceshi"
+            android:layout_toRightOf="@id/ceshi"
+            android:background="@drawable/middle_1_2"
+            />
+
+        <ImageButton
+            android:id="@+id/middle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ceshi"
+            android:layout_toLeftOf="@id/ceshi"
+            android:background="@drawable/middle_2_1"
+            android:src="@drawable/middle_2_0" />
+        <ImageView 
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/middle2"
+            android:layout_alignRight="@id/middle2"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/middle_2_2"
+            />
+
+        <ImageButton
+            android:id="@+id/middle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ceshi"
+            android:layout_toRightOf="@id/ceshi"
+            android:background="@drawable/middle_3_1" 
+            android:src="@drawable/middle_3_0" />
+        <ImageView 
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/middle3"
+            android:layout_alignLeft="@id/middle3"
+            android:layout_marginLeft="40dip"
+            android:background="@drawable/middle_3_2"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

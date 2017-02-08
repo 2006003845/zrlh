@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CorporateActivity" >
+
+    <include layout="@layout/title_c" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="您不是企业用户"
+        android:textColor="#373737"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_rounded_white"
+        android:gravity="center"
+        android:padding="20dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|left"
+            android:lineSpacingExtra="13dp"
+            android:text="@string/un_corporate_user_cont"
+            android:textColor="#898989" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/corporate_btn_unregist"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_rounded_red"
+        android:text="@string/unregist"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

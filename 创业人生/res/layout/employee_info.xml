@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:background="@drawable/selectsever_backgroud"
+   android:clickable="true"
+  >
+  <Button
+   android:id="@+id/employeeinfo_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/employeeinfo_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/employeeinfo_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="员工信息"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/employeeinfo_button_returnback"
+  	android:layout_toLeftOf="@id/employeeinfo_button_cancel"
+  />
+  <ImageView
+  android:id="@+id/employeeinfo_scrollviewback"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/employeeinfo_button_title"
+   
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="5px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  
+   android:layout_alignLeft="@id/employeeinfo_button_returnback"
+   android:layout_alignRight="@id/employeeinfo_button_cancel"
+  
+  android:background="@drawable/selectsever_smallback"
+  />
+  <ScrollView
+  android:id="@+id/employeeinfo_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignLeft="@id/employeeinfo_scrollviewback"
+  android:layout_alignRight="@id/employeeinfo_scrollviewback"
+  android:layout_alignTop="@id/employeeinfo_scrollviewback"
+  android:layout_alignBottom="@id/employeeinfo_scrollviewback"
+  >
+  <RelativeLayout
+  android:id="@+id/employeeinfo_scrollview_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <com.zrong.Android.View.SpriteView
+  android:id="@+id/employeeinfo_head"
+  android:layout_width="100px"
+  android:layout_height="90px"
+  android:layout_marginLeft="30px"
+  android:layout_marginTop="15px"
+  resID="1318"
+  />
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="15px"
+  android:layout_toRightOf="@id/employeeinfo_head"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_name"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  />
+  <TextView
+   android:id="@+id/employeeinfo_duty"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  />
+  </LinearLayout>
+  
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout2"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_layout1"
+   
+  android:layout_toRightOf="@id/employeeinfo_head"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_salary"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  />
+  </LinearLayout>
+  
+  
+  
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout3"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="15px"
+  android:layout_marginRight="15px"
+  android:layout_below="@id/employeeinfo_layout2"
+  >
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout31"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_textview_level"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="等级"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+  <Button
+  android:id="@+id/employeeinfo_button_level"
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  android:background="@drawable/colorbar_white"
+  android:gravity="center"
+  />
+  </LinearLayout>
+  
+  
+  
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout32"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_textview_loyalty"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="忠诚"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+  <Button
+  android:id="@+id/employeeinfo_button_loyalty"
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  android:background="@drawable/colorbar_purple"
+  android:gravity="center"
+  />
+  </LinearLayout>
+  
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout33"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_textview_ability"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="能力:"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+  <Button
+  android:id="@+id/employeeinfo_button_ability"
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  android:background="@drawable/colorbar_blue"
+  android:gravity="center"
+  />
+  </LinearLayout>
+  
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout34"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_textview_exprience"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="经验"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+  <Button
+  android:id="@+id/employeeinfo_button_exprience"
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  android:background="@drawable/colorbar_red"
+  android:gravity="center"
+  />
+  </LinearLayout>
+  
+  </LinearLayout>
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout_physical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_layout3"
+  android:layout_marginLeft="15px"
+  >
+  <TextView
+  android:id="@+id/employeeinfo_textview_physical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="体力"
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  />
+  <Button
+  android:id="@+id/employeeinfo_button_physical"
+   android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+   
+  android:textColor="@color/black"
+  android:textSize="18sp"
+  android:background="@drawable/colorbar_white"
+  android:gravity="center"
+  />
+  </LinearLayout>
+  
+  
+  <ImageView
+  android:id="@+id/employeeinfo_parting_line1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/parting_line"
+  android:layout_below="@id/employeeinfo_layout_physical"
+  />
+   <include
+  android:id="@+id/employeeinfo_study1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  layout="@layout/employeeinfo_skill_item"
+  android:layout_below="@id/employeeinfo_parting_line1"
+  
+  />
+   
+  <include
+  android:id="@+id/employeeinfo_study2"
+  layout="@layout/employeeinfo_skill_item"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_study1"
+  />
+  
+  <include
+  android:id="@+id/employeeinfo_study3"
+  layout="@layout/employeeinfo_skill_item"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_study2"
+  />
+  
+  
+  <ImageView
+  android:id="@+id/employeeinfo_parting_line2"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/parting_line"
+  android:layout_below="@id/employeeinfo_study3"
+  />
+  
+  <LinearLayout
+  android:id="@+id/employeeinfo_layout4"
+   android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_parting_line2"
+  >
+  <include
+  android:id="@+id/employeeinfo_quality1"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  
+   <include
+  android:id="@+id/employeeinfo_quality2"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  </LinearLayout> 
+  
+   <LinearLayout
+  android:id="@+id/employeeinfo_layout5"
+   android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_layout4"
+  >
+  <include
+  android:id="@+id/employeeinfo_quality3"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  
+   <include
+  android:id="@+id/employeeinfo_quality4"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  </LinearLayout> 
+  
+   <LinearLayout
+  android:id="@+id/employeeinfo_layout6"
+   android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_layout5"
+  >
+  <include
+  android:id="@+id/employeeinfo_quality5"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  
+   <include
+  android:id="@+id/employeeinfo_quality6"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  </LinearLayout> 
+  
+   <LinearLayout
+  android:id="@+id/employeeinfo_layout7"
+   android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_layout6"
+  >
+  <include
+  android:id="@+id/employeeinfo_quality7"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  
+   <include
+  android:id="@+id/employeeinfo_quality8"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  </LinearLayout> 
+  
+   <LinearLayout
+  android:id="@+id/employeeinfo_layout8"
+   android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/employeeinfo_layout7"
+  >
+  <include
+  android:id="@+id/employeeinfo_quality9"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  
+   <include
+  android:id="@+id/employeeinfo_quality10"
+  layout="@layout/employeeinfo_quality_item"
+  android:layout_width="0px"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+   
+  />
+  </LinearLayout> 
+   
+   
+   
+  </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>

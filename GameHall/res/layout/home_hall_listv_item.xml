@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/hall_listv_item01"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_piece_selector" />
+
+        <LinearLayout
+            android:id="@+id/hall_listv_1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/hall_listv_item01"
+            android:layout_alignLeft="@id/hall_listv_item01"
+            android:layout_alignRight="@id/hall_listv_item01"
+            android:background="@color/black_30"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/hall_listv_1_pb"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5px"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@anim/loading" />
+
+            <TextView
+                android:id="@+id/hall_listv_1_tv"
+                style="@style/text_mid_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="0%" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/hall_listv_item02"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/hall_listv_item01"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_piece_selector" />
+
+        <LinearLayout
+            android:id="@+id/hall_listv_2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/hall_listv_item02"
+            android:layout_alignLeft="@id/hall_listv_item02"
+            android:layout_alignRight="@id/hall_listv_item02"
+            android:background="@color/black_30"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/hall_listv_2_pb"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5px"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@anim/loading" />
+
+            <TextView
+                android:id="@+id/hall_listv_2_tv"
+                style="@style/text_mid_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="0%" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

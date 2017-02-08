@@ -1,0 +1,265 @@
+package cn.zrong.weibobinding;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import android.database.Cursor;
+
+public class BindingAccount implements Serializable {
+
+	private static final long serialVersionUID = 1254914086267695825L;
+
+	public static final String TYPE_BINDING_QQ = "_qq";
+	public static final String TYPE_BINDING_Sina = "_sina";
+
+	/**
+	 * 授权有效
+	 */
+	public static final int STATE_AUTHO_EFFECTIVE = 1;
+	/**
+	 * 授权失效
+	 */
+	public static final int STATE_AUTHO_DISABLED = 2;
+
+	/**
+	 * 绑定状态
+	 */
+	public static final int STATE_BINDING_ON = 1;
+	/**
+	 * 非绑定状态
+	 */
+	public static final int STATE_BINDING_OFF = 2;
+
+	public String userKeyId;// 连表与社区User
+
+	public String screen_name;
+	public int ID;
+	public String name;
+	private String userId;
+	private String type;// 微博账户类型
+	private String typeName;// 微博账户名字
+	private String typeIconUrl;// 微博账户icon
+
+	public String getTypeIconUrl() {
+		return typeIconUrl;
+	}
+
+	public void setTypeIconUrl(String typeIconUrl) {
+		this.typeIconUrl = typeIconUrl;
+	}
+
+	public String getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
+
+	private String newKey;
+	private String newSecret;
+	private int authoState;// 授权状态
+	private int bindingState;// 绑定状态
+	private String consumerKey;
+	private String consumerSecret;
+	private String oauthNonce;
+	private String oauthTimestamp;
+	private String oauthVerifier;
+	private String oauthVersion;
+
+	public String getOauthNonce() {
+		return oauthNonce;
+	}
+
+	public void setOauthNonce(String oauthNonce) {
+		this.oauthNonce = oauthNonce;
+	}
+
+	public String getOauthTimestamp() {
+		return oauthTimestamp;
+	}
+
+	public void setOauthTimestamp(String oauthTimestamp) {
+		this.oauthTimestamp = oauthTimestamp;
+	}
+
+	public String getOauthVerifier() {
+		return oauthVerifier;
+	}
+
+	public void setOauthVerifier(String oauthVerifier) {
+		this.oauthVerifier = oauthVerifier;
+	}
+
+	public String getOauthVersion() {
+		return oauthVersion;
+	}
+
+	public void setOauthVersion(String oauthVersion) {
+		this.oauthVersion = oauthVersion;
+	}
+
+	public String getConsumerKey() {
+		return consumerKey;
+	}
+
+	public void setConsumerKey(String consumerKey) {
+		this.consumerKey = consumerKey;
+	}
+
+	public String getConsumerSecret() {
+		return consumerSecret;
+	}
+
+	public void setConsumerSecret(String consumerSecret) {
+		this.consumerSecret = consumerSecret;
+	}
+
+	public int getBindingState() {
+		return bindingState;
+	}
+
+	public void setBindingState(int bindingState) {
+		this.bindingState = bindingState;
+	}
+
+	public int getAuthoState() {
+		return authoState;
+	}
+
+	public void setAuthoState(int authoState) {
+		this.authoState = authoState;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getUserKeyId() {
+		return userKeyId;
+	}
+
+	public void setUserKeyId(String userKeyId) {
+		this.userKeyId = userKeyId;
+	}
+
+	public String getNewKey() {
+		return newKey;
+	}
+
+	public void setNewKey(String newKey) {
+		this.newKey = newKey;
+	}
+
+	public String getNewSecret() {
+		return newSecret;
+	}
+
+	public void setNewSecret(String newSecret) {
+		this.newSecret = newSecret;
+	}
+
+	/**
+	 * 用户数据表
+	 * 
+	 * @author zhouzhilong
+	 * 
+	 */
+	public static class BindingAccountTable {
+		public static final String TAB_NAME = "bind_account";
+		// 字段名
+		public static final String _ID = "_id";
+		public static final String BINDINGUSER_USERID = "bindinguser_id";
+		public static final String BINDINGUSER_TYPE = "bindinguser_type";
+		public static final String BINDINGUSER_TYPE_NAME = "bindinguser_type_name";
+		public static final String BINDINGUSER_TYPE_IconURL = "bindinguser_type_iconurl";
+		public static final String BINDINGUSER_NEWKEY = "bindinguser_newkey";
+		public static final String BINDINGUSER_NEWSECRET = "bindinguser_newsecret";
+		public static final String BINDINGUSER_USER_KEYID = "bindinguser_user_keyid";
+		public static final String BINDINGUSER_AUTHO_STATE = "bindinguser_autho_state";
+		public static final String BINDINGUSER_BINDING_STATE = "bindinguser_binding_state";
+		public static final String BINDINGUSER_ConsumerKey = "bindinguser_consumerkey";
+		public static final String BINDINGUSER_ConsumerSecret = "bindinguser_consumersecret";
+		public static final String BINDINGUSER_OauthNonce = "bindinguser_oauthnonce";
+		public static final String BINDINGUSER_OauthTimestamp = "bindinguser_oauthtimestamp";
+		public static final String BINDINGUSER_OauthVerifier = "bindinguser_oauthverifier";
+		public static final String BINDINGUSER_OauthVersion = "bindinguser_oauthversion";
+		// 列编号
+		public static final int BINDINGUSER_USERID_INDEX = 1;
+		public static final int BINDINGUSER_TYPE_INDEX = 2;
+		public static final int BINDINGUSER_TYPE_NAME_INDEX = 3;
+		public static final int BINDINGUSER_TYPE_IconURL_INDEX = 4;
+		public static final int BINDINGUSER_NEWKEY_INDEX = 5;
+		public static final int BINDINGUSER_NEWSECRET_INDEX = 6;
+		public static final int BINDINGUSER_USER_KEYID_INDEX = 7;
+		public static final int BINDINGUSER_AUTHO_STATE_INDEX = 8;
+		public static final int BINDINGUSER_BINDING_STATE_INDEX = 9;
+		public static final int BINDINGUSER_ConsumerKey_INDEX = 10;
+		public static final int BINDINGUSER_ComsumerSecret_INDEX = 11;
+		public static final int BINDINGUSER_OauthNonce_INDEX = 12;
+		public static final int BINDINGUSER_OauthTimestamp_INDEX = 13;
+		public static final int BINDINGUSER_OauthVerifier_INDEX = 14;
+		public static final int BINDINGUSER_OauthVersion_INDEX = 15;
+
+		public static BindingAccount getBindingUser(Cursor cursor) {
+			if (cursor.getCount() == 0) {
+				cursor.close();
+				return null;
+			}
+			BindingAccount user = new BindingAccount();
+			user.userId = cursor.getString(BINDINGUSER_USERID_INDEX);
+			user.type = cursor.getString(BINDINGUSER_TYPE_INDEX);
+			user.typeName = cursor.getString(BINDINGUSER_TYPE_NAME_INDEX);
+			user.typeIconUrl = cursor.getString(BINDINGUSER_TYPE_IconURL_INDEX);
+			user.newKey = cursor.getString(BINDINGUSER_NEWKEY_INDEX);
+			user.newSecret = cursor.getString(BINDINGUSER_NEWSECRET_INDEX);
+			user.userKeyId = cursor.getString(BINDINGUSER_USER_KEYID_INDEX);
+			user.authoState = cursor.getInt(BINDINGUSER_AUTHO_STATE_INDEX);
+			user.bindingState = cursor.getInt(BINDINGUSER_BINDING_STATE_INDEX);
+			user.consumerKey = cursor.getString(BINDINGUSER_ConsumerKey_INDEX);
+			user.consumerSecret = cursor
+					.getString(BINDINGUSER_ComsumerSecret_INDEX);
+			user.oauthNonce = cursor.getString(BINDINGUSER_OauthNonce_INDEX);
+			user.oauthTimestamp = cursor
+					.getString(BINDINGUSER_OauthTimestamp_INDEX);
+			user.oauthVerifier = cursor
+					.getString(BINDINGUSER_OauthVerifier_INDEX);
+			user.oauthVersion = cursor
+					.getString(BINDINGUSER_OauthVersion_INDEX);
+//			cursor.close();
+			return user;
+		}
+
+		public static List<BindingAccount> getBindingUserList(Cursor cursor) {
+			cursor.moveToFirst();
+			int count = cursor.getCount();
+			ArrayList<BindingAccount> list = new ArrayList<BindingAccount>();
+			do {
+				if (count == 0) {
+					break;
+				}
+				BindingAccount user = BindingAccount.BindingAccountTable
+						.getBindingUser(cursor);
+				if (user != null) {
+					list.add(user);
+				}
+			} while (cursor.moveToNext());
+			cursor.close();
+			return list;
+		}
+	}
+
+}

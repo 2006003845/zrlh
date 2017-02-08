@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            style="@style/text_big_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="编辑名片" />
+
+        <TextView
+            android:id="@+id/card_edit_save"
+            style="@style/style_toptap_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/bg_btn_green_selector"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_edit_protraitlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white_50"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/card_edit_headportrait"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/card_edit_headportrait"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=" 上传头像"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/card_card_btn_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/person_edit_gender"
+            style="@style/text_mid_black"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="1dip"
+            android:background="@color/white_50"
+            android:gravity="center_vertical|left"
+            android:text="@string/gender" />
+
+        <TextView
+            android:id="@+id/m20"
+            style="@style/text_mid_black"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/person_edit_gender"
+            android:background="@color/white_50"
+            android:gravity="center"
+            android:text=":" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2px"
+            android:layout_toRightOf="@id/m20"
+            android:background="@color/white_50" >
+
+            <RadioGroup
+                android:id="@+id/card_edit_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/card_edit_radio_nan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_nan_selector"
+                    android:text="@string/nan"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/card_edit_radio_nv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:button="@drawable/radio_nv_selector"
+                    android:text="@string/nv"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/card_edit_nickname"
+            style="@style/text_mid_black"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="1dip"
+            android:background="@color/white_50"
+            android:gravity="center_vertical|left"
+            android:text="@string/nickname" />
+
+        <TextView
+            android:id="@+id/m10"
+            style="@style/text_mid_black"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/card_edit_nickname"
+            android:background="@color/white_50"
+            android:gravity="center"
+            android:text=":" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2px"
+            android:layout_toRightOf="@id/m10"
+            android:background="@color/white_50" >
+
+            <EditText
+                android:id="@+id/card_card_nickname_tv"
+                style="@style/text_mid_black"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2px"
+                android:layout_toRightOf="@id/m10"
+                android:clickable="true"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/card_edit_location"
+            style="@style/text_mid_black"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="1dip"
+            android:background="@color/white_50"
+            android:gravity="center_vertical|left"
+            android:text="@string/location" />
+
+        <TextView
+            android:id="@+id/m10"
+            style="@style/text_mid_black"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/card_edit_location"
+            android:background="@color/white_50"
+            android:gravity="center"
+            android:text=":" />
+
+        <Spinner
+            android:id="@+id/card_edit_location_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2px"
+            android:layout_toRightOf="@id/m10"
+            android:background="@color/white_50"
+            android:gravity="left|center_vertical"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/card_card_intro"
+            style="@style/text_mid_black"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="1dip"
+            android:background="@color/white_50"
+            android:gravity="center_vertical|left"
+            android:text="@string/personal_intro" />
+
+        <TextView
+            android:id="@+id/m10"
+            style="@style/text_mid_black"
+            android:layout_width="wrap_content"
+            android:layout_height="80dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/card_card_intro"
+            android:background="@color/white_50"
+            android:gravity="center"
+            android:text=":" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2px"
+            android:layout_toRightOf="@id/m10"
+            android:background="@color/white_50" >
+
+            <EditText
+                android:id="@+id/card_edit_intro_tv"
+                style="@style/text_mid_black"
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2px"
+                android:layout_toRightOf="@id/m10"
+                android:clickable="true"
+                android:gravity="left"
+                android:hint="您的简介"
+                android:singleLine="false"
+                android:text="   " />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

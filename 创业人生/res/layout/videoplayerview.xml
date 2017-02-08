@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+ <com.zrong.Android.View.customWidget.CustomerVideoView
+			android:id="@+id/videoView" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			 />
+			 
+  <Button
+  	android:id ="@+id/button_end"
+  	android:layout_width ="48px"
+  	android:layout_height="47px"
+  	android:layout_centerHorizontal="true"
+  	android:layout_alignParentBottom="true"
+  	android:layout_marginBottom="15px"
+  	android:visibility ="invisible"
+  	android:clickable ="false"
+  	android:background="@drawable/video_end_selector"
+  	 
+  />
+   
+  <ImageView
+  android:id ="@+id/imageView_endBack"
+  android:layout_width ="fill_parent"
+  android:layout_height="57px"
+  android:src="@color/white_50"
+  android:layout_alignParentBottom="true"
+  android:layout_marginBottom="12px"
+  android:visibility="invisible"
+  />
+  
+</RelativeLayout>

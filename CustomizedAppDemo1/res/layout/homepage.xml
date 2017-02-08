@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/tapbar_top"
+        style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            style="@style/style_top_btn" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/style_top_txt"
+            android:text="@string/app_name" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/homepage_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_below="@id/tapbar_top"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/homepage_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/homepage_viewpager"
+        android:background="#a0ffffff" >
+
+        <TextView
+            style="@style/text_mid_black_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="图片标题" />
+
+        <com.zr.zzl.cus.demo.PointLinearLayout
+            android:id="@+id/homepage_playout_pageturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homepage_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/homepage_btn_contactus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_btn_contactus_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="13dp" >
+
+            <TextView
+                style="@style/text_small_white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/contact2us" />
+
+            <TextView
+                style="@style/text_small_white_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="contact us" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="13dp" >
+
+            <ImageView
+                android:id="@+id/homepage_btn_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:contentDescription="@string/sina"
+                android:scaleType="centerInside"
+                android:src="@drawable/sina_selector" />
+
+            <ImageView
+                android:id="@+id/homepage_btn_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/setting"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_setting" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.zr.zzl.cus.demo.ScrollLayout
+        android:id="@+id/homepage_views"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/homepage_layout2"
+        android:layout_below="@id/homepage_layout1"
+      
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dip" />
+
+</RelativeLayout>

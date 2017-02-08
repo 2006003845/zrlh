@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+ 
+  android:clickable="true"
+  >
+  <ImageView 
+   android:id="@+id/imageview"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/selectsever_backgroud" 
+    />
+    
+  <Button
+  android:id="@+id/createcharacter_confirm"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/confirm_selector"
+  android:layout_marginLeft="10px"
+  android:layout_marginTop="5px"
+  />
+  
+  <Button
+  android:id="@+id/createcharacter_return"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/returns_selector"
+  android:layout_alignParentRight="true"
+  android:layout_marginTop="5px"
+  android:layout_marginRight="10px"
+  />
+  <Button
+    android:id="@+id/createcharactor_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="创建角色"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@+id/createcharacter_confirm"
+  	android:layout_toLeftOf="@+id/createcharacter_return"
+  	android:layout_marginLeft="5px"
+    android:layout_marginRight="5px"
+  />
+  
+  <ImageView
+  android:id="@+id/createcharactor_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/createcharactor_button_title"
+
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="50px"
+  android:layout_marginRight="50px"
+  
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  android:layout_marginBottom="10px"
+  />
+  
+    <ScrollView 
+  android:id="@+id/createcharactor_scrollview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@+id/createcharactor_smallback"
+  android:layout_alignLeft="@+id/createcharactor_smallback"
+  android:layout_alignRight="@+id/createcharactor_smallback"
+  android:layout_alignBottom="@+id/createcharactor_smallback"
+  
+  >
+  <RelativeLayout 
+  android:id="@+id/createcharactor_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   >
+  
+  <TextView
+  	android:id="@+id/createcharactor_chooseSex"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="选择性别"
+  	android:textColor="@color/black"
+  	android:textSize="20sp"
+  	android:gravity="center"
+  	android:layout_alignLeft="@id/createcharactor_button_title"
+  	android:layout_marginLeft="100px"
+  	android:layout_below="@id/createcharactor_button_title"
+  	android:layout_marginTop="25px"
+  />
+  
+  <RadioGroup
+  android:id="@+id/createcharactor_radiogroup"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_toRightOf="@id/createcharactor_chooseSex"
+  android:layout_marginLeft="60px"
+  android:layout_below="@id/createcharactor_button_title"
+  android:layout_marginTop="15px"
+  
+  >
+  <RadioButton
+  android:id="@+id/createcharactor_radiobutton_male"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="男"
+  android:textColor="@color/black"
+  />
+  <RadioButton
+  android:id="@+id/createcharactor_radiobutton_female"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="女"
+  android:textColor="@color/red"
+  />
+  </RadioGroup>
+  
+  <com.zrong.Android.View.SpriteView
+   		android:id="@+id/createcharactor_Avatar"
+   		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:layout_below="@id/createcharactor_radiogroup"
+    	android:layout_marginTop="2px"
+    	resID="1318" 
+   /> 
+  <LinearLayout
+	android:id ="@+id/linearLayout1"
+	android:layout_below="@+id/createcharactor_Avatar"
+	android:layout_alignLeft="@id/createcharactor_smallback"
+	android:layout_alignRight="@id/createcharactor_smallback"
+	android:orientation="horizontal" 
+	android:layout_marginTop="2px"
+	android:layout_marginLeft="40px"
+	android:layout_marginRight="40px"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	>
+	<TextView
+	android:id = "@+id/pnametext"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textColor="@color/black"
+	android:gravity="left|center_vertical"
+	android:text="角色名:"
+	/>
+	<EditText
+		android:id = "@+id/createcharactor_pname"
+		android:gravity="center_vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+	</LinearLayout>
+  <LinearLayout
+	android:id ="@+id/linearLayout2"
+	android:layout_below="@+id/linearLayout1"
+	android:layout_alignLeft="@id/createcharactor_smallback"
+	android:layout_alignRight="@id/createcharactor_smallback"
+	android:orientation="horizontal" 
+	android:layout_marginTop="5px"
+	android:layout_marginLeft="40px"
+	android:layout_marginRight="40px"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	>
+	<TextView
+	android:id = "@+id/cnametext"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textColor="@color/black"
+	android:gravity="left|center_vertical"
+	android:text="公司名:"
+	/>
+	<EditText
+		android:id = "@+id/createcharactor_cname"
+		android:gravity="center_vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+		/>
+	</LinearLayout>
+  <LinearLayout
+	android:id ="@+id/linearLayout3"
+	android:layout_below="@+id/linearLayout2"
+	android:layout_alignLeft="@id/createcharactor_smallback"
+	android:layout_alignRight="@id/createcharactor_smallback"
+	android:orientation="horizontal" 
+	android:layout_marginTop="5px"
+	android:layout_marginLeft="40px"
+	android:layout_marginRight="40px"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	>
+	<TextView
+	android:id = "@+id/pcidtext"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textColor="@color/black"
+	android:gravity="left|center_vertical"
+	android:text="推广ID:"
+	/>
+	<EditText
+		android:id = "@+id/createcharactor_pcid"
+		android:gravity="center_vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+		/>
+	</LinearLayout>
+		
+		
+ </RelativeLayout>
+  
+  
+  </ScrollView>		 
+  
+  
+ 
+  
+
+</RelativeLayout>

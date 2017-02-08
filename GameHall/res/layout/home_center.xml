@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/gamecenter_recommendgame00"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/recommendgame00" />
+
+            <RelativeLayout
+                android:id="@+id/gamecenter_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1.0"
+                android:background="#ff45b513" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginTop="2dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_game_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gamecenter_recommendgame01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/recommendgame01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5px"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/gamecenter_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#ff45b513" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginTop="2dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_game_hot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/hot_recommend"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gamecenter_ranked"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1.0"
+                android:background="#ff45b513" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginTop="2dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_game_ranked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip"
+                    android:text="@string/game_ranked"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/gamecenter_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="#ff45b513" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginTop="2dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_game_class" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginRight="2dip"
+                        android:text="@string/game_class"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/gamecenter_recommendgame02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5px"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recommendgame02" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gamecenter_recommendgame03"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/recommendgame03" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

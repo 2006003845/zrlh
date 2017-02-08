@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/selectsever_backgroud"
+  android:clickable="true"
+  >
+  
+  <Button
+   android:id="@+id/cardinfo_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/cardinfo_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/cardinfo_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="卡片信息"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/cardinfo_button_returnback"
+  	android:layout_toLeftOf="@id/cardinfo_button_cancel"
+  />
+  
+  <ImageView
+  android:id="@+id/cardinfo_Imageview"
+  android:layout_width="250px"
+  android:layout_height="250px" 
+  android:layout_marginLeft="5px"
+  android:layout_centerVertical="true"
+  android:layout_alignParentLeft="true"
+  
+  />
+  <TextView 
+    android:id="@+id/cardinfo_name"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/cardinfo_button_title"
+  android:layout_toRightOf="@id/cardinfo_Imageview"
+  android:layout_marginLeft="5px"
+  android:layout_marginTop="30dp"
+  android:text="卡片名称："
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  />
+  <TextView 
+  android:id="@+id/cardinfo_name_text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/cardinfo_button_title"
+  android:layout_toRightOf="@id/cardinfo_name"
+  android:layout_marginLeft="5px"
+  android:layout_marginTop="30dp"
+  android:text=""
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  />
+   <TextView 
+  android:id="@+id/cardinfo_collective"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/cardinfo_name"
+  android:layout_toRightOf="@id/cardinfo_Imageview"
+  android:layout_marginLeft="5px"
+
+  android:layout_marginTop="10dp"
+  android:text="收集率："
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  />
+  <TextView 
+  android:id="@+id/cardinfo_collective_text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/cardinfo_name_text"
+  android:layout_toRightOf="@id/cardinfo_collective"
+  android:layout_marginLeft="5px"
+
+  android:layout_marginTop="10dp"
+  android:text=""
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  />
+  <TextView 
+  android:id="@+id/cardinfo_desc"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/cardinfo_collective"
+  android:layout_toRightOf="@id/cardinfo_Imageview"
+  android:layout_marginLeft="5px"
+
+  android:layout_marginTop="10dp"
+  android:text="卡片描述："
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  />
+  <TextView 
+  android:id="@+id/cardinfo_desc_text"
+  android:layout_width="300px"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/cardinfo_collective_text"
+  android:layout_toRightOf="@id/cardinfo_desc"
+  android:layout_marginLeft="5px"
+
+  android:layout_marginTop="10dp"
+  android:text=""
+  android:textSize="20dp"
+  android:textColor="@color/black"
+  />
+ 
+ 
+
+	
+	   
+		
+</RelativeLayout>

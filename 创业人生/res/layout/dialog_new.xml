@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ImageView 
+        android:id="@+id/image_back"
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_marginTop="40dp"
+	    android:layout_marginBottom="40dp"
+	    android:background="@drawable/department_frame"
+        />
+	<ImageView 
+	    android:id="@+id/image_icon"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@id/image_back"
+	    android:layout_alignRight="@id/image_back"
+	    android:layout_marginTop="0dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/venture_icon"
+	    />
+	<!--  
+	<TextView 
+	    android:id="@+id/notice"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/image_icon"
+	    android:layout_marginLeft="20dp"
+	    android:text="提示"
+	    android:textStyle="bold"
+	    android:textSize="20sp"
+	    
+	    />
+	    -->
+	<TextView 
+	    android:id="@+id/notice_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/image_back"
+	    android:layout_alignRight="@id/image_back"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+		android:layout_centerInParent="true"
+	    android:text="是否退出？"
+	    android:gravity="center"
+	    android:textColor="@color/black"
+	    android:textColorHighlight="@color/black"
+	    android:textStyle="bold"
+	    android:textSize="30sp"
+	    
+	    />
+	<LinearLayout 
+	   android:id="@+id/button_layout"	    
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/image_back"
+       android:layout_alignRight="@+id/image_back"
+       android:layout_alignBottom="@+id/image_back"
+	    android:layout_marginBottom="40dp"
+	    >
+	      <RelativeLayout
+  android:id="@+id/button_layout1"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+	    
+	 	<Button 
+	    android:id="@+id/button_confirm"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+ 
+	    android:background="@drawable/dialog_confirm"
+	    />   
+	   </RelativeLayout> 
+	      <RelativeLayout
+  android:id="@+id/button_layout2"
+  android:layout_width="0px"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  >
+	    
+	 	<Button 
+	    android:id="@+id/button_cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/dialog_cancel"
+	    />   
+	   </RelativeLayout> 
+	</LinearLayout>
+
+	
+</RelativeLayout>

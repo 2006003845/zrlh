@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+     <ImageView 
+   android:id="@+id/imageview"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/selectsever_backgroud" 
+    />
+  <Button
+   android:id="@+id/lottery_station_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+   android:visibility="invisible"
+  />
+  <Button
+   android:id="@+id/lottery_station_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/lottery_station_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="投注"
+  	android:textColor="@android:color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/lottery_station_returnback"
+  	android:layout_toLeftOf="@id/lottery_station_cancel"
+  />  
+  <ImageView
+  android:id="@+id/lottery_station_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/lottery_station_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="50px"
+  android:layout_marginRight="50px"
+  android:layout_marginBottom="20px"
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  />  
+  
+  <Button
+  android:id="@+id/lottery_bet_button_ok"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignRight="@id/lottery_station_smallback"
+  android:layout_alignBottom="@id/lottery_station_smallback"
+  android:layout_marginRight="15px"
+  android:layout_marginBottom="20px"
+   android:background="@drawable/button_frame"
+   android:text="确定"
+   android:textSize="18sp"
+  android:textColor="@color/white"
+  />
+
+
+  <LinearLayout
+  android:id="@+id/lottery_bet_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@id/lottery_station_smallback"
+  android:layout_alignLeft="@id/lottery_station_smallback"
+  android:layout_alignRight="@id/lottery_station_smallback"
+  android:layout_marginLeft="10dp"
+  android:layout_marginTop="20dp"
+  android:layout_marginRight="5dp"
+  android:orientation="vertical"
+  >
+  <TextView
+  android:id="@+id/lottery_bet_number"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+   android:text="彩票号码"
+  
+  />
+  <EditText
+  android:id="@+id/lottery_bet_edit_number"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:maxLength="2"
+  android:numeric="integer"
+  
+  />
+  <TextView
+  android:id="@+id/lottery_bet_buy_number"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/black"
+  android:text="购买数量"
+  />
+   <EditText
+  android:id="@+id/lottery_bet_edit_buy_number"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:maxLength="3"
+  android:numeric="integer"
+  
+  />
+  
+  </LinearLayout>
+  
+</RelativeLayout>
+

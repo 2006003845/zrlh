@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg" >
+
+    <ImageView
+        android:id="@+id/home_bg_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="55px"
+        android:src="@drawable/home_title_bg" />
+
+    <com.zrong.view.DrawDynamicView
+        android:id="@+id/home_draw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/home_bottom_relat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12px" >
+
+        <ImageView
+            android:id="@+id/home_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12px"
+            android:background="@drawable/bg_btn_store_selector"
+            android:clickable="true"
+            android:paddingTop="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_help_selector" />
+
+        <ImageView
+            android:id="@+id/home_btn_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:layout_toRightOf="@id/home_btn_help"
+            android:background="@drawable/bg_btn_store_selector"
+            android:clickable="true"
+            android:paddingTop="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_about_selector" />
+
+        <ImageView
+            android:id="@+id/home_btn_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5px"
+            android:layout_marginRight="12px"
+            android:background="@drawable/bg_btn_store_selector"
+            android:clickable="true"
+            android:paddingTop="7px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_music_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_btn_modeselect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/home_bottom_relat"
+        android:layout_below="@id/home_bg_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2px"
+        android:layout_marginTop="2px" >
+
+        <ImageView
+            android:id="@+id/home_btn_stagemode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_mode_selector"
+            android:clickable="true"
+            android:padding="13px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_stage_selector" />
+
+        <ImageView
+            android:id="@+id/home_btn_timemode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@id/home_btn_stagemode"
+            android:background="@drawable/bg_mode_selector"
+            android:clickable="true"
+            android:padding="13px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_timed_selector" />
+
+        <ImageView
+            android:id="@+id/home_btn_endlessmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@id/home_btn_stagemode"
+            android:background="@drawable/bg_mode_selector"
+            android:clickable="true"
+            android:padding="13px"
+            android:scaleType="centerInside"
+            android:src="@drawable/tv_endless_selector" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home_btn_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="2px"
+        android:background="@drawable/bg_btn_store_selector"
+        android:clickable="true"
+        android:paddingTop="7px"
+        android:scaleType="centerInside"
+        android:src="@drawable/tv_store_selector" />
+
+    <ImageView
+        android:id="@+id/home_btn_achievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="2px"
+        android:background="@drawable/bg_btn_store_selector"
+        android:clickable="true"
+        android:paddingTop="7px"
+        android:scaleType="centerInside"
+        android:src="@drawable/tv_achievement_selector" />
+
+    <ImageView
+        android:id="@+id/home_wealth_bg"
+        android:layout_width="160px"
+        android:layout_height="70px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/home_btn_store"
+        android:layout_marginRight="2px"
+        android:src="@drawable/bg_gold" />
+
+    <com.zrong.view.NumView
+        android:id="@+id/home_wealthview"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/home_wealth_bg"
+        android:layout_alignLeft="@id/home_wealth_bg"
+        android:layout_alignRight="@id/home_wealth_bg"
+        android:layout_alignTop="@id/home_wealth_bg"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px" />
+
+</RelativeLayout>

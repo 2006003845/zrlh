@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/Back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/selectsever_backgroud"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/commerceinfo_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/cancel_selector" />
+
+    <Button
+        android:id="@+id/personnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/selection"
+        android:text="@string/department_personnel_dept"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/relation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/personnel"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@id/personnel"
+        android:background="@drawable/selection"
+        android:text="@string/department_menu2"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    
+  <Button
+        android:id="@+id/finance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/personnel"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@id/relation"
+        android:background="@drawable/selection"
+        android:text="@string/department_menu3"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+  
+    <Button
+        android:id="@+id/strategy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/personnel"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@id/finance"
+        android:background="@drawable/selection"
+        android:text="@string/department_menu4"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+  
+<!-- <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/finance"
+        android:layout_toRightOf="@id/finance"
+        android:layout_marginLeft="10px"
+        android:background="@drawable/button_frame"
+        android:text="测试"
+        android:textColor="@color/white"
+        android:textSize="15sp" /> -->
+   
+
+    <ImageView
+        android:id="@+id/commerceinfo_smallback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/strategy"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/selectsever_smallback" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/commerceinfo_smallback"
+        android:layout_alignLeft="@id/commerceinfo_smallback"
+        android:layout_alignRight="@id/commerceinfo_smallback"
+        android:layout_alignTop="@id/commerceinfo_smallback"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button0_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_frame"
+                android:text="@string/levelup"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button0_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button0_1"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button0_1"
+                android:background="@drawable/button_frame"
+                android:text="@string/appointed"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button0_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button0_2"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button0_2"
+                android:background="@drawable/button_frame"
+                android:text="@string/shoplist_deploy"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button0_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button0_3"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button0_3"
+                android:background="@drawable/button_frame"
+                android:text="@string/employeelist_button_employ"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ListView
+                android:id="@+id/listView0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/button0_1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+                android:listSelector="@drawable/department_item_selector"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_frame"
+                android:text="@string/levelup"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button1_1"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button1_1"
+                android:background="@drawable/button_frame"
+                android:text="@string/appointed"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button1_2"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button1_2"
+                android:background="@drawable/button_frame"
+                android:text="@string/shoplist_deploy"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button1_3"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button1_3"
+                android:background="@drawable/button_frame"
+                android:text="@string/employeelist_button_employ"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/button1_1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+                android:listSelector="@drawable/department_item_selector"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            
+            <Button
+                android:id="@+id/button2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_frame"
+                android:text="@string/levelup"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button2_1"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button2_1"
+                android:background="@drawable/button_frame"
+                android:text="@string/appointed"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button2_2"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button2_2"
+                android:background="@drawable/button_frame"
+                android:text="@string/shoplist_deploy"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button2_3"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button2_3"
+                android:background="@drawable/button_frame"
+                android:text="@string/employeelist_button_employ"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button2_4"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button2_4"
+                android:background="@drawable/button_frame"
+                android:text="@string/employeelist_button_routine"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/button2_1"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+                android:listSelector="@drawable/department_item_selector"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_frame"
+                android:text="@string/levelup"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button3_1"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button3_1"
+                android:background="@drawable/button_frame"
+                android:text="@string/appointed"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button3_2"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button3_2"
+                android:background="@drawable/button_frame"
+                android:text="@string/shoplist_deploy"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button3_3"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button3_3"
+                android:background="@drawable/button_frame"
+                android:text="@string/employeelist_button_employ"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button3_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/button3_4"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/button3_4"
+                android:background="@drawable/button_frame"
+                android:text="@string/policy"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            
+            <ListView
+                android:id="@+id/listView3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/button3_1"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+                android:listSelector="@drawable/department_item_selector"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+    </ViewFlipper>
+</RelativeLayout>

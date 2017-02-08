@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_top_tap" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            style="@style/text_big_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/binding_weibo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="25dip" >
+
+        <RelativeLayout
+            android:id="@+id/weibo_banding_layout_sina"
+            android:layout_width="110dip"
+            android:layout_height="110dip"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_pink_selector" >
+
+            <ImageView
+                android:id="@+id/weibo_banding_imgv_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_sina" />
+
+            <TextView
+                android:id="@+id/weibo_banding_tv_sina"
+                style="@style/text_mid_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/click_to_banding" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/weibo_banding_layout_qq"
+            android:layout_width="110dip"
+            android:layout_height="110dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/bg_btn_blue_selected" >
+
+            <ImageView
+                android:id="@+id/weibo_banding_imgv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_qq" />
+
+            <TextView
+                android:id="@+id/weibo_banding_tv_qq"
+                style="@style/text_mid_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/click_to_banding" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/accountmanage_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dip"
+        android:scrollbars="none" >
+    </ListView>
+    -->
+
+</LinearLayout>

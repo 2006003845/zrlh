@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+  
+  <Button
+   android:id="@+id/systemsetting_button_returnback"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/returnback_selector"
+  />
+  <Button
+   android:id="@+id/systemsetting_button_cancel"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:layout_marginRight="5px"
+   android:layout_marginTop="5px"
+   android:background="@drawable/cancel_selector"
+  />
+  <Button
+    android:id="@+id/systemsetting_button_title"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerHorizontal="true"
+  	android:text="系统设置"
+  	android:textColor="@color/black"
+  	android:textSize="30dp"
+  	android:gravity="center_horizontal|center_vertical"
+  	android:background="@drawable/selectsever_titleback"
+  	android:focusable="false"
+  	android:layout_toRightOf="@id/systemsetting_button_returnback"
+  	android:layout_toLeftOf="@id/systemsetting_button_cancel"
+  /> 
+   <ImageView
+  android:id="@+id/systemsetting_smallback"
+  android:layout_below="@id/systemsetting_button_title"
+  style="@style/fill_parent_model1"
+  android:background="@drawable/selectsever_smallback"
+  
+  />
+  
+  <ListView
+  android:id="@+id/systemsetting_listview"
+  android:layout_centerHorizontal="true"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@id/systemsetting_smallback"
+  android:layout_alignLeft="@id/systemsetting_smallback"
+  android:layout_alignRight="@id/systemsetting_smallback"
+  android:layout_alignBottom="@id/systemsetting_smallback"
+  
+  android:layout_marginTop="30px"
+  android:layout_marginLeft="10px"
+  android:layout_marginRight="10px"
+  android:layout_marginBottom="10px"
+  android:focusable="false"
+  >
+   
+  </ListView>
+   
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<RelativeLayout android:id="@+id/diag_relat"
+		android:layout_width="400px" android:layout_height="320px"
+		android:layout_marginBottom="5dip" android:layout_marginLeft="15dip"
+		android:layout_marginRight="15dip" android:layout_marginTop="10dip"
+		android:background="@drawable/bg2" android:orientation="horizontal">
+
+		<TextView android:id="@+id/diag_title_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+			android:layout_marginTop="30px" android:text="@string/prompt"
+			android:textColor="#030301" android:textSize="30px" />
+
+		<TextView android:id="@+id/diag_content_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerInParent="true" android:text="@string/exit"
+			android:textColor="#010101" android:textSize="27px" />
+
+		<View android:id="@+id/diag_view" android:layout_width="10px"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true" android:layout_marginLeft="15px" />
+
+		<Button android:id="@+id/diag_positive_btn"
+			android:layout_width="90px" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" android:layout_toLeftOf="@id/diag_view"
+			android:background="@drawable/bg_btn_other_selector" android:text="@string/confirm">
+		</Button>
+
+		<Button android:id="@+id/diag_negative_btn"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" android:layout_toRightOf="@id/diag_view"
+			android:background="@drawable/bg_btn_other_selector" android:text="@string/cancel">
+		</Button>
+	</RelativeLayout>
+
+</RelativeLayout>

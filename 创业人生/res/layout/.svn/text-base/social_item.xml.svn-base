@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/shoplist_selector"
+  >
+  
+  <!-- 名称 -->
+  <TextView
+  android:id="@+id/social_item_name_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:text="@string/list_item_name_title"
+  android:layout_marginLeft="5sp"
+  />
+  
+  <TextView
+  android:id="@+id/social_item_name"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/item_namecolor"
+  android:textSize="20sp"
+  android:layout_toRightOf="@id/social_item_name_title"
+  />
+  <!-- 等级 -->
+  <TextView
+  android:id="@+id/social_item_level_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="20sp"
+  android:layout_toRightOf="@id/social_item_name"
+  android:layout_marginLeft="20px"
+  android:text="@string/list_item_level_title"
+  />
+  
+  <TextView
+  android:id="@+id/social_item_level"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/blue"
+  android:textSize="20sp"
+  android:layout_toRightOf="@id/social_item_level_title"
+  />
+  <!--是否在线  -->
+   <TextView
+  android:id="@+id/social_item_isonlie_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="10sp"
+  android:layout_marginLeft="5sp"
+  android:layout_below="@id/social_item_name"
+  android:text="@string/list_item_online_title"
+  />
+  <TextView
+  android:id="@+id/social_item_isonlie"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/blue"
+  android:textSize="10sp"
+  android:layout_marginLeft="5sp"
+  android:layout_below="@id/social_item_name"
+  android:layout_toRightOf="@id/social_item_isonlie_title"
+  />
+  <!-- 是否被招揽 -->
+  <TextView 
+  android:id="@+id/social_item_isrecurited_title"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/black"
+  android:textSize="10sp"    
+  android:layout_below="@id/social_item_isonlie"
+  android:layout_marginLeft="5sp"
+  android:text="@string/list_item_isrecruit_title"    
+  />
+  <TextView 
+  android:id="@+id/social_item_isrecurited"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@color/blue"
+  android:textSize="10sp"    
+  android:layout_below="@id/social_item_isonlie"
+  android:layout_toRightOf="@id/social_item_isrecurited_title"
+  android:layout_marginLeft="5sp"    
+  />
+  
+</RelativeLayout>

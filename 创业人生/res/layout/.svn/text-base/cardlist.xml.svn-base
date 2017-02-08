@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:clickable="true"
+  android:background="@drawable/selectsever_backgroud"
+  >
+   <Button 
+ android:id="@+id/cardlist_button_returnback"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginLeft="5px"
+ android:layout_marginTop="5px"
+ android:background="@drawable/returnback_selector"
+  />   
+ <Button 
+ android:id="@+id/cardlist_button_cancel"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_alignParentRight="true"
+ android:layout_marginRight="5px"
+ android:layout_marginTop="5px"
+ android:background="@drawable/cancel_selector"
+  />   
+ <Button 
+ android:id="@+id/cardlist_button_title"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_centerHorizontal="true"
+ android:gravity="center_vertical|center_horizontal"
+ android:layout_toLeftOf="@+id/cardlist_button_cancel"
+ android:layout_toRightOf="@+id/cardlist_button_returnback"
+ android:background="@drawable/selectsever_titleback"
+ android:text="卡片列表"
+ android:textSize="30dp"
+ android:textColor="@color/black"
+ android:focusable="false"
+  /> 
+    <ImageView
+  android:id="@+id/cardlist_smallback"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/cardlist_button_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="20px"
+  android:layout_marginRight="20px"
+  android:layout_marginBottom="10px"
+  android:background="@drawable/selectsever_smallback"
+  android:focusable="false"
+  />
+ 
+   <GridView
+  android:id="@+id/cardlist_gridview"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignTop="@+id/cardlist_smallback"
+  android:layout_alignLeft="@+id/cardlist_smallback"
+  android:layout_alignRight="@+id/cardlist_smallback"
+  android:numColumns="4"
+  android:verticalSpacing="10px"
+  android:horizontalSpacing="10px"
+  android:gravity="center"
+  
+  android:stretchMode="columnWidth"
+  
+  />
+  
+</RelativeLayout>
+
+
